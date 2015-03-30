@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/1/variants?page=&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 1234567890ASDFGHJKLMNBVCX
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 04:47:40 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      X-Accepted-Oauth-Scopes:
+      - offline_access
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 29b8970b-16c6-4be2-89e4-7fecca60d7c8
+      X-Runtime:
+      - '0.007782'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_request"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 04:47:40 GMT
+recorded_with: VCR 2.9.3

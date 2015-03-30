@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/1/variants/65
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 05:01:36 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '166'
+      Etag:
+      - W/"f94568131f106728ea2b862eff69b23c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=VHhNbmtIWll1WXNUT21IUm11S1NHVjlyblQ5cDU4aWxGc1VNRTI5dE9vQ0RIZWFVbzd6WnJDUEFqTElKN0tJVnRNZEUzSDdpRmtZUUlubVRiVjIzZWc9PS0tRVY0QnhGaEowbVIreDIybzdteklBdz09--f6057e321ac45ac9d5f7cca117e78f22eb6e8891;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 1f094c56-e0ab-49cd-aa4e-7257a3fd9f99
+      X-Runtime:
+      - '0.023812'
+    body:
+      encoding: UTF-8
+      string: '{"id":65,"sku":"010165","description":"Voucher nominal 600.000","nominal":650000,"price":650000,"created_at":"2015-03-30
+        04:48:29","updated_at":"2015-03-30 04:58:11"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 05:01:36 GMT
+recorded_with: VCR 2.9.3

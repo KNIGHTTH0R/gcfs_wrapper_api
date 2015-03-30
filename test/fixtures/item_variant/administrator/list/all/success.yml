@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/1/variants?page=&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 04:47:15 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '5'
+      X-Total-Pages:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '1'
+      X-Next-Page:
+      - ''
+      X-Prev-Page:
+      - ''
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '772'
+      Etag:
+      - W/"2f31bdcbf1ea40bf9b3342dc60a3054b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=N3JsazlPNWl3S1pJa1Q5OFBDT1dUYUZuQnlET1lKVjZGbTVLcXEwOWgwS2dQakJEQXFvVTJnZ0tuSVZEL29qbVhYZk1JQnpXZUZrVWVHNlRJVkFQWWc9PS0tT1BDTHZ4NkJIdTZxZWlwbi9TT01Cdz09--4d7548c8e31a2a9619db342e5c75312cc7856bec;
+        path=/; HttpOnly
+      X-Request-Id:
+      - b84df3cc-76f7-4d3b-b9c2-402f7f27ab93
+      X-Runtime:
+      - '0.025958'
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"sku":"010101","description":"Job 50rb","nominal":50000,"price":45000,"created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:35:06"},{"id":2,"sku":"010102","description":"Job
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},{"id":21,"sku":"010121","description":"Job 150rb","nominal":150000,"price":145000,"created_at":"2015-03-17
+        07:34:32","updated_at":"2015-03-24 08:35:06"},{"id":22,"sku":"010122","description":"Job
+        200rb","nominal":200000,"price":190000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},{"id":64,"sku":"010164","description":"Voucher nominal 250rb","nominal":250000,"price":245000,"created_at":"2015-03-30
+        04:41:44","updated_at":"2015-03-30 04:41:44"}]'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 04:47:15 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/items/1/variants
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 04:49:30 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '72'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=QW45TExuSFVXQ2NTSVF2OUt6aU1GS1UyVzRuZ2V3cThJYkhyVGhpQkFlYmxKNzViSExIbGRYRmxCamVmdjJIUncwc1FRV1VEOXJQNjI1ZEJSYkltdnc9PS0tZXJRZWhmZzNYUzhHTGVQMHlDVFVEZz09--f99a9a30d311350d1c76cec7eac00c0cc53a4cdd;
+        path=/; HttpOnly
+      X-Request-Id:
+      - ed2735d5-3256-42f4-a092-d3da7b989e1b
+      X-Runtime:
+      - '0.020408'
+    body:
+      encoding: UTF-8
+      string: '{"error":"description is missing, nominal is missing, price is missing"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 04:49:30 GMT
+recorded_with: VCR 2.9.3
