@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/13/variants/33
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:43 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '153'
+      Etag:
+      - W/"63236c163d82c16ef230bbdea76a5032"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=bmQzT29xeU9EbWZQL0lBVEdlT1I0c01RYXZJa0I0OG1ZemJrK1A1ZXhKUW1QOFZscGJFNUlZUkowT2pweVNJQktpQ0dNSXFzUWF0MHpBblJGK1QyM0E9PS0tY1plKzh4TVdWcGhTaTF3eW1FS1lmZz09--d424870f0a6314849d41affb0aeae66193d4fed3;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 4ae2916f-0170-472f-b666-d38866d3e33f
+      X-Runtime:
+      - '0.017419'
+    body:
+      encoding: UTF-8
+      string: '{"id":33,"sku":"021333","description":"Konklab 50rb","nominal":50000,"price":45000,"created_at":"2015-03-17
+        07:34:34","updated_at":"2015-03-24 08:35:06"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:43 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://1234567890:POIUYTREWQ@localhost:3000/v1/token
+    body:
+      encoding: UTF-8
+      string: '{"username":"williamson.kasey@renner.biz","password":"012a6dcc5d09dc318b63296be6b512e1","grant_type":"password","scope":"offline_access"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 04:38:04 GMT
+      Status:
+      - 401 Unauthorized
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      X-Accepted-Oauth-Scopes:
+      - offline_access
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 6a051bce-8ed0-430b-9a1b-647ab3a21ba9
+      X-Runtime:
+      - '0.010119'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_client"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 04:38:04 GMT
+recorded_with: VCR 2.9.3

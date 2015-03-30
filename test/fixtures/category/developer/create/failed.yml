@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/categories
+    body:
+      encoding: UTF-8
+      string: '{"name":"Resto"}'
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 06:50:09 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '27'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=MklNS0NvUXZjVjlxaHJZd205ZGh1NVl4QllER3Z3WC82Q2ovOEd4OG9YMklHWm85MGdneHUvUVRIbFRMVmpMb0w0OU9yQ1hsQWhYTllIamhWRkVIbGc9PS0tdjJQTFZmWVhEYzlCZGk1OXgvNGdvZz09--7c07919031fe502878c4b65736316a57a7a721a3;
+        path=/; HttpOnly
+      X-Request-Id:
+      - c81d667a-11d3-4a87-9548-8e0a2767a287
+      X-Runtime:
+      - '0.021606'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_request"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 06:50:09 GMT
+recorded_with: VCR 2.9.3

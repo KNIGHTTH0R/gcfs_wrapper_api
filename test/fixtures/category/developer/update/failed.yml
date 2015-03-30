@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/categories/1
+    body:
+      encoding: UTF-8
+      string: '{"name":"Restaurant"}'
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 06:52:33 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '27'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=U2NzOHdpOEJrSlVjTVFYYk1QVEREL0tqd1B0aEVWdFg0eXNZZjRScjRyN0g5YVdsNjVNY3dwckdxcjBtUlB0eEhqZDZheFY2N3N5TFd1OW95bGFsb2c9PS0teE1WUWJ5N05aUG55eWhQeEtPTUg1dz09--ce616461d396c4d2a994c2107fffa72459dfd4fc;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 7d245c6d-4ad9-4660-bf32-5d33b1e15942
+      X-Runtime:
+      - '0.017562'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_request"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 06:52:33 GMT
+recorded_with: VCR 2.9.3

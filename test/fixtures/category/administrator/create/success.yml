@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/categories
+    body:
+      encoding: UTF-8
+      string: '{"name":"Resto"}'
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 06:28:12 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '23'
+      Etag:
+      - W/"a9f2aaba9076a0c69d303a2104d6306a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=dnQ5K3QwQzg3MjY0bFd4YXJ2VGNVcUtDWkMzRFlPenpvSFhRSUVuRXlOS1lmcUUyM1V1WTZ6eWM0aTJ6aWtyUmxvdkh2S2RkU0FsT0paOXl6aEI5aFE9PS0tbk1hU0Jiak5TZHZ4ZVVUZzk2NXA4UT09--8610350ee8d8e41c6ecceb1dc567d7dc96449d8c;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 79dcc793-6a47-4ae7-8cc0-e2199226758a
+      X-Runtime:
+      - '0.033947'
+    body:
+      encoding: UTF-8
+      string: '{"id":8,"name":"Resto"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 06:28:12 GMT
+recorded_with: VCR 2.9.3

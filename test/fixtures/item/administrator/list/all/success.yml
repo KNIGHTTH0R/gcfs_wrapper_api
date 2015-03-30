@@ -1,0 +1,149 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items?page=&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:30 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '22'
+      X-Total-Pages:
+      - '2'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '1'
+      X-Next-Page:
+      - '2'
+      X-Prev-Page:
+      - ''
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '11230'
+      Etag:
+      - W/"488ade3705389fd580f047fed7f00051"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=ZmlLWk0xV0NReE82RHVyZDBuWDJoV0FtSWxiTGgvM0hKR2FaSDhWUk1nVXhobURjT1I1RnV3SHdsV25OTjg0WnNreTBleDdDSGFGcnIzc1IyNFBDZ0E9PS0tc1BCaFJLSW9tVHlnNmxmeVZHaGQ0QT09--3c5a028fef3794cc4902c9310dd839d92ee8e8a4;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 64d81c9a-af00-4ebc-a97d-1db835c2c9ac
+      X-Runtime:
+      - '0.218456'
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57","variants":[{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},{"id":2,"sku":"010102","description":"Job 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:35:06"},{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},{"id":22,"sku":"010122","description":"Job 200rb","nominal":200000,"price":190000,"created_at":"2015-03-17
+        07:34:32","updated_at":"2015-03-24 08:35:06"}]},{"id":2,"sku":"0102","name":"Ventosanzap","category":"Giftcard","image":"/uploads/item/image/2/4c3aac74d74a631450f51f46e5153375.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57","variants":[{"id":3,"sku":"010203","description":"Ventosanzap
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},{"id":4,"sku":"010204","description":"Ventosanzap 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:35:06"},{"id":23,"sku":"010223","description":"Ventosanzap
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},{"id":24,"sku":"010224","description":"Ventosanzap 200rb","nominal":200000,"price":190000,"created_at":"2015-03-17
+        07:34:32","updated_at":"2015-03-24 08:35:06"}]},{"id":3,"sku":"0203","name":"Stim","category":"Voucher","image":"/uploads/item/image/3/73f3ab0c16a409c163b43b1cadbe089e.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57","variants":[{"id":5,"sku":"020305","description":"50rb","nominal":50000,"price":45000,"created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:35:06"},{"id":6,"sku":"020306","description":"Stim
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:24","updated_at":"2015-03-24
+        08:35:06"},{"id":29,"sku":"020329","description":"Stim 150rb","nominal":150000,"price":145000,"created_at":"2015-03-17
+        07:34:34","updated_at":"2015-03-24 08:35:06"},{"id":30,"sku":"020330","description":"Stim
+        200rb","nominal":200000,"price":190000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"}]},{"id":4,"sku":"0204","name":"Quo Lux","category":"Voucher","image":"/uploads/item/image/4/b5def0bf7288235b34b6e700cd706472.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57","variants":[{"id":7,"sku":"020407","description":"Quo
+        Lux 50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:24","updated_at":"2015-03-24
+        08:35:06"},{"id":8,"sku":"020408","description":"Quo Lux 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:35:06"},{"id":31,"sku":"020431","description":"Quo
+        Lux 150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"}]},{"id":5,"sku":"0305","name":"Zontrax","category":"Fokado","image":"/uploads/item/image/5/3fea005ce2070823a2dba7659b1a7449.gif","created_at":"2015-03-17
+        04:14:26","updated_at":"2015-03-24 08:34:57","variants":[{"id":9,"sku":"030509","description":"Zontrax
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:26","updated_at":"2015-03-24
+        08:35:06"},{"id":10,"sku":"030510","description":"Zontrax 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:26","updated_at":"2015-03-24 08:35:06"},{"id":37,"sku":"030537","description":"Zontrax
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:36","updated_at":"2015-03-24
+        08:35:06"}]},{"id":6,"sku":"0306","name":"Tres-Zap","category":"Fokado","image":"/uploads/item/image/6/bb2787bd7bd200c35b66c1e405647253.gif","created_at":"2015-03-17
+        04:14:26","updated_at":"2015-03-24 08:34:57","variants":[{"id":11,"sku":"030611","description":"Tres-Zap
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:26","updated_at":"2015-03-24
+        08:35:06"},{"id":12,"sku":"030612","description":"Tres-Zap 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:26","updated_at":"2015-03-24 08:35:06"}]},{"id":7,"sku":"0407","name":"Fintone","category":"Tada","image":"/uploads/item/image/7/7c784a0fdc38f520cafaed118d1b0eab.gif","created_at":"2015-03-17
+        04:14:28","updated_at":"2015-03-24 08:34:57","variants":[{"id":13,"sku":"040713","description":"Fintone
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:28","updated_at":"2015-03-24
+        08:35:06"},{"id":14,"sku":"040714","description":"Fintone 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:28","updated_at":"2015-03-24 08:35:06"}]},{"id":8,"sku":"0408","name":"Zoolab","category":"Tada","image":"/uploads/item/image/8/1e9449430018b9b492ff6038306e3607.gif","created_at":"2015-03-17
+        04:14:28","updated_at":"2015-03-24 08:34:57","variants":[{"id":15,"sku":"040815","description":"Zoolab
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:28","updated_at":"2015-03-24
+        08:35:06"},{"id":16,"sku":"040816","description":"Zoolab 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:28","updated_at":"2015-03-24 08:35:06"}]},{"id":9,"sku":"0509","name":"Namfix","category":"Gadgets","image":"/uploads/item/image/9/00a1674fb204dfecdac65e57a7468f62.gif","created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:34:57","variants":[{"id":17,"sku":"050917","description":"Namfix
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:30","updated_at":"2015-03-24
+        08:35:06"},{"id":18,"sku":"050918","description":"Namfix 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:35:06"}]},{"id":10,"sku":"0510","name":"Bigtax","category":"Gadgets","image":"/uploads/item/image/10/54927f8ebab67944b300e1bfb23b8f98.gif","created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:34:57","variants":[{"id":19,"sku":"051019","description":"Bigtax
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:30","updated_at":"2015-03-24
+        08:35:06"},{"id":20,"sku":"051020","description":"Bigtax 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:35:06"}]},{"id":11,"sku":"0111","name":"Opela","category":"Giftcard","image":"/uploads/item/image/11/82ac9fa8bb5203b441ec464e46ad26ce.gif","created_at":"2015-03-17
+        07:34:30","updated_at":"2015-03-24 08:34:57","variants":[{"id":25,"sku":"011125","description":"Opela
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},{"id":26,"sku":"011126","description":"Opela 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        07:34:32","updated_at":"2015-03-24 08:35:06"}]},{"id":12,"sku":"0112","name":"Keylex","category":"Giftcard","image":"/uploads/item/image/12/4169acecb25a2a62c914e5b2264fa6b1.gif","created_at":"2015-03-17
+        07:34:32","updated_at":"2015-03-24 08:34:57","variants":[{"id":27,"sku":"011227","description":"Keylex
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},{"id":28,"sku":"011228","description":"Keylex 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        07:34:32","updated_at":"2015-03-24 08:35:06"}]},{"id":13,"sku":"0213","name":"Konklab","category":"Voucher","image":"/uploads/item/image/13/a09dff4af4ade8a1a31159df596c4194.gif","created_at":"2015-03-17
+        07:34:33","updated_at":"2015-03-24 08:34:57","variants":[{"id":33,"sku":"021333","description":"Konklab
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},{"id":34,"sku":"021334","description":"Konklab 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        07:34:34","updated_at":"2015-03-24 08:35:06"}]},{"id":14,"sku":"0214","name":"Lotstring","category":"Voucher","image":"/uploads/item/image/14/e81f83fdf9918b4000ba1f7b2181d6d0.gif","created_at":"2015-03-17
+        07:34:34","updated_at":"2015-03-24 08:34:57","variants":[{"id":35,"sku":"021435","description":"Lotstring
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},{"id":36,"sku":"021436","description":"Lotstring 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        07:34:34","updated_at":"2015-03-24 08:35:06"}]},{"id":15,"sku":"0315","name":"Quo
+        Lux","category":"Fokado","image":"/uploads/item/image/15/15d4cb2abeda2eb7b490ae7e4ffbfec3.gif","created_at":"2015-03-17
+        07:34:35","updated_at":"2015-03-24 08:34:57","variants":[{"id":41,"sku":"031541","description":"Quo
+        Lux 50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:36","updated_at":"2015-03-24
+        08:35:06"},{"id":42,"sku":"031542","description":"Quo Lux 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        07:34:36","updated_at":"2015-03-24 08:35:06"}]},{"id":16,"sku":"0316","name":"Trippledex","category":"Fokado","image":"/uploads/item/image/16/1cc9a37a441ad9396e21f10191ea0e16.gif","created_at":"2015-03-17
+        07:34:36","updated_at":"2015-03-24 08:34:57","variants":[{"id":43,"sku":"031643","description":"Trippledex
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:36","updated_at":"2015-03-24
+        08:35:06"},{"id":44,"sku":"031644","description":"Trippledex 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        07:34:36","updated_at":"2015-03-24 08:35:06"}]},{"id":17,"sku":"0417","name":"Sub-Ex","category":"Tada","image":"/uploads/item/image/17/4a90370df2702c58aefdb3aa9ea9ae8d.gif","created_at":"2015-03-17
+        07:34:38","updated_at":"2015-03-24 08:34:57","variants":[{"id":49,"sku":"041749","description":"Sub-Ex
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:38","updated_at":"2015-03-24
+        08:35:06"},{"id":50,"sku":"041750","description":"Sub-Ex 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        07:34:38","updated_at":"2015-03-24 08:35:06"}]},{"id":18,"sku":"0618","name":"Yayasan
+        Komunitas Sahabat Anak","category":"Charity","image":"/uploads/item/image/18/5bf42c68ab907596f290804d15819ecd.jpg","created_at":"2015-03-24
+        08:27:15","updated_at":"2015-03-24 08:34:57","variants":[{"id":51,"sku":"061851","description":"100rb","nominal":100000,"price":100000,"created_at":"2015-03-24
+        08:27:15","updated_at":"2015-03-24 08:35:06"}]},{"id":19,"sku":"0519","name":"IPhone
+        6","category":"Gadgets","image":"/uploads/item/image/19/ef607f982b4fbd0c0ce77e4f350e7a77.jpg","created_at":"2015-03-24
+        08:29:35","updated_at":"2015-03-24 08:34:57","variants":[{"id":52,"sku":"051952","description":"32Gb","nominal":7000000,"price":7000000,"created_at":"2015-03-24
+        08:29:35","updated_at":"2015-03-24 08:35:06"}]},{"id":20,"sku":"0520","name":"Samsung
+        S5","category":"Gadgets","image":"/uploads/item/image/20/bcaf56d3576ad98ca8ae9e0bdc582b34.jpg","created_at":"2015-03-24
+        08:31:58","updated_at":"2015-03-24 08:34:57","variants":[{"id":53,"sku":"052053","description":"Samsung
+        S5","nominal":7000000,"price":7000000,"created_at":"2015-03-24 08:31:58","updated_at":"2015-03-24
+        08:35:06"}]}]'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:30 GMT
+recorded_with: VCR 2.9.3

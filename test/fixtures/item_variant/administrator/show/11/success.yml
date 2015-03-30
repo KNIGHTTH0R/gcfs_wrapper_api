@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/6/variants/11
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:43 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '154'
+      Etag:
+      - W/"d1807006131ead386040c7d045b1869e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=WVhKN0srRHZ4eXZLSXdZc0RoeW1Gamgwd1FzbEFONmdaZjdXQWxPMDRxbE5paUI1eVJBL1lWc2tvYk4wNC9JQ2xzZzNKdGphelV0dms0NGZHYmc2dlE9PS0tTjlSYnZwazNRZC9ZaHRWQ3JYSFVZZz09--6bde40488f8ae33e79cda8c08afcc4343ebf1a0b;
+        path=/; HttpOnly
+      X-Request-Id:
+      - cab6a368-9732-4319-88e0-4a7ce3ea27bf
+      X-Runtime:
+      - '0.017631'
+    body:
+      encoding: UTF-8
+      string: '{"id":11,"sku":"030611","description":"Tres-Zap 50rb","nominal":50000,"price":45000,"created_at":"2015-03-17
+        04:14:26","updated_at":"2015-03-24 08:35:06"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:43 GMT
+recorded_with: VCR 2.9.3

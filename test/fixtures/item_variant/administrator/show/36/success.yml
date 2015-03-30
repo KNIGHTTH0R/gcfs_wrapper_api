@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/14/variants/36
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:44 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '157'
+      Etag:
+      - W/"231ed8eb34292da23160a99e9628d28e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=dzJKZ3ZsZG0rQXBUYS82dG1qbmVtNHhJa0FQRWhnRk9lSWlvM3l2S3BCam5xUzBGaTlVYWlRTVdiekRjRGYrR0FDc1hvRk04cEpGcFJ1NnNZU0xETlE9PS0tSFZ4cHN4djdNZTJROGpwR2NMSmdKZz09--87c78a1e7b41196181c043def9782d650d0c50d7;
+        path=/; HttpOnly
+      X-Request-Id:
+      - e0b4785b-85f2-426f-9965-48b6ade7d8c6
+      X-Runtime:
+      - '0.016834'
+    body:
+      encoding: UTF-8
+      string: '{"id":36,"sku":"021436","description":"Lotstring 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        07:34:34","updated_at":"2015-03-24 08:35:06"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:44 GMT
+recorded_with: VCR 2.9.3

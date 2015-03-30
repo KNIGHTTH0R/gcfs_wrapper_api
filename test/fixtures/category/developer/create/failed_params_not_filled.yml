@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/categories
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 06:51:09 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '27'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=QzRaSGZlWW1saHE0ZXRTckxVMm9ZOTVVMmlsMFozUzRqazhwc1F6eDNuczYrYUZTWEF0cWlRV3N3dVdRZWVvQlRBS050NzUxQ1NiSTBVNzBkSlI0R0E9PS0tMmwvUCsrc3BjMEtGcFFpYWxDREV1dz09--e5333ec5473b3464240f295a4aad03ee7666074a;
+        path=/; HttpOnly
+      X-Request-Id:
+      - cf508dc6-45f9-42de-939e-50f555a6b1dd
+      X-Runtime:
+      - '0.021385'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_request"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 06:51:09 GMT
+recorded_with: VCR 2.9.3

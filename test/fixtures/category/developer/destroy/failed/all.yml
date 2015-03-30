@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/categories?page=&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 06:55:21 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '3'
+      X-Total-Pages:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '1'
+      X-Next-Page:
+      - ''
+      X-Prev-Page:
+      - ''
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '80'
+      Etag:
+      - W/"ae3f905c910562c1702fa357229a8926"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=N2E2WDdpSVRyVjk2UnNKampobFpOckpWZmFxWnJ4aXhYK3NWaXMrSjlUanRwTnZuN1R3d0o4RGtrbVh5dzczUHFRRHBwaVZ4T2E0dVVrSnNKa0lpekE9PS0teEZQNVp5OXpiRVNTMTB1czkvb2R6Zz09--e49945988013b73048db05c531523e49ef822833;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 42a9734e-b001-4551-8d09-7a60b77ef5e4
+      X-Runtime:
+      - '0.025350'
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"name":"Giftcard"},{"id":2,"name":"Voucher"},{"id":5,"name":"Gadgets"}]'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 06:55:21 GMT
+recorded_with: VCR 2.9.3

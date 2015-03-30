@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/inventories
+    body:
+      encoding: UTF-8
+      string: '{"type":"incoming","description":"update stock 27/03/2015","item_id":1,"variant_id":1,"quantity":10,"metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 04:27:34 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '27'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=ZjlhMjhpRHpJRnFUdUY3blhxWThZVzJ2di9PZUQwb2IxMFhBWHA0Q2ZobFEzYVR5emRESkc5dTVaWVlSSGJvZFI4WTVZSmRFR3NYSERrUjlQVjBIanc9PS0tUlo2TGp6YzFwam1LZUxGR05zTkdWUT09--efac02c6a446917b72bc706ec4b02cd0f7b5840b;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 9ee25682-e772-4104-ac3a-5a3f305669d5
+      X-Runtime:
+      - '0.016138'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_request"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 04:27:34 GMT
+recorded_with: VCR 2.9.3

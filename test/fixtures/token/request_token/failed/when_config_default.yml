@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://12345678901234567890:12345678901234567890@localhost:3000/v1/token
+    body:
+      encoding: UTF-8
+      string: '{"username":"derri@giftcard.co.id","password":"12345678","grant_type":"password","scope":"offline_access"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 04:38:04 GMT
+      Status:
+      - 401 Unauthorized
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      X-Accepted-Oauth-Scopes:
+      - offline_access
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 2e3259df-3b2c-4fc7-86a1-ca0f0bba1d7b
+      X-Runtime:
+      - '0.008620'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_client"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 04:38:04 GMT
+recorded_with: VCR 2.9.3

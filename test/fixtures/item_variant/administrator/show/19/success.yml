@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/10/variants/19
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:43 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '152'
+      Etag:
+      - W/"6c019139ca89edc243596382f1d5a6fe"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=eERxVUFRSjNYSStvVWF0M1k4aGFvS3ZMTVdPNlNmUWZwZmVWWk5rWW1rZlkzYnQzRFZxY0dLUXh4OFR2Z0dhQzNLemFrdlV6MURQa3hFbHpBVHlGNmc9PS0tRG9oSGhXYlhWaCtFdTBZL1l6akpNUT09--ae2fd65be70fbf19015f56dfb900798fb7c5889e;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 84effab8-8f48-41d2-b1a0-1939549fe3df
+      X-Runtime:
+      - '0.016502'
+    body:
+      encoding: UTF-8
+      string: '{"id":19,"sku":"051019","description":"Bigtax 50rb","nominal":50000,"price":45000,"created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:35:06"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:43 GMT
+recorded_with: VCR 2.9.3

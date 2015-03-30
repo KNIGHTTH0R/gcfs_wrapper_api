@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/categories?page=&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 06:28:12 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '8'
+      X-Total-Pages:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '1'
+      X-Next-Page:
+      - ''
+      X-Prev-Page:
+      - ''
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '212'
+      Etag:
+      - W/"dc85113fa2a81cabc3532903600b6925"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=eE82aEdUYzhEVmlkVlNXZVVxMVhUTW1aTDVkWW43SnVsMUNnbVVRZU9aUStjSnUyU0k3Szk0Tm5Zc3NndWt1a2U1ZkVTZXdxV243VWFmL0VNYjh3ZkE9PS0tSjdUZFY2V2I5cmtHZTU4SHEyeGVZZz09--10008e632983c169be07a9dc7072b3778aef92da;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 58c70e40-597e-40fa-9feb-05788779be0f
+      X-Runtime:
+      - '0.019968'
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"name":"Giftcard"},{"id":2,"name":"Voucher"},{"id":3,"name":"Fokado"},{"id":4,"name":"Tada"},{"id":5,"name":"Gadgets"},{"id":6,"name":"Charity"},{"id":7,"name":"Home
+        Appliances"},{"id":8,"name":"Resto"}]'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 06:28:12 GMT
+recorded_with: VCR 2.9.3

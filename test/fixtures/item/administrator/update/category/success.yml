@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/items/29
+    body:
+      encoding: UTF-8
+      string: '{"category":"Fokado"}'
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:47:49 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '201'
+      Etag:
+      - W/"4cfe89a30faf410b9b081ef9859a838c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=K2swVWdNeGtLL0xFNExQL2R5aG5xSFZ6VysxdkxvZTl6NnZXSmpVYmwzeHpNVWVvWWxaNTZuS3FIYUlpdWFlbEg2YkZ3K1hrS0NITnlNQlBMcUhYVUE9PS0teTIySnp1aGloN1JseFhnRkxUSlpMZz09--af436ecd5f109ec0a4af59357728ceea8f4a5bed;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 564af795-b307-4f55-b56e-fd692ef21690
+      X-Runtime:
+      - '0.027640'
+    body:
+      encoding: UTF-8
+      string: '{"id":29,"sku":"0129","name":"Voucher C","category":"Fokado","image":"/uploads/item/image/29/60415b63443b7dec9aa9e6fa20a4c4be.png","created_at":"2015-03-27
+        10:45:09","updated_at":"2015-03-27 10:47:49"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:47:49 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,158 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/inventories/incoming?page=&per_page=&sort%5Bcreated_at%5D=desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 04:00:08 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '4511'
+      X-Total-Pages:
+      - '226'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '1'
+      X-Next-Page:
+      - '2'
+      X-Prev-Page:
+      - ''
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '12075'
+      Etag:
+      - W/"d973961fb97b300ff32c0e0414c2aefb"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=Q2xDL3VFMjRLMktmR2x1YUJzaFhKejlxTEE3TUdBTHhkdDlkdkoxMkNSTEo3Z2NUZy9DMU1zZlpPZTJNTDc4bjBmYTZnTEc3UXVmT2U0QVBtNWNEMVE9PS0tUzIvU3VhWldtVUFCZ0pRa1RBdmxaUT09--19960fd75369b4077dd45d6d85278ba9faa7ce9c;
+        path=/; HttpOnly
+      X-Request-Id:
+      - f67cbc26-d958-4d51-85b9-704f4123ef72
+      X-Runtime:
+      - '0.278360'
+    body:
+      encoding: UTF-8
+      string: '[{"id":82446,"type":"incoming","description":"update stock 27/03/2015","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":10,"metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-03-27
+        03:49:16","updated_at":"2015-03-27 03:49:16"},{"id":82445,"type":"incoming","description":"Order
+        Voucher","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-03-27
+        03:43:22","updated_at":"2015-03-27 03:43:22"},{"id":82098,"type":"incoming","description":"Autem
+        voluptatem est nisi sint quasi.","item":{"id":21,"sku":"0521","name":"LG G3","category":"Gadgets","image":"/uploads/item/image/21/b6c51de106fa934ea63ca6a947f7e85b.jpg","created_at":"2015-03-24
+        08:34:02","updated_at":"2015-03-24 08:34:57"},"variant":{"id":54,"sku":"052154","description":"G3","nominal":7000000,"price":7000000,"created_at":"2015-03-24
+        08:34:02","updated_at":"2015-03-24 08:35:06"},"quantity":100,"metadata":{"user":{"id":"0","name":"Tyler
+        Ward"}},"created_at":"2015-03-24 09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82097,"type":"incoming","description":"Praesentium
+        eius dolore dolores assumenda temporibus reiciendis quae expedita.","item":{"id":20,"sku":"0520","name":"Samsung
+        S5","category":"Gadgets","image":"/uploads/item/image/20/bcaf56d3576ad98ca8ae9e0bdc582b34.jpg","created_at":"2015-03-24
+        08:31:58","updated_at":"2015-03-24 08:34:57"},"variant":{"id":53,"sku":"052053","description":"Samsung
+        S5","nominal":7000000,"price":7000000,"created_at":"2015-03-24 08:31:58","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"0","name":"Dr. Irma Hilpert"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82096,"type":"incoming","description":"Iusto
+        dolores minima et ipsam odio doloremque quia dolorem.","item":{"id":19,"sku":"0519","name":"IPhone
+        6","category":"Gadgets","image":"/uploads/item/image/19/ef607f982b4fbd0c0ce77e4f350e7a77.jpg","created_at":"2015-03-24
+        08:29:35","updated_at":"2015-03-24 08:34:57"},"variant":{"id":52,"sku":"051952","description":"32Gb","nominal":7000000,"price":7000000,"created_at":"2015-03-24
+        08:29:35","updated_at":"2015-03-24 08:35:06"},"quantity":100,"metadata":{"user":{"id":"8","name":"Demario
+        Ledner"}},"created_at":"2015-03-24 09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82095,"type":"incoming","description":"Porro
+        cumque voluptas et.","item":{"id":18,"sku":"0618","name":"Yayasan Komunitas
+        Sahabat Anak","category":"Charity","image":"/uploads/item/image/18/5bf42c68ab907596f290804d15819ecd.jpg","created_at":"2015-03-24
+        08:27:15","updated_at":"2015-03-24 08:34:57"},"variant":{"id":51,"sku":"061851","description":"100rb","nominal":100000,"price":100000,"created_at":"2015-03-24
+        08:27:15","updated_at":"2015-03-24 08:35:06"},"quantity":100,"metadata":{"user":{"id":"7","name":"Saul
+        Krajcik II"}},"created_at":"2015-03-24 09:52:19","updated_at":"2015-03-24
+        09:52:19"},{"id":82094,"type":"incoming","description":"Quis esse vero ex
+        delectus temporibus sed modi cumque.","item":{"id":17,"sku":"0417","name":"Sub-Ex","category":"Tada","image":"/uploads/item/image/17/4a90370df2702c58aefdb3aa9ea9ae8d.gif","created_at":"2015-03-17
+        07:34:38","updated_at":"2015-03-24 08:34:57"},"variant":{"id":50,"sku":"041750","description":"Sub-Ex
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 07:34:38","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"7","name":"Orval Spencer"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82093,"type":"incoming","description":"Nihil
+        magni minus quisquam laborum in sunt maiores sed.","item":{"id":17,"sku":"0417","name":"Sub-Ex","category":"Tada","image":"/uploads/item/image/17/4a90370df2702c58aefdb3aa9ea9ae8d.gif","created_at":"2015-03-17
+        07:34:38","updated_at":"2015-03-24 08:34:57"},"variant":{"id":49,"sku":"041749","description":"Sub-Ex
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:38","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"5","name":"Isac Bogan"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82092,"type":"incoming","description":"Ratione
+        asperiores rerum illum et aut saepe dicta tempore.","item":{"id":16,"sku":"0316","name":"Trippledex","category":"Fokado","image":"/uploads/item/image/16/1cc9a37a441ad9396e21f10191ea0e16.gif","created_at":"2015-03-17
+        07:34:36","updated_at":"2015-03-24 08:34:57"},"variant":{"id":44,"sku":"031644","description":"Trippledex
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 07:34:36","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"5","name":"Lyla Prosacco"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82091,"type":"incoming","description":"Omnis
+        fuga aperiam officia accusamus blanditiis itaque voluptatibus iusto.","item":{"id":16,"sku":"0316","name":"Trippledex","category":"Fokado","image":"/uploads/item/image/16/1cc9a37a441ad9396e21f10191ea0e16.gif","created_at":"2015-03-17
+        07:34:36","updated_at":"2015-03-24 08:34:57"},"variant":{"id":43,"sku":"031643","description":"Trippledex
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:36","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"4","name":"Jarred Sawayn"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82090,"type":"incoming","description":"Deserunt
+        aut nesciunt eligendi aut qui distinctio.","item":{"id":15,"sku":"0315","name":"Quo
+        Lux","category":"Fokado","image":"/uploads/item/image/15/15d4cb2abeda2eb7b490ae7e4ffbfec3.gif","created_at":"2015-03-17
+        07:34:35","updated_at":"2015-03-24 08:34:57"},"variant":{"id":42,"sku":"031542","description":"Quo
+        Lux 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 07:34:36","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"2","name":"Eda Stokes"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82089,"type":"incoming","description":"Provident
+        temporibus corrupti fugit.","item":{"id":15,"sku":"0315","name":"Quo Lux","category":"Fokado","image":"/uploads/item/image/15/15d4cb2abeda2eb7b490ae7e4ffbfec3.gif","created_at":"2015-03-17
+        07:34:35","updated_at":"2015-03-24 08:34:57"},"variant":{"id":41,"sku":"031541","description":"Quo
+        Lux 50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:36","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"1","name":"Laila Herman"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82088,"type":"incoming","description":"Natus
+        aliquam sunt dolor animi.","item":{"id":5,"sku":"0305","name":"Zontrax","category":"Fokado","image":"/uploads/item/image/5/3fea005ce2070823a2dba7659b1a7449.gif","created_at":"2015-03-17
+        04:14:26","updated_at":"2015-03-24 08:34:57"},"variant":{"id":37,"sku":"030537","description":"Zontrax
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:36","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"7","name":"Alda Pollich"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82087,"type":"incoming","description":"Autem
+        et quisquam voluptatem.","item":{"id":14,"sku":"0214","name":"Lotstring","category":"Voucher","image":"/uploads/item/image/14/e81f83fdf9918b4000ba1f7b2181d6d0.gif","created_at":"2015-03-17
+        07:34:34","updated_at":"2015-03-24 08:34:57"},"variant":{"id":36,"sku":"021436","description":"Lotstring
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"6","name":"Cleora Stiedemann
+        IV"}},"created_at":"2015-03-24 09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82086,"type":"incoming","description":"Maiores
+        distinctio ea et non blanditiis molestiae nisi aut.","item":{"id":14,"sku":"0214","name":"Lotstring","category":"Voucher","image":"/uploads/item/image/14/e81f83fdf9918b4000ba1f7b2181d6d0.gif","created_at":"2015-03-17
+        07:34:34","updated_at":"2015-03-24 08:34:57"},"variant":{"id":35,"sku":"021435","description":"Lotstring
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"1","name":"Reggie Osinski"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82085,"type":"incoming","description":"Quis
+        aliquid alias natus perferendis voluptatem.","item":{"id":13,"sku":"0213","name":"Konklab","category":"Voucher","image":"/uploads/item/image/13/a09dff4af4ade8a1a31159df596c4194.gif","created_at":"2015-03-17
+        07:34:33","updated_at":"2015-03-24 08:34:57"},"variant":{"id":34,"sku":"021334","description":"Konklab
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"5","name":"Kelsi Brakus"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82084,"type":"incoming","description":"Laboriosam
+        fugiat ut perferendis animi rerum numquam ipsam ullam.","item":{"id":13,"sku":"0213","name":"Konklab","category":"Voucher","image":"/uploads/item/image/13/a09dff4af4ade8a1a31159df596c4194.gif","created_at":"2015-03-17
+        07:34:33","updated_at":"2015-03-24 08:34:57"},"variant":{"id":33,"sku":"021333","description":"Konklab
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"6","name":"Ollie Casper"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82083,"type":"incoming","description":"Magnam
+        iusto omnis velit.","item":{"id":4,"sku":"0204","name":"Quo Lux","category":"Voucher","image":"/uploads/item/image/4/b5def0bf7288235b34b6e700cd706472.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":31,"sku":"020431","description":"Quo
+        Lux 150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"7","name":"Lexie Stark
+        III"}},"created_at":"2015-03-24 09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82082,"type":"incoming","description":"Voluptas
+        omnis eveniet tenetur quod quis iste et unde.","item":{"id":3,"sku":"0203","name":"Stim","category":"Voucher","image":"/uploads/item/image/3/73f3ab0c16a409c163b43b1cadbe089e.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":30,"sku":"020330","description":"Stim
+        200rb","nominal":200000,"price":190000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"5","name":"Andres Funk"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"},{"id":82081,"type":"incoming","description":"Libero
+        praesentium error inventore voluptas.","item":{"id":3,"sku":"0203","name":"Stim","category":"Voucher","image":"/uploads/item/image/3/73f3ab0c16a409c163b43b1cadbe089e.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":29,"sku":"020329","description":"Stim
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"5","name":"Zoe Roberts"}},"created_at":"2015-03-24
+        09:52:19","updated_at":"2015-03-24 09:52:19"}]'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 04:00:08 GMT
+recorded_with: VCR 2.9.3

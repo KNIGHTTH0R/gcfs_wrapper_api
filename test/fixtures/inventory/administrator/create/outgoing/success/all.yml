@@ -1,0 +1,145 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/inventories/outgoing?page=&per_page=&sort%5Bcreated_at%5D=desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 04:18:22 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '10251'
+      X-Total-Pages:
+      - '513'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '1'
+      X-Next-Page:
+      - '2'
+      X-Prev-Page:
+      - ''
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '10795'
+      Etag:
+      - W/"38f229e189613c1d9ef495f19dc9b9e0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=eFg4bWJaeThlbEZzaGR2clRRdGt4ZjR3bHQvWTUxcWFnN2k4aSt6b1J4LzRpRGd5Z2pCcDA3Ly9sY29vS0ljUVlmS2hoVUxDUzRXTXpFMGNvUDhGeHc9PS0tN05hSFI0T2RrZTBhTHFhMXZSMnc3UT09--c110b11083f0b879bf4af112546fa915063fb653;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 0bc2bd12-b162-47b1-a40b-829d5fe8fd40
+      X-Runtime:
+      - '0.120159'
+    body:
+      encoding: UTF-8
+      string: '[{"id":82447,"type":"outgoing","description":"order voucher","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-10,"metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-03-27
+        04:18:22","updated_at":"2015-03-27 04:18:22"},{"id":82444,"type":"outgoing","description":"Order
+        #kVHmQsT2zv","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-9,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-26
+        08:42:50","updated_at":"2015-03-26 08:42:50"},{"id":82443,"type":"outgoing","description":"Order
+        #kVHmQsT2zv","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-8,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-26
+        08:42:50","updated_at":"2015-03-26 08:42:50"},{"id":82442,"type":"outgoing","description":"Order
+        #kVHmQsT2zv","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-8,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-26
+        08:42:50","updated_at":"2015-03-26 08:42:50"},{"id":82441,"type":"outgoing","description":"Order
+        #ZJICPArHQE","item":{"id":17,"sku":"0417","name":"Sub-Ex","category":"Tada","image":"/uploads/item/image/17/4a90370df2702c58aefdb3aa9ea9ae8d.gif","created_at":"2015-03-17
+        07:34:38","updated_at":"2015-03-24 08:34:57"},"variant":{"id":49,"sku":"041749","description":"Sub-Ex
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:38","updated_at":"2015-03-24
+        08:35:06"},"quantity":-4,"metadata":null,"created_at":"2015-03-25 04:08:41","updated_at":"2015-03-25
+        04:08:41"},{"id":82440,"type":"outgoing","description":"Order #ZJICPArHQE","item":{"id":9,"sku":"0509","name":"Namfix","category":"Gadgets","image":"/uploads/item/image/9/00a1674fb204dfecdac65e57a7468f62.gif","created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:34:57"},"variant":{"id":17,"sku":"050917","description":"Namfix
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:30","updated_at":"2015-03-24
+        08:35:06"},"quantity":-5,"metadata":null,"created_at":"2015-03-25 04:08:41","updated_at":"2015-03-25
+        04:08:41"},{"id":82439,"type":"outgoing","description":"Order #ZJICPArHQE","item":{"id":3,"sku":"0203","name":"Stim","category":"Voucher","image":"/uploads/item/image/3/73f3ab0c16a409c163b43b1cadbe089e.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":30,"sku":"020330","description":"Stim
+        200rb","nominal":200000,"price":190000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},"quantity":-5,"metadata":null,"created_at":"2015-03-25 04:08:41","updated_at":"2015-03-25
+        04:08:41"},{"id":82438,"type":"outgoing","description":"Order #ZJICPArHQE","item":{"id":4,"sku":"0204","name":"Quo
+        Lux","category":"Voucher","image":"/uploads/item/image/4/b5def0bf7288235b34b6e700cd706472.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":8,"sku":"020408","description":"Quo
+        Lux 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:24","updated_at":"2015-03-24
+        08:35:06"},"quantity":-4,"metadata":null,"created_at":"2015-03-25 04:08:41","updated_at":"2015-03-25
+        04:08:41"},{"id":82437,"type":"outgoing","description":"Order #Zg1VRSKLWf","item":{"id":17,"sku":"0417","name":"Sub-Ex","category":"Tada","image":"/uploads/item/image/17/4a90370df2702c58aefdb3aa9ea9ae8d.gif","created_at":"2015-03-17
+        07:34:38","updated_at":"2015-03-24 08:34:57"},"variant":{"id":49,"sku":"041749","description":"Sub-Ex
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:38","updated_at":"2015-03-24
+        08:35:06"},"quantity":-4,"metadata":null,"created_at":"2015-03-25 04:08:41","updated_at":"2015-03-25
+        04:08:41"},{"id":82436,"type":"outgoing","description":"Order #Zg1VRSKLWf","item":{"id":9,"sku":"0509","name":"Namfix","category":"Gadgets","image":"/uploads/item/image/9/00a1674fb204dfecdac65e57a7468f62.gif","created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:34:57"},"variant":{"id":17,"sku":"050917","description":"Namfix
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:30","updated_at":"2015-03-24
+        08:35:06"},"quantity":-5,"metadata":null,"created_at":"2015-03-25 04:08:41","updated_at":"2015-03-25
+        04:08:41"},{"id":82435,"type":"outgoing","description":"Order #Zg1VRSKLWf","item":{"id":3,"sku":"0203","name":"Stim","category":"Voucher","image":"/uploads/item/image/3/73f3ab0c16a409c163b43b1cadbe089e.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":30,"sku":"020330","description":"Stim
+        200rb","nominal":200000,"price":190000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},"quantity":-5,"metadata":null,"created_at":"2015-03-25 04:08:41","updated_at":"2015-03-25
+        04:08:41"},{"id":82434,"type":"outgoing","description":"Order #Zg1VRSKLWf","item":{"id":4,"sku":"0204","name":"Quo
+        Lux","category":"Voucher","image":"/uploads/item/image/4/b5def0bf7288235b34b6e700cd706472.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":8,"sku":"020408","description":"Quo
+        Lux 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:24","updated_at":"2015-03-24
+        08:35:06"},"quantity":-4,"metadata":null,"created_at":"2015-03-25 04:08:41","updated_at":"2015-03-25
+        04:08:41"},{"id":82433,"type":"outgoing","description":"Order #7JKoeGVusb","item":{"id":4,"sku":"0204","name":"Quo
+        Lux","category":"Voucher","image":"/uploads/item/image/4/b5def0bf7288235b34b6e700cd706472.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":8,"sku":"020408","description":"Quo
+        Lux 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:24","updated_at":"2015-03-24
+        08:35:06"},"quantity":-10,"metadata":null,"created_at":"2015-03-25 04:08:40","updated_at":"2015-03-25
+        04:08:40"},{"id":82432,"type":"outgoing","description":"Order #7JKoeGVusb","item":{"id":10,"sku":"0510","name":"Bigtax","category":"Gadgets","image":"/uploads/item/image/10/54927f8ebab67944b300e1bfb23b8f98.gif","created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:34:57"},"variant":{"id":19,"sku":"051019","description":"Bigtax
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:30","updated_at":"2015-03-24
+        08:35:06"},"quantity":-10,"metadata":null,"created_at":"2015-03-25 04:08:40","updated_at":"2015-03-25
+        04:08:40"},{"id":82431,"type":"outgoing","description":"Order #7JKoeGVusb","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-10,"metadata":null,"created_at":"2015-03-25 04:08:40","updated_at":"2015-03-25
+        04:08:40"},{"id":82430,"type":"outgoing","description":"Order #38n9Bkfrbu","item":{"id":17,"sku":"0417","name":"Sub-Ex","category":"Tada","image":"/uploads/item/image/17/4a90370df2702c58aefdb3aa9ea9ae8d.gif","created_at":"2015-03-17
+        07:34:38","updated_at":"2015-03-24 08:34:57"},"variant":{"id":49,"sku":"041749","description":"Sub-Ex
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:38","updated_at":"2015-03-24
+        08:35:06"},"quantity":-4,"metadata":null,"created_at":"2015-03-25 04:08:40","updated_at":"2015-03-25
+        04:08:40"},{"id":82429,"type":"outgoing","description":"Order #38n9Bkfrbu","item":{"id":9,"sku":"0509","name":"Namfix","category":"Gadgets","image":"/uploads/item/image/9/00a1674fb204dfecdac65e57a7468f62.gif","created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:34:57"},"variant":{"id":17,"sku":"050917","description":"Namfix
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:30","updated_at":"2015-03-24
+        08:35:06"},"quantity":-5,"metadata":null,"created_at":"2015-03-25 04:08:40","updated_at":"2015-03-25
+        04:08:40"},{"id":82428,"type":"outgoing","description":"Order #38n9Bkfrbu","item":{"id":3,"sku":"0203","name":"Stim","category":"Voucher","image":"/uploads/item/image/3/73f3ab0c16a409c163b43b1cadbe089e.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":30,"sku":"020330","description":"Stim
+        200rb","nominal":200000,"price":190000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"},"quantity":-5,"metadata":null,"created_at":"2015-03-25 04:08:40","updated_at":"2015-03-25
+        04:08:40"},{"id":82427,"type":"outgoing","description":"Order #38n9Bkfrbu","item":{"id":4,"sku":"0204","name":"Quo
+        Lux","category":"Voucher","image":"/uploads/item/image/4/b5def0bf7288235b34b6e700cd706472.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":8,"sku":"020408","description":"Quo
+        Lux 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:24","updated_at":"2015-03-24
+        08:35:06"},"quantity":-4,"metadata":null,"created_at":"2015-03-25 04:08:40","updated_at":"2015-03-25
+        04:08:40"},{"id":82426,"type":"outgoing","description":"Order #G8nDw56YBz","item":{"id":17,"sku":"0417","name":"Sub-Ex","category":"Tada","image":"/uploads/item/image/17/4a90370df2702c58aefdb3aa9ea9ae8d.gif","created_at":"2015-03-17
+        07:34:38","updated_at":"2015-03-24 08:34:57"},"variant":{"id":49,"sku":"041749","description":"Sub-Ex
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 07:34:38","updated_at":"2015-03-24
+        08:35:06"},"quantity":-4,"metadata":null,"created_at":"2015-03-25 04:08:40","updated_at":"2015-03-25
+        04:08:40"}]'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 04:18:22 GMT
+recorded_with: VCR 2.9.3

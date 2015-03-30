@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/inventories
+    body:
+      encoding: UTF-8
+      string: '{"type":"outgoing","description":"order voucher","item_id":1,"variant_id":1,"quantity":10,"metadata":{"user":{"id":1,"name":"Admin"}}}'
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 04:22:14 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '37'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=UHI4YkVpaWtzVHpSNzBQVTU4elFHaWNaRjNHZnUwdzFrWWVlR0hVTitZUUgzRFU5WkJ1RUZuRmdXaTl1VnVIZWpacUN5Y1NqS1N1Si9nblRhK0NMbFE9PS0tRjBUV0hsZE9wcHNWVElZSVFyS3pOQT09--2d8f0e82fa1a54da4411436a5445c51214ef62eb;
+        path=/; HttpOnly
+      X-Request-Id:
+      - e617d721-3429-4569-a827-14fd856563e5
+      X-Runtime:
+      - '0.029990'
+    body:
+      encoding: UTF-8
+      string: '{"error":"Quantity must be negative"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 04:22:14 GMT
+recorded_with: VCR 2.9.3

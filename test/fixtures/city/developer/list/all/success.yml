@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/cities?page=&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 03:06:43 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '167'
+      X-Total-Pages:
+      - '9'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '1'
+      X-Next-Page:
+      - '2'
+      X-Prev-Page:
+      - ''
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '822'
+      Etag:
+      - W/"41c39e30eb1f180d9d4420eaaf83996f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=TW1XRnNibTMzVVZXbHFxdGxCNXVSUXY3aytPTktsVitwbldud3J6b3B1Rm1CUFlSZngySUY2N2tiMTRNL3piK01FODVjN3V2QUt3elBueWdUVzJpV2c9PS0tMDNoNTBReWtacFNid1NyTThjdGpWQT09--814f6b7455134deef9af21520b86dfb52c04974c;
+        path=/; HttpOnly
+      X-Request-Id:
+      - fcfce5dd-0dee-4bb1-80a3-29ac74e48b70
+      X-Runtime:
+      - '0.017307'
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"name":"banda aceh","price":38500},{"id":2,"name":"medan","price":32000},{"id":3,"name":"pekanbaru","price":30000},{"id":4,"name":"batam","price":30000},{"id":5,"name":"tanjung
+        pinang","price":37500},{"id":6,"name":"padang","price":30000},{"id":7,"name":"jambi","price":23500},{"id":8,"name":"palembang","price":23500},{"id":9,"name":"pangkal
+        pinang","price":23500},{"id":10,"name":"tanjung pandan","price":27500},{"id":11,"name":"bengkulu","price":25500},{"id":12,"name":"bandar
+        lampung","price":20000},{"id":13,"name":"dki jakarta","price":0},{"id":14,"name":"cilegon","price":11000},{"id":15,"name":"tangerang","price":0},{"id":16,"name":"bandung","price":12500},{"id":17,"name":"bekasi","price":0},{"id":18,"name":"bogor","price":0},{"id":19,"name":"cirebon","price":12500},{"id":20,"name":"depok","price":0}]'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 03:06:43 GMT
+recorded_with: VCR 2.9.3

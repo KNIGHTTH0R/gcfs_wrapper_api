@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://DQI5DqcwA2fuEARnciMWl5oHroU:vH6urcUIjh20aq4qLKQYXTLIUIw@localhost:3000/v1/token
+    body:
+      encoding: UTF-8
+      string: '{"username":"williamson.kasey@renner.biz","password":"012a6dcc5d09dc318b63296be6b512e1","grant_type":"password","scope":"offline_access"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 04:38:04 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '27'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=eXY3TWtTWk5OMjE4MDJiSU1XTnR4VGVNUDU4U3B4REpXTm1JWGNkcm9wRUU2TDgxYWpFZlNWaWxmVEUrb2cwMEZ3QTFVM0xlZVFCM3AweWtCKytsbGc9PS0tNkZYZU16NnNaV2cvZENFY01BbUJrZz09--432cd9622d5dcf714511a7186b633fce51f922e4;
+        path=/; HttpOnly
+      X-Request-Id:
+      - bbd371f9-c041-4795-92a7-7d41beb07b6c
+      X-Runtime:
+      - '0.013392'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_request"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 04:38:04 GMT
+recorded_with: VCR 2.9.3

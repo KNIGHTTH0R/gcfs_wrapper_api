@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://localhost:3000/v1/categories/8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 06:41:32 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '28'
+      Etag:
+      - W/"eb4ace8f2c98447571b28808039a5895"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=WElDTkFDZnRBdjZCcE81NWVEd2txaEF3UUtoTXhKNGRDOFNQNFRqVTFZM0dwSkZjME5BRFdaakJBbkh5emVUNHVCbFBSSG9Zd3FOSGN4RTZXa3BHclE9PS0tYytSQmdyU0xRem15dVZZRlZvZ05hUT09--2aabc94de421efc283b838451a1745391c28ca3c;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 739982e2-b7c0-498c-bfb9-db0016349034
+      X-Runtime:
+      - '0.022371'
+    body:
+      encoding: UTF-8
+      string: '{"id":8,"name":"Restaurant"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 06:41:32 GMT
+recorded_with: VCR 2.9.3

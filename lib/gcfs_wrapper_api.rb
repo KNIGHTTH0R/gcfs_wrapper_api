@@ -1,0 +1,27 @@
+require 'httparty'
+require 'kaminari/config'
+require 'kaminari/models/configuration_methods'
+require 'kaminari/models/page_scope_methods'
+require 'kaminari/models/array_extension'
+
+require "gcfs_wrapper_api/version"
+
+require 'gcfs_wrapper_api/configuration'
+require 'gcfs_wrapper_api/helper'
+require 'gcfs_wrapper_api/error'
+require 'gcfs_wrapper_api/util'
+
+require 'gcfs_wrapper_api/base'
+require 'gcfs_wrapper_api/status'
+require 'gcfs_wrapper_api/token'
+require 'gcfs_wrapper_api/category'
+require 'gcfs_wrapper_api/item'
+require 'gcfs_wrapper_api/item_variant'
+require 'gcfs_wrapper_api/order'
+require 'gcfs_wrapper_api/order_item'
+require 'gcfs_wrapper_api/order_item_variant'
+require 'gcfs_wrapper_api/order_history'
+require 'gcfs_wrapper_api/client'
+require 'gcfs_wrapper_api/recepient'
+require 'gcfs_wrapper_api/inventory'
+require 'gcfs_wrapper_api/city'

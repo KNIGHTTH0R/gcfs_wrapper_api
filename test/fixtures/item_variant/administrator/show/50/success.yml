@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/17/variants/50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:44 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '154'
+      Etag:
+      - W/"49509ac133736d191b552ccab847d295"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=ZkpzS3lURnFZU0U1RG5xVGNSSWpwOFNzc3ZNVXZLK0lrZ3J1OVI3WlBsKzVCQ2tsSlRFaVl3RHUzNERXcitVM2RkZjh4SHJuVlBUaS9penBUdC8wMHc9PS0tVXhDVmZGM3RITmRYS1diMEdPQ3RLQT09--e6807c56953efc42344df2358bd4c77755cb86d8;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 1249639f-6880-4b47-a1a1-bc503f559565
+      X-Runtime:
+      - '0.026691'
+    body:
+      encoding: UTF-8
+      string: '{"id":50,"sku":"041750","description":"Sub-Ex 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        07:34:38","updated_at":"2015-03-24 08:35:06"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:44 GMT
+recorded_with: VCR 2.9.3

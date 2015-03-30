@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/categories/8
+    body:
+      encoding: UTF-8
+      string: '{"name":"Restaurant"}'
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 06:32:58 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '28'
+      Etag:
+      - W/"eb4ace8f2c98447571b28808039a5895"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=UXVYR0RlWmFEU0RXTG4yREhSZ3NsejBkZjZsOFN5Q0FoMkE0NzJVOFdpOWN4VUcvdEZXbWY1WTRnMkF0Q1hTZDVzM0p1ajhJeVdzTmJ4ZWI4NzZBR0E9PS0tVFlWRDRKL3BNUVppcnlKdzhjWnlKUT09--55cac2314316c0c2148ba66fa0c2e16a18b83466;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 62cc1280-28f8-41d6-be47-e9b2855fd722
+      X-Runtime:
+      - '0.037645'
+    body:
+      encoding: UTF-8
+      string: '{"id":8,"name":"Restaurant"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 06:32:58 GMT
+recorded_with: VCR 2.9.3

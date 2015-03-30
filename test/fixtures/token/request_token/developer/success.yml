@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://JeXM4bSqiUs-TKvY0_1YOHeqvVA:0eTL6Mb4nQl0cD8p-HZOu-s7cJk@localhost:3000/v1/token
+    body:
+      encoding: UTF-8
+      string: '{"username":"mutouzi@gmail.com","password":"12345678","grant_type":"password","scope":"offline_access"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 06:48:03 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '72'
+      Etag:
+      - W/"bf13ee3bbbafb6826b8823d512857f91"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=UTBOenBVSElUNVJVY1BMK2RXbWI2NGlNNUFBR0gxaWNMVnJvZ1FqWXJoKzFYNWk0Ui8zMDZlcUorOE9kVmd2MTFMRU5KcVdRdHFNQ29ZWHgrdzZzWGc9PS0taVJPdVpNNzRNT1h0eUNpYUFCV0pHUT09--9eac092513c3bb78d5e15d730cd663108ee11e98;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 163d3b76-cf9d-4f73-97c6-ac7306e31dc0
+      X-Runtime:
+      - '0.077964'
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"3428325ac75a959656991a04b0bbdffd","expires_in":2592000}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 06:48:03 GMT
+recorded_with: VCR 2.9.3

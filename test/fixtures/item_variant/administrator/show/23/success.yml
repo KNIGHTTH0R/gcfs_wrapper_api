@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/2/variants/23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:43 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '160'
+      Etag:
+      - W/"9f14072fb290cf4620ee7f2f0863a892"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=M2gwdHBKL3UzK2d0MkJnSkVVa0ppbXYwN2YxOHAxYkt5Q09CZXNZYVk2Tkd1bGxyeEM3MUlnSkhUZGV1dExpbXcxNG1CMjJFT2trb21XbDRWRjRURmc9PS0tWEcyTSt4SzJ2aGF0MWFaWVBVcGpqQT09--188c888e0facfa6c8fbc3c4e255bfe3e5da27db1;
+        path=/; HttpOnly
+      X-Request-Id:
+      - eec69bbf-268f-4265-b53c-11e1b558358b
+      X-Runtime:
+      - '0.016776'
+    body:
+      encoding: UTF-8
+      string: '{"id":23,"sku":"010223","description":"Ventosanzap 150rb","nominal":150000,"price":145000,"created_at":"2015-03-17
+        07:34:32","updated_at":"2015-03-24 08:35:06"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:43 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://localhost:3000/v1/items/29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:48:44 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=eXBEeFdqQ1k4bnlsR0k4bGt6S2Y5ZnJJdFlxQmt6azI2OGRFd1pQWTVKOFJYVCtkaXFTNzJQRHIzZmdGUzErc2xsQUE0ekdVdldLbHVFN24xTXdpSWc9PS0tVTByRTVIaXU2ZGduTmVDZFJpaVhxZz09--c0c93f530df9b2446b31812ab62ca4c8cee12f15;
+        path=/; HttpOnly
+      X-Request-Id:
+      - ae3725f3-ae91-4b4e-97e6-951054010481
+      X-Runtime:
+      - '0.025900'
+    body:
+      encoding: UTF-8
+      string: '{"error":"id does not have a valid value"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:48:44 GMT
+recorded_with: VCR 2.9.3

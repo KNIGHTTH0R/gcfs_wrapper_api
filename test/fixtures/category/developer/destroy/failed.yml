@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://localhost:3000/v1/categories/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 06:55:21 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '27'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=WUVUMzZ5K08wbnc3N0MyeTJERnUwS2d4RVpKNXRVYkx1QTJLQlVEZGpFYVcxYXRkVjI2VEFxRUllYURUdnFWS3FyZ3gzbzN2OENLai9xZEpBbE5Ya1E9PS0tMXdKemFPUlUreWpaU0g5RGhza1VPUT09--04a80215699539d152a350107bafd3f44c1092c6;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 403ddbcf-59aa-437c-a1e9-ffa34b8471c9
+      X-Runtime:
+      - '0.021408'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_request"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 06:55:21 GMT
+recorded_with: VCR 2.9.3

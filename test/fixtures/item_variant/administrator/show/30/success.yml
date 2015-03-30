@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/3/variants/30
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:43 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '153'
+      Etag:
+      - W/"7e629c1c1b636e1eeacd28907a8caed2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=MytPSUFjZCtQc1RlREpwZCtpc0dSSHJCSkhnNG92TVhkNENtSzFSZWdEMWoxQmRTaXdrajRaTHlBNUFXam9ldTNNS21wS0lsSXRwbzNnT3BSblVlZXc9PS0tekNPR3dsaHJ0SG5rMWVuaE9KZnl3UT09--50d7f420a5c7218b0410617f18812091d623eaa7;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 4763e23a-fb04-4fc8-8fea-8b2c287f5e68
+      X-Runtime:
+      - '0.175851'
+    body:
+      encoding: UTF-8
+      string: '{"id":30,"sku":"020330","description":"Stim 200rb","nominal":200000,"price":190000,"created_at":"2015-03-17
+        07:34:34","updated_at":"2015-03-24 08:35:06"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:43 GMT
+recorded_with: VCR 2.9.3

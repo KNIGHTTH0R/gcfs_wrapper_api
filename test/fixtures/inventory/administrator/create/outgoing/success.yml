@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/inventories
+    body:
+      encoding: UTF-8
+      string: '{"type":"outgoing","description":"order voucher","item_id":1,"variant_id":1,"quantity":-10,"metadata":{"user":{"id":1,"name":"Admin"}}}'
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 04:18:22 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '551'
+      Etag:
+      - W/"16bfb00785d7875c844de65fb4c7d742"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=c0FhYnd4cjVXeTFxeitwVTI4enkvRUVCdHJ1c1RHME1hczd3T2lja3kxSFArTFVhUUhSWVMrVjlPWXozT3JCWUptYUYzWjF6WUp2aUFQd2hCekVIMFE9PS0tUVQ3ZWswbDNTanFrUjM1N1l4MmVaUT09--36aa5093ba0d96dbcb7ffe17de1a940f7dfb93fd;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 4b8fa4cd-f6c2-4d71-a6b1-778a5f6c8cc2
+      X-Runtime:
+      - '0.229497'
+    body:
+      encoding: UTF-8
+      string: '{"id":82447,"type":"outgoing","description":"order voucher","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-10,"metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-03-27
+        04:18:22","updated_at":"2015-03-27 04:18:22"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 04:18:22 GMT
+recorded_with: VCR 2.9.3

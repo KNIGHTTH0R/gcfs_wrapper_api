@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/items
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:46:51 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '125'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=Zk1nUVQxN2wvT2R6VGpGNEZ5QkJFNjRNWE1NS0N5alluZEtJZU9PMSszVC9WYzBZYWlzYWEwamp5Umg0eDF3eHRLWTBRSHBTTTZxdThBUENyQTBMSUE9PS0tYXR5WjI3MG80V1drUWtEN3ZnaURPZz09--a33dd075dc49e6bd9ba39745de473a4771ab5dcf;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 4e2c2ddc-fff4-4c52-a2a9-631f316b6ae8
+      X-Runtime:
+      - '0.205987'
+    body:
+      encoding: UTF-8
+      string: '{"error":"name is missing, category is missing, category does not have
+        a valid value, image is missing, variants is missing"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:46:51 GMT
+recorded_with: VCR 2.9.3

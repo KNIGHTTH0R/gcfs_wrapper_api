@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/inventories/incoming?page=&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 04:24:25 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '27'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=OFh6QVIvdXJ5VExhSUhKS3lJRFI2QURyQnIxUk1ibXcxSFRGZUEzQ1dCQmVNeVgwTGdLemM2UGkrZkh2M05mRWJQZHpKTncvNVltMENJYjYxYThEYUE9PS0tSDRtSjAwWUR6eU9BVFIxcm81OG56dz09--d82a58c27da4b5724cb6d3649932c4b64267ec72;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 212d8b25-28ba-4a47-94e0-6681f25e30d4
+      X-Runtime:
+      - '0.012510'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_request"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 04:24:25 GMT
+recorded_with: VCR 2.9.3

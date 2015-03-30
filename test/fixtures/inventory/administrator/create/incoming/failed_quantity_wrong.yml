@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/inventories
+    body:
+      encoding: UTF-8
+      string: '{"type":"incoming","description":"update stock 27/03/2015","item_id":1,"variant_id":1,"quantity":-10,"metadata":{"user":{"id":1,"name":"Admin"}}}'
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 04:15:14 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '37'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=cXpQelRSejRaaEhOWlpRK3U5NnM3NTc0YjdIQ3ZoZmVOTm5mclJaQU1sV0dWREZtRDZjZmJMVTdNZXl6dWl4L0duYWFYcVV6VXl6L2lhaEpTaGJRaFE9PS0taDA1YXQ2SEIxQW53em51VHRibzdXdz09--eb9d2e9986c4bc4ea567c01e88c36af4a75b2262;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 9eb98d6c-7e02-4314-837e-2dc8a89cdc05
+      X-Runtime:
+      - '0.194327'
+    body:
+      encoding: UTF-8
+      string: '{"error":"Quantity must be positive"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 04:15:15 GMT
+recorded_with: VCR 2.9.3

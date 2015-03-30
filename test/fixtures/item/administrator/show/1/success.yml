@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:42 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '195'
+      Etag:
+      - W/"25e5ac372749f9941223b92217bda822"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=MDBodWZkVG9YSGJHNExncEQ1Y21WU1ErWC9SV2J3c2xQZTR2TEdPekJBbExzT1pVdEd4NGF6TkFQMElzL1BXbnowSlgyNUlXTmRzMngvN2huNG9SK3c9PS0tQmV1UHYxU2NXalJQY2krV012ZGx3dz09--edf909085bed868c2820aa8f175f72868b7e0c7e;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 313dea5d-fbbb-486c-9ff8-686f1a886136
+      X-Runtime:
+      - '0.018944'
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:42 GMT
+recorded_with: VCR 2.9.3

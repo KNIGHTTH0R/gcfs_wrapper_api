@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items?page=&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:50:03 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '6'
+      X-Total-Pages:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '1'
+      X-Next-Page:
+      - ''
+      X-Prev-Page:
+      - ''
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4202'
+      Etag:
+      - W/"a0c8034fa8bea646a67f6617032fb3a7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=ampEeEgwMnZQMUltR0dBQzJvSFFBS1FhaWdkUFdIM3lYOG92Z1ZFZDZUUk1hYmpBWnM3OXMxVlJ6Nk00R3ZyRis5WkdQdVNBa3htQmcyZTlqS1RrSXc9PS0tMWkxcjBPUnFYOXc5bkZMbEY5SS9pUT09--0138881217c913f8e0939f6b3fe6ce8e850f2a4a;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 075ea05c-d9d1-47e1-9c3d-4213259ebb3a
+      X-Runtime:
+      - '0.067991'
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57","variants":[{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},{"id":2,"sku":"010102","description":"Job 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:35:06"},{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},{"id":22,"sku":"010122","description":"Job 200rb","nominal":200000,"price":190000,"created_at":"2015-03-17
+        07:34:32","updated_at":"2015-03-24 08:35:06"}]},{"id":2,"sku":"0102","name":"Ventosanzap","category":"Giftcard","image":"/uploads/item/image/2/4c3aac74d74a631450f51f46e5153375.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57","variants":[{"id":3,"sku":"010203","description":"Ventosanzap
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},{"id":4,"sku":"010204","description":"Ventosanzap 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:35:06"},{"id":23,"sku":"010223","description":"Ventosanzap
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},{"id":24,"sku":"010224","description":"Ventosanzap 200rb","nominal":200000,"price":190000,"created_at":"2015-03-17
+        07:34:32","updated_at":"2015-03-24 08:35:06"}]},{"id":3,"sku":"0203","name":"Stim","category":"Voucher","image":"/uploads/item/image/3/73f3ab0c16a409c163b43b1cadbe089e.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57","variants":[{"id":5,"sku":"020305","description":"50rb","nominal":50000,"price":45000,"created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:35:06"},{"id":6,"sku":"020306","description":"Stim
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:24","updated_at":"2015-03-24
+        08:35:06"},{"id":29,"sku":"020329","description":"Stim 150rb","nominal":150000,"price":145000,"created_at":"2015-03-17
+        07:34:34","updated_at":"2015-03-24 08:35:06"},{"id":30,"sku":"020330","description":"Stim
+        200rb","nominal":200000,"price":190000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"}]},{"id":4,"sku":"0204","name":"Quo Lux","category":"Voucher","image":"/uploads/item/image/4/b5def0bf7288235b34b6e700cd706472.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57","variants":[{"id":7,"sku":"020407","description":"Quo
+        Lux 50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:24","updated_at":"2015-03-24
+        08:35:06"},{"id":8,"sku":"020408","description":"Quo Lux 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:35:06"},{"id":31,"sku":"020431","description":"Quo
+        Lux 150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:34","updated_at":"2015-03-24
+        08:35:06"}]},{"id":9,"sku":"0509","name":"Namfix","category":"Gadgets","image":"/uploads/item/image/9/00a1674fb204dfecdac65e57a7468f62.gif","created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:34:57","variants":[{"id":17,"sku":"050917","description":"Namfix
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:30","updated_at":"2015-03-24
+        08:35:06"},{"id":18,"sku":"050918","description":"Namfix 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:35:06"}]},{"id":10,"sku":"0510","name":"Bigtax","category":"Gadgets","image":"/uploads/item/image/10/54927f8ebab67944b300e1bfb23b8f98.gif","created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:34:57","variants":[{"id":19,"sku":"051019","description":"Bigtax
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:30","updated_at":"2015-03-24
+        08:35:06"},{"id":20,"sku":"051020","description":"Bigtax 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        04:14:30","updated_at":"2015-03-24 08:35:06"}]}]'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:50:03 GMT
+recorded_with: VCR 2.9.3

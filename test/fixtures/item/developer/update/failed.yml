@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/items/10
+    body:
+      encoding: UTF-8
+      string: '{"name":"Voucher X"}'
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:50:28 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '27'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=UldIcks2R1Bza1E3RnpuNXpjRXRPN2Vnb2RzQm1WN2FONko5Wm1jMHI1WWhXaW5UQkI4T0szd0lEWFpLZnRFWTVaMEltWVU1bzd1OXJZaFlIdzZ0VGc9PS0tUUlleXB0cDZNNGY5UkFDcW5ybkRZUT09--264e2e4023bd19cccb0bf50363685c1566fd4824;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 8697e9d7-29ad-4779-b042-05950311a71a
+      X-Runtime:
+      - '0.014261'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_request"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:50:28 GMT
+recorded_with: VCR 2.9.3

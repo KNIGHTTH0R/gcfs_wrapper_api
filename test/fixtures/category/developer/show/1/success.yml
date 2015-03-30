@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/categories/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Mar 2015 06:48:37 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '26'
+      Etag:
+      - W/"0bbbac974e7ed063551437d88110b2b4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=MW44R3U0amhqTGVSL3EzS0ZPd1pwSjlURmdFdGJjOVg4WmJIRmhWd1ltRThEeVQwa0U3dDVYQXdpS0REWC9MQVN3RW5RcjRxUVRuMktXUkRaQlBrNEE9PS0tTjNjMkN2bGV3TG9xL0swclRGbnBvQT09--a13a94d1e6d2d095ea57b5273e93da0ca82b5310;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 2001a4a2-5a9b-4611-a00b-93590f63ca1a
+      X-Runtime:
+      - '0.040296'
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"name":"Giftcard"}'
+    http_version: 
+  recorded_at: Thu, 26 Mar 2015 06:48:37 GMT
+recorded_with: VCR 2.9.3

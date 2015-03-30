@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/11/variants/25
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:43 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '151'
+      Etag:
+      - W/"a797a3f64e604af8af18925dbde3c01e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=QWpTTm5xMTJVMlVuMk9Ia1l6Yk1XRHEvYzdwTlVDUEx1azRJRVVPZnoxS1JnUmlFYnBHckx4aXUzL09oUkRzd1F4T2FPL3pFc21rQ3Q2M25YRk1FUmc9PS0tc2liWmFIYnp1SmtQMHFvbXZreEVPdz09--1cdd2c02f83db1d8823f4c74bb77264f5607e568;
+        path=/; HttpOnly
+      X-Request-Id:
+      - d7bc3fa4-bfa0-415a-83bc-1a4724f02bf9
+      X-Runtime:
+      - '0.016851'
+    body:
+      encoding: UTF-8
+      string: '{"id":25,"sku":"011125","description":"Opela 50rb","nominal":50000,"price":45000,"created_at":"2015-03-17
+        07:34:32","updated_at":"2015-03-24 08:35:06"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:43 GMT
+recorded_with: VCR 2.9.3

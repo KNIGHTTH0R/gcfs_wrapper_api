@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/4/variants/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:43 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '152'
+      Etag:
+      - W/"ec92e9a1d18055e9cb2d26de3c8ed091"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=UFpTMjI2anh3SUNuT2hVL3JoYTFFMjllSkIreTdqdkhkdVFicjkzN2VQYUNab0RRa2JyN284ajZkZWZjbE9CYnQrdHFZc3N0SjFPeThOLzhHb2I2K0E9PS0tVWZCV3F5cUsrdUltcWxuRGJ5b1BqQT09--3c5505c2b4ee1b5ff73e4cdd712410cb52ba1873;
+        path=/; HttpOnly
+      X-Request-Id:
+      - f04ce9d7-4d57-4b28-ba60-fafdb0acecd8
+      X-Runtime:
+      - '0.017734'
+    body:
+      encoding: UTF-8
+      string: '{"id":7,"sku":"020407","description":"Quo Lux 50rb","nominal":50000,"price":45000,"created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:35:06"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:43 GMT
+recorded_with: VCR 2.9.3

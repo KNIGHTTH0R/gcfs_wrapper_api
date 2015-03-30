@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/inventories
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 04:06:43 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '338'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=M09lK2JUTVVTcWZEN3BMYmQ1N1kxTzBwVWRFTFk5czFCYjIyQWoyUjZkMW10NWxLUnAvbEJqbWpqZm5PbVFYWlozd2FVTTBkM0ozbllzTHdLdUtycVE9PS0tcXp2ZWVNWk9sOTFVRmlyTHcrRUZqQT09--8f2aedd7456e120ff1878ed6c6419232a2ca151e;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 6e327706-aa9c-4d43-a181-20ac43d24c67
+      X-Runtime:
+      - '0.191599'
+    body:
+      encoding: UTF-8
+      string: '{"error":"type is missing, type does not have a valid value, description
+        is missing, item_id is missing, item_id does not have a valid value, variant_id
+        is missing, variant_id does not have a valid value, quantity is missing, metadata
+        is missing, metadata[user] is missing, metadata[user][id] is missing, metadata[user][name]
+        is missing"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 04:06:43 GMT
+recorded_with: VCR 2.9.3

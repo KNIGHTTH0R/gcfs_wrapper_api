@@ -1,0 +1,154 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/inventories/incoming?page=&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 03:49:16 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '4510'
+      X-Total-Pages:
+      - '226'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '1'
+      X-Next-Page:
+      - '2'
+      X-Prev-Page:
+      - ''
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '11800'
+      Etag:
+      - W/"5b39e0b884d33ef5b628ba9e58f83d7f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=Z29tc2JKSmJvMHlVZDFlUDBGTk5tdnQ5T3V1UzdPbE5CSGJZSVpqVms0UG9mUnB6QXZxWVRnOVl3T3VCdXM1Rkh6WlM5Ti9uS05sYkRla2pmTHNFOEE9PS0tZEtFc0UreXY0REMwM2NvdVhKWkhaUT09--b7bb5931f7bef12469cd3e554a6e229431d5a7bf;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 8dde9b1c-88e1-46f0-8c09-ae3e1b770247
+      X-Runtime:
+      - '0.135336'
+    body:
+      encoding: UTF-8
+      string: '[{"id":30027,"type":"incoming","description":"update stock 17/03/2015","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":10000,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-17
+        07:39:36","updated_at":"2015-03-17 07:39:36"},{"id":30028,"type":"incoming","description":"update
+        stock 17/03/2015","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":100000,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-17
+        07:40:47","updated_at":"2015-03-17 07:40:47"},{"id":30029,"type":"incoming","description":"update
+        stock 17/03/2015","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":2,"sku":"010102","description":"Job
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":100000,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-17
+        07:41:26","updated_at":"2015-03-17 07:41:26"},{"id":30049,"type":"incoming","description":"update
+        stock 19/03/2015","item":{"id":2,"sku":"0102","name":"Ventosanzap","category":"Giftcard","image":"/uploads/item/image/2/4c3aac74d74a631450f51f46e5153375.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":3,"sku":"010203","description":"Ventosanzap
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-19
+        01:39:29","updated_at":"2015-03-19 01:39:29"},{"id":30050,"type":"incoming","description":"update
+        stock 19/03/2015","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-19
+        01:45:17","updated_at":"2015-03-19 01:45:17"},{"id":30051,"type":"incoming","description":"update
+        stock 19/03/2015","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-19
+        01:54:12","updated_at":"2015-03-19 01:54:12"},{"id":30052,"type":"incoming","description":"update
+        stock 19/03/2015","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":10,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-19
+        02:48:50","updated_at":"2015-03-19 02:48:50"},{"id":30053,"type":"incoming","description":"update
+        stock 19/03/2015","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":10,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-19
+        02:49:04","updated_at":"2015-03-19 02:49:04"},{"id":30055,"type":"incoming","description":"update
+        stock","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-19
+        02:49:54","updated_at":"2015-03-19 02:49:54"},{"id":67637,"type":"incoming","description":"update","item":{"id":2,"sku":"0102","name":"Ventosanzap","category":"Giftcard","image":"/uploads/item/image/2/4c3aac74d74a631450f51f46e5153375.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":4,"sku":"010204","description":"Ventosanzap
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":110,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-19
+        10:20:54","updated_at":"2015-03-19 10:20:54"},{"id":67644,"type":"incoming","description":"update","item":{"id":2,"sku":"0102","name":"Ventosanzap","category":"Giftcard","image":"/uploads/item/image/2/4c3aac74d74a631450f51f46e5153375.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":4,"sku":"010204","description":"Ventosanzap
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-23
+        10:07:15","updated_at":"2015-03-23 10:07:15"},{"id":67694,"type":"incoming","description":"Saepe
+        nam voluptatum quam.","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"0","name":"Krystina Blick
+        IV"}},"created_at":"2015-03-24 07:36:37","updated_at":"2015-03-24 07:36:37"},{"id":67695,"type":"incoming","description":"Iure
+        nemo amet fugiat impedit non nostrum omnis tenetur.","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":2,"sku":"010102","description":"Job
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"7","name":"Cary Marquardt"}},"created_at":"2015-03-24
+        07:36:37","updated_at":"2015-03-24 07:36:37"},{"id":67696,"type":"incoming","description":"Sed
+        omnis explicabo eligendi enim maiores quod.","item":{"id":2,"sku":"0102","name":"Ventosanzap","category":"Giftcard","image":"/uploads/item/image/2/4c3aac74d74a631450f51f46e5153375.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":3,"sku":"010203","description":"Ventosanzap
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"9","name":"Michelle Dooley"}},"created_at":"2015-03-24
+        07:36:37","updated_at":"2015-03-24 07:36:37"},{"id":67697,"type":"incoming","description":"Et
+        quam suscipit nobis culpa.","item":{"id":2,"sku":"0102","name":"Ventosanzap","category":"Giftcard","image":"/uploads/item/image/2/4c3aac74d74a631450f51f46e5153375.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":4,"sku":"010204","description":"Ventosanzap
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"6","name":"Vinnie Wehner"}},"created_at":"2015-03-24
+        07:36:37","updated_at":"2015-03-24 07:36:37"},{"id":67698,"type":"incoming","description":"Ipsa
+        delectus sunt dolorem hic rem provident accusamus excepturi.","item":{"id":3,"sku":"0203","name":"Stim","category":"Voucher","image":"/uploads/item/image/3/73f3ab0c16a409c163b43b1cadbe089e.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":5,"sku":"020305","description":"50rb","nominal":50000,"price":45000,"created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:35:06"},"quantity":100,"metadata":{"user":{"id":"6","name":"Giovani
+        Nikolaus"}},"created_at":"2015-03-24 07:36:37","updated_at":"2015-03-24 07:36:37"},{"id":67699,"type":"incoming","description":"Molestiae
+        aperiam corporis quia.","item":{"id":3,"sku":"0203","name":"Stim","category":"Voucher","image":"/uploads/item/image/3/73f3ab0c16a409c163b43b1cadbe089e.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":6,"sku":"020306","description":"Stim
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:24","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"3","name":"Verdie Stiedemann"}},"created_at":"2015-03-24
+        07:36:37","updated_at":"2015-03-24 07:36:37"},{"id":67700,"type":"incoming","description":"Repellendus
+        possimus aperiam perspiciatis.","item":{"id":4,"sku":"0204","name":"Quo Lux","category":"Voucher","image":"/uploads/item/image/4/b5def0bf7288235b34b6e700cd706472.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":7,"sku":"020407","description":"Quo
+        Lux 50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:24","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"5","name":"Nola Klocko
+        DVM"}},"created_at":"2015-03-24 07:36:37","updated_at":"2015-03-24 07:36:37"},{"id":67701,"type":"incoming","description":"Beatae
+        sed odio dolorem pariatur quo et natus.","item":{"id":4,"sku":"0204","name":"Quo
+        Lux","category":"Voucher","image":"/uploads/item/image/4/b5def0bf7288235b34b6e700cd706472.gif","created_at":"2015-03-17
+        04:14:24","updated_at":"2015-03-24 08:34:57"},"variant":{"id":8,"sku":"020408","description":"Quo
+        Lux 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:24","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"1","name":"Aubrey Schuster"}},"created_at":"2015-03-24
+        07:36:37","updated_at":"2015-03-24 07:36:37"},{"id":67702,"type":"incoming","description":"Et
+        ipsam a provident rerum amet consectetur quia.","item":{"id":5,"sku":"0305","name":"Zontrax","category":"Fokado","image":"/uploads/item/image/5/3fea005ce2070823a2dba7659b1a7449.gif","created_at":"2015-03-17
+        04:14:26","updated_at":"2015-03-24 08:34:57"},"variant":{"id":9,"sku":"030509","description":"Zontrax
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:26","updated_at":"2015-03-24
+        08:35:06"},"quantity":100,"metadata":{"user":{"id":"8","name":"Dr. John Runolfsdottir"}},"created_at":"2015-03-24
+        07:36:37","updated_at":"2015-03-24 07:36:37"}]'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 03:49:16 GMT
+recorded_with: VCR 2.9.3

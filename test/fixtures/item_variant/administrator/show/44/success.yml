@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/16/variants/44
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:17:44 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '158'
+      Etag:
+      - W/"d6db01a802a2d9302895a21066cb4559"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=R2RBTXdCR1ZtVE44NFAwQVI4eFQxUTRJWDBhYlJLUGxEY2tGbFhCTXNFM3d0ZDhuc0VKN2k3eGZDbHZBbHA5ejZXaEt2dzF6SlBITzRWbkp3TWtWNlE9PS0tYi9xVEdrT3NoQmJhcUZEOWJqN2FqUT09--3d03c3c0960a0d8965a83572ae78c3a33ed9c1a7;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 6cb9cbae-b2d1-4c38-af54-fb684e5dabbc
+      X-Runtime:
+      - '0.017360'
+    body:
+      encoding: UTF-8
+      string: '{"id":44,"sku":"031644","description":"Trippledex 100rb","nominal":100000,"price":90000,"created_at":"2015-03-17
+        07:34:36","updated_at":"2015-03-24 08:35:06"}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:17:44 GMT
+recorded_with: VCR 2.9.3

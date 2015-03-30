@@ -1,0 +1,156 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/inventories/outgoing?page=&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 03:49:16 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '10250'
+      X-Total-Pages:
+      - '513'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '1'
+      X-Next-Page:
+      - '2'
+      X-Prev-Page:
+      - ''
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '11395'
+      Etag:
+      - W/"4b9590a0997156f583d014f6001c5365"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=UWNFNDJxU1Nsb3Q1bVBQayt4UHFxQURrY0ZLUGlkVW5yeE4vdXphbG1xYzZVb0haQ0QzNVBJZjg2c0p6bSsyZkxtU25TUFJHS2RMdnVCZWo3eDkvcFE9PS0tL3lacXJ2MmpCM1dWOGZPRmZlY3g1Zz09--16163e70e1ff1fa0eee24ed315a2ab1191d253d8;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 1d87289b-2e57-4778-a538-57a9334b409b
+      X-Runtime:
+      - '0.081416'
+    body:
+      encoding: UTF-8
+      string: '[{"id":67736,"type":"outgoing","description":"Order #fb7iTIYZc6","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":-3,"metadata":{"user":{"id":"8","name":"Mrs. Tatum Davis"}},"created_at":"2015-03-24
+        07:36:45","updated_at":"2015-03-24 07:36:45"},{"id":67737,"type":"outgoing","description":"Order
+        #fb7iTIYZc6","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-3,"metadata":{"user":{"id":"8","name":"Mrs. Tatum Davis"}},"created_at":"2015-03-24
+        07:36:45","updated_at":"2015-03-24 07:36:45"},{"id":67738,"type":"outgoing","description":"Order
+        #8W0pbUR9wL","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":-2,"metadata":{"user":{"id":"2","name":"Kendra Collier"}},"created_at":"2015-03-24
+        07:36:45","updated_at":"2015-03-24 07:36:45"},{"id":67739,"type":"outgoing","description":"Order
+        #8W0pbUR9wL","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":-3,"metadata":{"user":{"id":"2","name":"Kendra Collier"}},"created_at":"2015-03-24
+        07:36:45","updated_at":"2015-03-24 07:36:45"},{"id":67740,"type":"outgoing","description":"Order
+        #QAZgFj6Gvm","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":-5,"metadata":{"user":{"id":"3","name":"Eleonore Hintz"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67741,"type":"outgoing","description":"Order
+        #QAZgFj6Gvm","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-8,"metadata":{"user":{"id":"3","name":"Eleonore Hintz"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67742,"type":"outgoing","description":"Order
+        #K0aOnRlTZp","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":-1,"metadata":{"user":{"id":"6","name":"Darian Bogisich"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67743,"type":"outgoing","description":"Order
+        #K0aOnRlTZp","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":2,"sku":"010102","description":"Job
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-2,"metadata":{"user":{"id":"6","name":"Darian Bogisich"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67744,"type":"outgoing","description":"Order
+        #8MC6IVBXG0","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":2,"sku":"010102","description":"Job
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-7,"metadata":{"user":{"id":"2","name":"Rasheed McCullough"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67745,"type":"outgoing","description":"Order
+        #8MC6IVBXG0","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":2,"sku":"010102","description":"Job
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-7,"metadata":{"user":{"id":"2","name":"Rasheed McCullough"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67746,"type":"outgoing","description":"Order
+        #90ilWNCH41","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":-9,"metadata":{"user":{"id":"8","name":"Geoffrey Bradtke"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67747,"type":"outgoing","description":"Order
+        #90ilWNCH41","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-4,"metadata":{"user":{"id":"8","name":"Geoffrey Bradtke"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67748,"type":"outgoing","description":"Order
+        #Sx2e9avP3j","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":2,"sku":"010102","description":"Job
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-3,"metadata":{"user":{"id":"4","name":"Chelsea Kunze"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67749,"type":"outgoing","description":"Order
+        #Sx2e9avP3j","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":2,"sku":"010102","description":"Job
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-4,"metadata":{"user":{"id":"4","name":"Chelsea Kunze"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67750,"type":"outgoing","description":"Order
+        #3vmOk8fdRr","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
+        50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-3,"metadata":{"user":{"id":"5","name":"Clotilde Kuhn"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67751,"type":"outgoing","description":"Order
+        #3vmOk8fdRr","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":-3,"metadata":{"user":{"id":"5","name":"Clotilde Kuhn"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67752,"type":"outgoing","description":"Order
+        #tYNw2kidvS","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":2,"sku":"010102","description":"Job
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-6,"metadata":{"user":{"id":"8","name":"Ms. Domenic
+        Kuhic"}},"created_at":"2015-03-24 07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67753,"type":"outgoing","description":"Order
+        #tYNw2kidvS","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":2,"sku":"010102","description":"Job
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-4,"metadata":{"user":{"id":"8","name":"Ms. Domenic
+        Kuhic"}},"created_at":"2015-03-24 07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67754,"type":"outgoing","description":"Order
+        #oq9nNmfbhI","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":21,"sku":"010121","description":"Job
+        150rb","nominal":150000,"price":145000,"created_at":"2015-03-17 07:34:32","updated_at":"2015-03-24
+        08:35:06"},"quantity":-1,"metadata":{"user":{"id":"4","name":"Mr. Kamron Jacobi"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"},{"id":67755,"type":"outgoing","description":"Order
+        #oq9nNmfbhI","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
+        04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":2,"sku":"010102","description":"Job
+        100rb","nominal":100000,"price":90000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
+        08:35:06"},"quantity":-9,"metadata":{"user":{"id":"4","name":"Mr. Kamron Jacobi"}},"created_at":"2015-03-24
+        07:37:08","updated_at":"2015-03-24 07:37:08"}]'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 03:49:16 GMT
+recorded_with: VCR 2.9.3

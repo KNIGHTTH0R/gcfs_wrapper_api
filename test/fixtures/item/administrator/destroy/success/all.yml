@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items?page=2&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2015 10:48:33 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '22'
+      X-Total-Pages:
+      - '2'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '2'
+      X-Next-Page:
+      - ''
+      X-Prev-Page:
+      - '1'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '886'
+      Etag:
+      - W/"ab147da336274ab69ff0c896eaae43dc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=bHAvWmpvUDhUQklUbEJ6NkpYT0FUVUpxRjhWMUxNekZEYmtBVWcyWm5uR0dOb3hKMGt2aHlNaUFKRmJwWjFCYWt4YVFUWnVhaHYzU0d1d1psVnoxaUE9PS0tdnJXcGxQOGhnVVIvMGx5WVF1ZXU0dz09--f727dcb8d54bddd0f3482cb114fc9eabe2959422;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 3eb87615-9655-4aca-9095-32969ffb5607
+      X-Runtime:
+      - '0.023963'
+    body:
+      encoding: UTF-8
+      string: '[{"id":21,"sku":"0521","name":"LG G3","category":"Gadgets","image":"/uploads/item/image/21/b6c51de106fa934ea63ca6a947f7e85b.jpg","created_at":"2015-03-24
+        08:34:02","updated_at":"2015-03-24 08:34:57","variants":[{"id":54,"sku":"052154","description":"G3","nominal":7000000,"price":7000000,"created_at":"2015-03-24
+        08:34:02","updated_at":"2015-03-24 08:35:06"}]},{"id":28,"sku":"0228","name":"Giant","category":"Voucher","image":"/uploads/item/image/28/ae73c51a5144f00dc0b5d1939e1efb97.png","created_at":"2015-03-27
+        10:15:30","updated_at":"2015-03-27 10:16:29","variants":[{"id":61,"sku":"022861","description":"Voucher
+        100rb","nominal":100000,"price":95000,"created_at":"2015-03-27 10:15:30","updated_at":"2015-03-27
+        10:15:30"},{"id":62,"sku":"022862","description":"Voucher 250rb","nominal":250000,"price":250000,"created_at":"2015-03-27
+        10:18:38","updated_at":"2015-03-27 10:18:38"}]}]'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2015 10:48:33 GMT
+recorded_with: VCR 2.9.3
