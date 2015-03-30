@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/items/1/variants/65
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 06:45:56 GMT
+      Status:
+      - 404 Not Found
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '38'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=c2ZaRVhYMTZOMHBsYjhHNSs5bENjQnh2dVUzaTdSSm5TM0I5eVhwTTh4NGZpUFg5a0NGL0pzOFlhVzY2N0VJblVKTmpMaFA5K2Yvd2RCK3k5bFJONVE9PS0tUWwzYWJXQXFFV1BWQVJ5WlF1bHorQT09--7daa3de318c1d87161a65fc3313ef2befd06185a;
+        path=/; HttpOnly
+      X-Request-Id:
+      - badda05c-8699-4e60-9a33-53f764d034b0
+      X-Runtime:
+      - '0.071789'
+    body:
+      encoding: UTF-8
+      string: '{"error":"Item Variant doesn''t Exist"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 06:45:56 GMT
+recorded_with: VCR 2.9.3

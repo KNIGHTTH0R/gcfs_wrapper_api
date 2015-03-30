@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/items/1/variants/64
+    body:
+      encoding: UTF-8
+      string: '{"description":"Voucher nominal 600rb","nominal":600000,"price":600000}'
+    headers:
+      Authorization:
+      - Bearer 3428325ac75a959656991a04b0bbdffd
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 06:45:38 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '27'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=bnlwcytib245TFE4RWF4eTFPeXVDM2RJL3JsR0lTZTNJZ2RnSEdVN1djbjljSExIdmFDZmYwb21INjRGa1lEd3pXazgrUUVpODRTaTNETDlYR0NzbXc9PS0tcWZCMld4ZFhIOE1Tc3lyRjY3SzBoUT09--117465975ac5a746ef1541386b834c71f532e423;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 415bda50-76d6-4350-9c9b-3ffa89144ba2
+      X-Runtime:
+      - '0.049926'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_request"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 06:45:38 GMT
+recorded_with: VCR 2.9.3
