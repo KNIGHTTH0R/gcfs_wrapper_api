@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/orders
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Authorization:
+      - Bearer 1fa06f6f92cdab2a8174d1f9868960ee
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 10:04:45 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '370'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=TnUvSDVnK0MyUmVsamdlalRweEVHSHhVUnJ1SUNiU1QxRU0zcy9sMTM4dlhmM0FwRGwyU082VXRlYkNvY0FUVEI1ZlZMbGZQTDZtSmFwakNLaEVkWGc9PS0tU3hwQWhJcisvaXArTjR1NnIxSHJwQT09--a037d81e7f9883485a30d11a63139878ebee520b;
+        path=/; HttpOnly
+      X-Request-Id:
+      - c7897ae0-df7e-4a08-9023-4e08577de005
+      X-Runtime:
+      - '0.031755'
+    body:
+      encoding: UTF-8
+      string: '{"error":"description is missing, recepient is missing, recepient[name]
+        is missing, recepient[email] is missing, recepient[phone_number] is missing,
+        recepient[address] is missing, recepient[city] is missing, recepient[zip_code]
+        is missing, items is missing, metadata is missing, metadata[user] is missing,
+        metadata[user][id] is missing, metadata[user][name] is missing"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 10:04:45 GMT
+recorded_with: VCR 2.9.3

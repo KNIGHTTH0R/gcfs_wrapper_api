@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/orders/20072
+    body:
+      encoding: UTF-8
+      string: '{"status":"delivered","metadata":{"user":{"id":1,"name":"Admin"}}}'
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 09:06:56 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '31'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=SVhIaFh1Q1kzR1JJL012SFZqUzliZzN1UkIzVDFjRXE2SVhFL252OHJJZjQ3TXlnM3VKdkI2ckRhTWFYQVJYbE1NTjVuSFdBNWo3dTdmc0VzanVLT2c9PS0tWlFGVVhzZUNJclk1L1JuajAwdWhNdz09--0931d8cd7ab0eb801e1ec370febaabeed4740b27;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 48d349ec-9388-44aa-b8b1-51c30c0ee710
+      X-Runtime:
+      - '0.031048'
+    body:
+      encoding: UTF-8
+      string: '{"error":"delivery is missing"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 09:06:56 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/orders/20075
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 1fa06f6f92cdab2a8174d1f9868960ee
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 10:11:21 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1850'
+      Etag:
+      - W/"392c4de2861709cbd57e1d8bb11453a6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=WE4waDd4NUw4SlhPVDlFMENMNHhzL1hTaVlBTFRON203bDM2cUdPRUE3VjRkRFpESjBEYUpMQm9sdTc0d0daWWYremd6RTgwbCswajRHMjZWcmJSZGc9PS0tUGd5c2VkRStoTzhTUXg5T3owa3B3QT09--325d144aedc33a109d47e04ca7116ef786940958;
+        path=/; HttpOnly
+      X-Request-Id:
+      - ad2d52d8-9abd-457a-a9e8-ca55e903fac3
+      X-Runtime:
+      - '0.048327'
+    body:
+      encoding: UTF-8
+      string: '{"id":20075,"transaction_id":"rMO2yJDFqX","invoice_number":null,"description":"Pembelian
+        Voucher","client":{"name":"Feil-Baumbach","address":"33593 Cassie Branch New
+        Brianchester SD 66436-1797","billing_address":"955 Afton Canyon Stoltenbergfurt
+        DE 25374-5680"},"recepient":{"name":"Mr. Burnice Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
+        Said 10 DKI JAKARTA 12950","city":"DKI JAKARTA","zip_code":"12950","notes":"-"},"items":[{"id":1,"sku":"0101","name":"Job","variants":[{"id":1,"sku":"010101","description":"Job
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":2,"sku":"010102","description":"Job
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]},{"id":2,"sku":"0102","name":"Ventosanzap","variants":[{"id":3,"sku":"010203","description":"Ventosanzap
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":4,"sku":"010204","description":"Ventosanzap
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]}],"histories":[{"id":38886,"status":"received","description":"Received
+        by Julita at 2015-03-12 08:07:52","metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}},"created_at":"2015-03-30
+        10:08:41"},{"id":38885,"status":"delivered","description":"JNE with resi CGKS301072156314","metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}},"created_at":"2015-03-30
+        10:07:47"},{"id":38884,"status":"new order","description":"Order #rMO2yJDFqX","metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}},"created_at":"2015-03-30
+        10:01:23"}],"total":2700000,"status":"received","payment_status":"outstanding","delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"receive":{"receiver":"Julita","received_at":"2015-03-12
+        08:07:52"},"created_at":"2015-03-30 10:01:23","updated_at":"2015-03-30 10:08:41"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 10:11:21 GMT
+recorded_with: VCR 2.9.3

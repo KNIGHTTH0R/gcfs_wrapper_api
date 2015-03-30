@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/orders/20075
+    body:
+      encoding: UTF-8
+      string: '{"status":"delivered","delivery":{"courier_name":"JNE"},"metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
+    headers:
+      Authorization:
+      - Bearer 1fa06f6f92cdab2a8174d1f9868960ee
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 10:10:15 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=cTQ4VDIvd1lXU2xjQ1hxZzJib1hTSEc1ZHRRcEFQTDRURDFyUmdJWVdQTTZqSVM0UjZvaWc0ZHdnV1JGRm5DUlVGRUtTdnFMSm9Sb1U5YmhBMXowVkE9PS0teTlsaEtraWxIS0orWFZzK3pNVUZkQT09--07e74da818cbf58383e0d8e9f851ce78eeb51794;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 662c80e2-30aa-4d62-b10e-34f8852aca93
+      X-Runtime:
+      - '0.033006'
+    body:
+      encoding: UTF-8
+      string: '{"error":"delivery[receipt_number] is missing"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 10:10:15 GMT
+recorded_with: VCR 2.9.3

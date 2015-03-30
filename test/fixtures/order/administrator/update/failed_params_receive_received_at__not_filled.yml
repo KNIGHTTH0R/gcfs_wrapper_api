@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/orders/20072
+    body:
+      encoding: UTF-8
+      string: '{"status":"received","receive":{"receiver":"Julita"},"metadata":{"user":{"id":1,"name":"Admin"}}}'
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 09:11:16 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '43'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=VGlKbUtwTWVyVm84SVhsM3FGRnlMVHBCdHBvcnpON2hJYUVRU0NVTERxWFZkOCswRkQxb0tia0cvUVRFL1V3R1lVY0ZxblY5ZzFZSWZEOW5jN2dEbmc9PS0tU0ZJWVgwNkJuRUNqWmZWdkY1ZXBHQT09--98d14a2a67ea19e67ccf54cce0a0fe4a830dbd49;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 5a32fca8-42b8-49db-ba83-1f69fc3e2e77
+      X-Runtime:
+      - '0.034901'
+    body:
+      encoding: UTF-8
+      string: '{"error":"receive[received_at] is missing"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 09:11:16 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://59tXpmSARVZ5rTzentMoDmwl6Mk:uMO7PoP7Z1q4EpvNPdBkXbI0ylw@localhost:3000/v1/token
+    body:
+      encoding: UTF-8
+      string: '{"username":"derri@giftcard.co.id","password":"12345678","grant_type":"password","scope":"offline_access"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 10:06:33 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '72'
+      Etag:
+      - W/"ecba580e775410bf752b945bb041aafa"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=K2NGUDltaEJGMGUyTkd3MTBNL21reU52NWUrUkpOVmZBbmdYTHlFQVZPaCtkQzJoOGh4aXQ4QnJMWVNBQkRZMTkwY2FCMmVLbG9MVVY0V29DQ0N3eGc9PS0tcnczNGlIODFYMHFXZnRBU2hLV2Y2QT09--7ce7e680d734abde5eb50adf9b145efbde383bec;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 424ed100-0919-4e3e-b09f-30dd747648c7
+      X-Runtime:
+      - '0.075569'
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"bf3ae2ba0aad1177da960c9a3d6a759d","expires_in":2592000}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 10:06:33 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/orders/20075
+    body:
+      encoding: UTF-8
+      string: '{"status":"received","metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
+    headers:
+      Authorization:
+      - Bearer 1fa06f6f92cdab2a8174d1f9868960ee
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 10:10:15 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '30'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=WHA2dnFLU0VqLzBPSmZYSEI2MXE2WmNrWWNOV1UvR3VWaElvRDhUbG5lTUhJekNzbjJrNUxwZjRvOHgyOEh5aVZWUllodnM2NmdKSDFadU0zWTNDaEE9PS0tYU1vR2xHaGJ2eXdiN1krV1BBOHJVQT09--05c3363c7bfbdf901891989ffb164c3ceeeee964;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 4d6ac05c-2a51-4c31-8d01-dce912b721cb
+      X-Runtime:
+      - '0.027299'
+    body:
+      encoding: UTF-8
+      string: '{"error":"receive is missing"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 10:10:15 GMT
+recorded_with: VCR 2.9.3

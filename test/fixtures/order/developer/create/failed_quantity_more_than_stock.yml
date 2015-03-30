@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/orders
+    body:
+      encoding: UTF-8
+      string: '{"description":"Pembelian Voucher","recepient":{"name":"Mr. Burnice
+        Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
+        Said 10","city":"dki jakarta","zip_code":"12950","notes":"-"},"items":[{"id":18,"variants":[{"id":51,"quantity":10}]}],"metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
+    headers:
+      Authorization:
+      - Bearer 1fa06f6f92cdab2a8174d1f9868960ee
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 10:04:20 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '109'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=Ti9jZE5Rc3ZaeXNwbmtXOGx4c2UwNmdNTW8wdk1Dd2xDQWNsYzlBWHZmWHg4VytIMzBYSmprZmJGRGhUSHppSG0zUExpOUdHYlFJY1ZueGNkbHozekE9PS0tT0o4QU9SUThMTThHWDdsbUMzUU9zdz09--2e0b0a821661a41b2d5674eb0aa9800412bf65c1;
+        path=/; HttpOnly
+      X-Request-Id:
+      - a28787cb-4702-493f-9e69-112c87b4cb7f
+      X-Runtime:
+      - '0.046027'
+    body:
+      encoding: UTF-8
+      string: '{"error":"quantity out of stock of variant SKU:061851 and quantity
+        insufficient stock of variant SKU:061851"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 10:04:20 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/orders
+    body:
+      encoding: UTF-8
+      string: '{"description":"Pembelian Voucher","recepient":{"name":"Mr. Burnice
+        Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
+        Said 10","city":"dki jakarta","zip_code":"12950","notes":"-"},"items":[{"id":1,"variants":[{"id":1,"quantity":10},{"id":2,"quantity":10}]},{"id":2,"variants":[{"id":3,"quantity":10},{"id":4,"quantity":10}]}],"metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
+    headers:
+      Authorization:
+      - Bearer 1fa06f6f92cdab2a8174d1f9868960ee
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 10:01:23 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1359'
+      Etag:
+      - W/"91f29416e0d36fe51156413e20272496"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _gcfs_session=QlZFakJOeHRMMVhEVzB5MC80dkJiUnpmTEV0RTBJZnhuV2VNR1I5WklscHgrWjV4czNyVUNtTFhVc1cyMFhIWk11UXZVaVJhRmxiRC85UVJuL1dSWnc9PS0tMTNCZ3NBN3VDTXRoZTJNcSt1YzJVZz09--59b9f0617e29d6f6779f9a6c6a1dd74f991a13ea;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 8b3e2657-2780-410e-919f-180c4265fa82
+      X-Runtime:
+      - '0.315059'
+    body:
+      encoding: UTF-8
+      string: '{"id":20075,"transaction_id":"rMO2yJDFqX","invoice_number":null,"description":"Pembelian
+        Voucher","client":{"name":"Feil-Baumbach","address":"33593 Cassie Branch New
+        Brianchester SD 66436-1797","billing_address":"955 Afton Canyon Stoltenbergfurt
+        DE 25374-5680"},"recepient":{"name":"Mr. Burnice Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
+        Said 10 DKI JAKARTA 12950","city":"DKI JAKARTA","zip_code":"12950","notes":"-"},"items":[{"id":1,"sku":"0101","name":"Job","variants":[{"id":1,"sku":"010101","description":"Job
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":2,"sku":"010102","description":"Job
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]},{"id":2,"sku":"0102","name":"Ventosanzap","variants":[{"id":3,"sku":"010203","description":"Ventosanzap
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":4,"sku":"010204","description":"Ventosanzap
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]}],"histories":[{"id":38884,"status":"new
+        order","description":"Order #rMO2yJDFqX","metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}},"created_at":"2015-03-30
+        10:01:23"}],"total":2700000,"status":"new order","payment_status":"outstanding","created_at":"2015-03-30
+        10:01:23","updated_at":"2015-03-30 10:01:23"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 10:01:23 GMT
+recorded_with: VCR 2.9.3

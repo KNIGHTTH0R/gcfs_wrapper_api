@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/orders
+    body:
+      encoding: UTF-8
+      string: '{"description":"Pembelian Voucher","recepient":{"name":"Mr. Burnice
+        Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
+        Said 10","city":"dki jakarta","zip_code":"12950","notes":"-"},"items":[{"id":10,"variants":[{"id":20,"quantity":10}]}],"metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
+    headers:
+      Authorization:
+      - Bearer bf3ae2ba0aad1177da960c9a3d6a759d
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 10:06:33 GMT
+      Status:
+      - 404 Not Found
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '36'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _gcfs_session=a3dscTJSWmxFNWcweXEzSW5kMFN6VjFnOFBXNnhHM0dpNHNMOWhiK0NVWUNXSERHS2lobnZ2ZHZGR3h1TitzMkV6dkJJOXJTTEJ4eHRzelgvNVVlZFE9PS0tWnhlMWhkY0hLdEpWdWtncnRzQUhRdz09--126457d5f2cee2b73273d65b0a33ad275872db54;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 940cff87-fa2c-4720-8aca-c1aed7084a82
+      X-Runtime:
+      - '0.024914'
+    body:
+      encoding: UTF-8
+      string: '{"error":"Item ID 10 doesn''t Exist"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 10:06:33 GMT
+recorded_with: VCR 2.9.3

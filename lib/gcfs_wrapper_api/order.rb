@@ -32,8 +32,8 @@ module Gcfs
           @total = attributes["total"]
           @status = attributes["status"]
           @payment_status = attributes["payment_status"]
-          @delivery = attributes["delivery"]
-          @receive = attributes["receive"]
+          @delivery = Gcfs::Wrapper::Api::OrderDelivery.new attributes["delivery"] if attributes["delivery"]
+          @receive = Gcfs::Wrapper::Api::OrderReceive.new attributes["receive"] if attributes["receive"]
           @created_at = attributes["created_at"]
           @updated_at = attributes["updated_at"]
         end

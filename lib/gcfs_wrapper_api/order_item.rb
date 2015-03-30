@@ -4,11 +4,12 @@ module Gcfs
       extend Configuration
 
       class OrderItem < Base
-        VALID_ATTRIBUTES =  [:id, :name, :variants].freeze
+        VALID_ATTRIBUTES =  [:id, :sku, :name, :variants].freeze
         attr_reader *VALID_ATTRIBUTES
 
         def initialize(attributes)
           @id = attributes["id"]
+          @sku = attributes["sku"]
           @name = attributes["name"]
           @variants = attributes["variants"].map{|item| Gcfs::Wrapper::Api::OrderItemVariant.new item } if attributes["variants"]
         end
