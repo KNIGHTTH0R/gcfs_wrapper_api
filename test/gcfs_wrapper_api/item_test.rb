@@ -160,7 +160,7 @@ describe 'item' do
               item.category.must_equal categories.last.name
 
               VCR.use_cassette('item/administrator/update/success/image') do
-                uri = URI.parse(File.join(Gcfs::Wrapper::Api::Item.base_uri, item.image))
+                uri = URI.parse(item.image)
                 response = Net::HTTP.get_response(uri)
 
                 tempfile = Tempfile.new("fileupload")
@@ -261,7 +261,7 @@ describe 'item' do
               item.category.must_equal categories.third.name
 
               VCR.use_cassette('item/administrator/update/image/success/image') do
-                uri = URI.parse(File.join(Gcfs::Wrapper::Api::Item.base_uri, item.image))
+                uri = URI.parse(item.image)
                 response = Net::HTTP.get_response(uri)
 
                 tempfile = Tempfile.new("fileupload")
@@ -332,7 +332,7 @@ describe 'item' do
             item.category.must_equal categories.third.name
 
             VCR.use_cassette('item/administrator/update/image/success/image') do
-              uri = URI.parse(File.join(Gcfs::Wrapper::Api::Item.base_uri, item.image))
+              uri = URI.parse(item.image)
               response = Net::HTTP.get_response(uri)
 
               tempfile = Tempfile.new("fileupload")

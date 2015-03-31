@@ -27,7 +27,7 @@ module Gcfs
           @objects[options[:per_page].to_i] = [] if options[:force] and @objects[options[:per_page].to_i]
           @objects[options[:per_page].to_i][options[:page].to_i] = nil if options[:force]
           # @objects[options[:per_page].to_i][options[:page].to_i] ||= retrieve_url self.get("/v1/categories", @options)
-          categories = retrieve_url self.get("/v1/cities", @options)
+          cities = retrieve_url self.get("/v1/cities", @options)
         end
 
       end
