@@ -20,7 +20,9 @@ be assigned an GCFS account email/password pair for that application. You'll nee
 to configure these values before you make a request or else you'll get the
 error:
 
-    #<Gcfs::Wrapper::Api::Error: invalid_request>
+```ruby
+#<Gcfs::Wrapper::Api::Error: invalid_request>
+```
 
 You can pass configuration options as a block to `Gcfs::Wrapper::Api::configure`.
 
@@ -30,6 +32,8 @@ Gcfs::Wrapper::Api::configure do |config|
   config.secret   = 'Your API Secret'
   config.username = 'Your GCFS Email Account'
   config.password = 'Your GCFS Password Account'
+  config.endpoint = 'GCFS Endpoint' #https://api.gcfs.com/
+  config.debug    = true #optional, default false
 end
 ```
 
@@ -46,13 +50,17 @@ token = Gcfs::Wrapper::Api::Token.request
 
 It will generate:
 
-    #<Gcfs::Wrapper::Api::Token: @access_token="602a16b2dd0cd18027f8bc9387786ae9", @expired_at=2015-04-30 09:14:56 +0700, @expires_in=2592000>
+```ruby
+#<Gcfs::Wrapper::Api::Token: @access_token="602a16b2dd0cd18027f8bc9387786ae9", @expired_at=2015-04-30 09:14:56 +0700, @expires_in=2592000>
+```
 
 You can see generated token using:
 
-    Gcfs::Wrapper::Api.token
-    or
-    Gcfs::Wrapper::Api.options[:token]
+```ruby
+Gcfs::Wrapper::Api.token
+or
+Gcfs::Wrapper::Api.options[:token]
+```
 
 After generate a `token`, you can do the following things.
 
