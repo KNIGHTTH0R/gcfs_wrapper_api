@@ -10,9 +10,6 @@ module Gcfs
         module ClassMethods
           private
           def retrieve_url(response)
-            base_uri Gcfs::Wrapper::Api.options[:endpoint]
-            debug_output $stderr if Gcfs::Wrapper::Api.options[:debug]
-
             begin
               json = JSON.parse response.body
               if json.is_a? Array
@@ -49,6 +46,9 @@ module Gcfs
           end
 
           def parsed_params (options={})
+            base_uri Gcfs::Wrapper::Api.options[:endpoint]
+            debug_output $stderr if Gcfs::Wrapper::Api.options[:debug]
+
             options = options.symbolize_keys
             options.delete_if {|key, value| value.blank? }
 
