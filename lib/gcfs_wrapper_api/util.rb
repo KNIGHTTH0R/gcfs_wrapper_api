@@ -30,6 +30,9 @@ module Gcfs
           end
 
           def configure_params(options={})
+            base_uri Gcfs::Wrapper::Api.options[:endpoint]
+            debug_output $stderr if Gcfs::Wrapper::Api.options[:debug]
+
             params = { headers: { "Authorization"=> "Bearer #{Gcfs::Wrapper::Api.options[:access_token]}", "Content-Type"=> "application/json" } }
             params[:headers].merge!(options[:headers]) if options[:headers]
             params.merge!(query: options[:query]) if options[:query]
