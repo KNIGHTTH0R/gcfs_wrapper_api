@@ -14,7 +14,6 @@ module Gcfs
         end
 
         def fetch_gcfs_api_token
-          Gcfs::Wrapper::Api::Token.request
           Rails.cache.fetch('GCFS_API_TOKEN') { Gcfs::Wrapper::Api::Token.request }
         end
 
