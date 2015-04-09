@@ -11,6 +11,7 @@ module Gcfs
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES_WITH_VARIANTS
         attr_reader *VALID_ATTRIBUTES
 
+        QUERY_ATTRIBUTES = [:client, :category, :sku, :name, :nominal, :price].freeze
         SORT_ATTRIBUTES = [:sku, :name, :category].freeze
 
         def initialize(attributes)
@@ -26,7 +27,7 @@ module Gcfs
 
         def self.all(options={force: false})
           options = parsed_params options
-          @options = configure_params query: { page: options[:page], per_page: options[:per_page] }.merge(options[:sort] ? {sort: options[:sort].select{|key, hash|SORT_ATTRIBUTES.include? key }} : {})
+          @options = configure_params query: { page: options[:page], per_page: options[:per_page] }.merge(options[:sort] ? {sort: options[:sort].select{|key, hash|SORT_ATTRIBUTES.include? key }} : {}).merge(options[:query] ? {query: options[:query].select{|key, hash|QUERY_ATTRIBUTES.include? key }} : {})
 
           @objects ||= []
           @objects[options[:per_page].to_i] ||= []
