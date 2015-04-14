@@ -19,7 +19,7 @@ module Gcfs
           @sku = attributes["sku"]
           @name = attributes["name"]
           @category = attributes["category"]
-          @image = File.join(Gcfs::Wrapper::Api::Item.base_uri, attributes["image"]) if attributes["image"]
+          @image = attributes["image"]
           @created_at = attributes["created_at"]
           @updated_at = attributes["updated_at"]
           @variants = attributes["variants"].map{|variant| Gcfs::Wrapper::Api::ItemVariant.new variant } if attributes["variants"]
