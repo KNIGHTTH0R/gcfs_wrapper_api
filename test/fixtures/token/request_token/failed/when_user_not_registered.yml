@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://DQI5DqcwA2fuEARnciMWl5oHroU:vH6urcUIjh20aq4qLKQYXTLIUIw@localhost:3000/v1/token
+    uri: http://APIKEY:APISECRET@localhost:3000/v1/token
     body:
       encoding: UTF-8
       string: '{"username":"williamson.kasey@renner.biz","password":"012a6dcc5d09dc318b63296be6b512e1","grant_type":"password","scope":"offline_access"}'

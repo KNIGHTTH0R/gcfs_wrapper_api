@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://DQI5DqcwA2fuEARnciMWl5oHroU:vH6urcUIjh20aq4qLKQYXTLIUIw@localhost:3000/v1/token
+    uri: http://APIKEY:APISECRET@localhost:3000/v1/token
     body:
       encoding: UTF-8
-      string: '{"username":"derri@giftcard.co.id","password":"12345678","grant_type":"password","scope":"offline_access"}'
+      string: '{"username":"admin@gcfs.co.id","password":"12345678","grant_type":"password","scope":"offline_access"}'
     headers:
       Content-Type:
       - application/json

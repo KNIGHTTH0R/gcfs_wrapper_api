@@ -6,9 +6,9 @@ describe 'inventory' do
 
     before do
       Gcfs::Wrapper::Api::configure do |config|
-        config.key      = 'DQI5DqcwA2fuEARnciMWl5oHroU'
-        config.secret   = 'vH6urcUIjh20aq4qLKQYXTLIUIw'
-        config.username = 'derri@giftcard.co.id'
+        config.key      = 'APIKEY'
+        config.secret   = 'APISECRET'
+        config.username = 'admin@gcfs.co.id'
         config.password = '12345678'
         # config.debug    = true
       end

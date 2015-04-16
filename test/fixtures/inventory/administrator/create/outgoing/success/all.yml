@@ -59,17 +59,17 @@ http_interactions:
         #kVHmQsT2zv","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
         04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
         50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
-        08:35:06"},"quantity":-9,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-26
+        08:35:06"},"quantity":-9,"metadata":{"user":{"id":1,"name":"admin@gcfs.co.id"}},"created_at":"2015-03-26
         08:42:50","updated_at":"2015-03-26 08:42:50"},{"id":82443,"type":"outgoing","description":"Order
         #kVHmQsT2zv","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
         04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
         50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
-        08:35:06"},"quantity":-8,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-26
+        08:35:06"},"quantity":-8,"metadata":{"user":{"id":1,"name":"admin@gcfs.co.id"}},"created_at":"2015-03-26
         08:42:50","updated_at":"2015-03-26 08:42:50"},{"id":82442,"type":"outgoing","description":"Order
         #kVHmQsT2zv","item":{"id":1,"sku":"0101","name":"Job","category":"Giftcard","image":"/uploads/item/image/1/d4dca5889aa4febff80e41109d279eee.gif","created_at":"2015-03-17
         04:14:22","updated_at":"2015-03-24 08:34:57"},"variant":{"id":1,"sku":"010101","description":"Job
         50rb","nominal":50000,"price":45000,"created_at":"2015-03-17 04:14:22","updated_at":"2015-03-24
-        08:35:06"},"quantity":-8,"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}},"created_at":"2015-03-26
+        08:35:06"},"quantity":-8,"metadata":{"user":{"id":1,"name":"admin@gcfs.co.id"}},"created_at":"2015-03-26
         08:42:50","updated_at":"2015-03-26 08:42:50"},{"id":82441,"type":"outgoing","description":"Order
         #ZJICPArHQE","item":{"id":17,"sku":"0417","name":"Sub-Ex","category":"Tada","image":"/uploads/item/image/17/4a90370df2702c58aefdb3aa9ea9ae8d.gif","created_at":"2015-03-17
         07:34:38","updated_at":"2015-03-24 08:34:57"},"variant":{"id":49,"sku":"041749","description":"Sub-Ex

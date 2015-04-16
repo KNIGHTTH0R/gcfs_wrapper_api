@@ -6,9 +6,9 @@ describe 'order' do
 
     before do
       Gcfs::Wrapper::Api::configure do |config|
-        config.key      = 'DQI5DqcwA2fuEARnciMWl5oHroU'
-        config.secret   = 'vH6urcUIjh20aq4qLKQYXTLIUIw'
-        config.username = 'derri@giftcard.co.id'
+        config.key      = 'APIKEY'
+        config.secret   = 'APISECRET'
+        config.username = 'admin@gcfs.co.id'
         config.password = '12345678'
       end
       VCR.use_cassette('token/request_token/success') do
@@ -77,7 +77,7 @@ describe 'order' do
         orders.last.histories.first.id.must_equal 38878
         orders.last.histories.first.status.must_equal 'received'
         orders.last.histories.first.description.must_equal 'Received by Maye Effertz at 2015-03-30 15:06:26'
-        metadata = {"user"=>{"id"=>1, "name"=>"derri@giftcard.co.id"}}
+        metadata = {"user"=>{"id"=>1, "name"=>"admin@gcfs.co.id"}}
         orders.last.histories.first.metadata.must_equal metadata
 
         total = 0
@@ -389,7 +389,7 @@ describe 'order' do
           Gcfs::Wrapper::Api::configure do |config|
             config.key      = '59tXpmSARVZ5rTzentMoDmwl6Mk'
             config.secret   = 'uMO7PoP7Z1q4EpvNPdBkXbI0ylw'
-            config.username = 'derri@giftcard.co.id'
+            config.username = 'admin@gcfs.co.id'
             config.password = '12345678'
           end
           VCR.use_cassette('token/request_token/administrator/different_client/success') do
@@ -1332,7 +1332,7 @@ describe 'order' do
           Gcfs::Wrapper::Api::configure do |config|
             config.key      = '59tXpmSARVZ5rTzentMoDmwl6Mk'
             config.secret   = 'uMO7PoP7Z1q4EpvNPdBkXbI0ylw'
-            config.username = 'derri@giftcard.co.id'
+            config.username = 'admin@gcfs.co.id'
             config.password = '12345678'
           end
           VCR.use_cassette('token/request_token/developer/different_client/success') do

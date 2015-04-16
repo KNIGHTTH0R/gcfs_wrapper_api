@@ -35,8 +35,8 @@ describe 'token' do
 
   it "it will fail when config invalid" do
     Gcfs::Wrapper::Api::configure do |config|
-      config.key      = 'DQI5DqcwA2fuEARnciMWl5oHroU'
-      config.secret   = 'vH6urcUIjh20aq4qLKQYXTLIUIw'
+      config.key      = 'APIKEY'
+      config.secret   = 'APISECRET'
       config.username = 'williamson.kasey@renner.biz'
       config.password = '012a6dcc5d09dc318b63296be6b512e1'
     end
@@ -53,9 +53,9 @@ describe 'token' do
 
   it "must generate token" do
     Gcfs::Wrapper::Api::configure do |config|
-      config.key      = 'DQI5DqcwA2fuEARnciMWl5oHroU'
-      config.secret   = 'vH6urcUIjh20aq4qLKQYXTLIUIw'
-      config.username = 'derri@giftcard.co.id'
+      config.key      = 'APIKEY'
+      config.secret   = 'APISECRET'
+      config.username = 'admin@gcfs.co.id'
       config.password = '12345678'
     end
     VCR.use_cassette('token/request_token/success') do
