@@ -5,7 +5,7 @@ A Ruby interface to the GCFS API.
 ## Installation
 Add this to your Gemfile
 
-    gem 'gcfs_wrapper_api', git: 'git@github.com:aksivisitama/gcfs_wrapper_api.git'
+    gem 'gcfs_wrapper_api', git: 'git://github.com/aksivisitama/gcfs_wrapper_api.git'
 
 ## Configuration
 [GCFS API v1][gcfs] requires you to authenticate via [OAuth2][oauth], so you'll need to
