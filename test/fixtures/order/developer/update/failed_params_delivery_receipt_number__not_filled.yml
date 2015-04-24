@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://localhost:3000/v1/orders/20075
+    uri: http://localhost:3000/v1/orders/119
     body:
       encoding: UTF-8
       string: '{"status":"delivered","delivery":{"courier_name":"JNE"},"metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
@@ -17,7 +17,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Mon, 30 Mar 2015 10:10:15 GMT
+      - Fri, 24 Apr 2015 06:20:39 GMT
       Status:
       - 400 Bad Request
       Connection:
@@ -29,15 +29,14 @@ http_interactions:
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - _gcfs_session=cTQ4VDIvd1lXU2xjQ1hxZzJib1hTSEc1ZHRRcEFQTDRURDFyUmdJWVdQTTZqSVM0UjZvaWc0ZHdnV1JGRm5DUlVGRUtTdnFMSm9Sb1U5YmhBMXowVkE9PS0teTlsaEtraWxIS0orWFZzK3pNVUZkQT09--07e74da818cbf58383e0d8e9f851ce78eeb51794;
-        path=/; HttpOnly
+      - _session_id=d00d281b49a4fedae67fa960ac991776; path=/; HttpOnly
       X-Request-Id:
-      - 662c80e2-30aa-4d62-b10e-34f8852aca93
+      - 5beb6d82-92f7-4773-a7cd-ce5a7fafcd2e
       X-Runtime:
-      - '0.033006'
+      - '0.022349'
     body:
       encoding: UTF-8
       string: '{"error":"delivery[receipt_number] is missing"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 10:10:15 GMT
+  recorded_at: Fri, 24 Apr 2015 06:20:39 GMT
 recorded_with: VCR 2.9.3

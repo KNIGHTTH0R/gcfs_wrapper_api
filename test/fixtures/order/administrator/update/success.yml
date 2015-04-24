@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://localhost:3000/v1/orders/20072
+    uri: http://localhost:3000/v1/orders/104
     body:
       encoding: UTF-8
       string: '{"status":"delivered","delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"metadata":{"user":{"id":1,"name":"Admin"}}}'
@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 30 Mar 2015 08:55:58 GMT
+      - Fri, 24 Apr 2015 04:13:37 GMT
       Status:
       - 200 OK
       Connection:
@@ -25,32 +25,31 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1504'
+      - '1554'
       Etag:
-      - W/"2d38c0270c7bd24ec9a1a9a9ce4ad81d"
+      - W/"c40c983a40c0fe640817f0dc6db6ef70"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _gcfs_session=ay9YdWhFQTBtRGVKOHBrZzEyd0JGaENRSUg2NFhaTXExYVQ4NEdvNWdoLzRJVVVNMTdJOEtZTVZKbnp4T0NEWFJ4VlRnSHVjZ2JsbURrMkwyc2Fqb0E9PS0tbFNKUWRCOXRvU2hKbHhFdTYrZVBqdz09--33e54c198a638623f54fde919f35e90e7a16e4e5;
-        path=/; HttpOnly
+      - _session_id=a646973fe15ceb1bebb08cfcd4b7d5d6; path=/; HttpOnly
       X-Request-Id:
-      - d427cad2-a439-46ce-8b5c-9f494705731b
+      - b74facac-361d-4b6c-a40e-0c77eea77d41
       X-Runtime:
-      - '0.308034'
+      - '0.171188'
     body:
       encoding: UTF-8
-      string: '{"id":20072,"transaction_id":"nmSqAOsRXF","invoice_number":null,"description":"Pembelian
+      string: '{"id":104,"transaction_id":"d1cIui5lmW","invoice_number":null,"description":"Pembelian
         Voucher","client":{"name":"Giftcard","address":"giftcard.co.id","billing_address":"giftcard.co.id"},"recepient":{"name":"Mr.
         Burnice Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
-        Said 10 DKI JAKARTA 12950","city":"DKI JAKARTA","zip_code":"12950","notes":"-"},"items":[{"id":1,"sku":"0101","name":"Job","variants":[{"id":1,"sku":"010101","description":"Job
-        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":2,"sku":"010102","description":"Job
-        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]},{"id":2,"sku":"0102","name":"Ventosanzap","variants":[{"id":3,"sku":"010203","description":"Ventosanzap
-        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":4,"sku":"010204","description":"Ventosanzap
-        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]}],"histories":[{"id":38880,"status":"delivered","description":"JNE
-        with resi CGKS301072156314","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-03-30
-        08:55:58"},{"id":38879,"status":"new order","description":"Order #nmSqAOsRXF","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-03-30
-        08:25:39"}],"total":2700000,"status":"delivered","payment_status":"outstanding","delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"created_at":"2015-03-30
-        08:25:39","updated_at":"2015-03-30 08:55:58"}'
+        Said 10 DKI JAKARTA 12950","city":"DKI JAKARTA","zip_code":"12950","notes":"-"},"items":[{"id":1,"sku":"0101","name":"Fintone","variants":[{"id":1,"sku":"010101","description":"Fintone
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":2,"sku":"010102","description":"Fintone
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]},{"id":2,"sku":"0102","name":"Y-Solowarm","variants":[{"id":3,"sku":"010203","description":"Y-Solowarm
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":4,"sku":"010204","description":"Y-Solowarm
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]}],"histories":[{"id":118,"status":"delivered","description":"JNE
+        with resi CGKS301072156314","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-04-24
+        04:13:37"},{"id":117,"status":"new order","description":"Order #d1cIui5lmW","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-04-24
+        03:59:37"}],"total":2700000,"shipping_fee":0,"total_with_shipping":2700000,"status":"delivered","payment_status":"outstanding","delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"created_at":"2015-04-24
+        03:59:37","updated_at":"2015-04-24 04:13:37"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 08:55:58 GMT
+  recorded_at: Fri, 24 Apr 2015 04:13:37 GMT
 recorded_with: VCR 2.9.3

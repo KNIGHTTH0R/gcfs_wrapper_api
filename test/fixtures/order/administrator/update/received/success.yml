@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://localhost:3000/v1/orders/20072
+    uri: http://localhost:3000/v1/orders/104
     body:
       encoding: UTF-8
       string: '{"status":"received","receive":{"receiver":"Julita","received_at":"2015-03-12
@@ -18,7 +18,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 30 Mar 2015 08:59:54 GMT
+      - Fri, 24 Apr 2015 04:15:13 GMT
       Status:
       - 200 OK
       Connection:
@@ -26,33 +26,32 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1741'
+      - '1789'
       Etag:
-      - W/"521fe7b51bae21c9d9d91dfb4fd831cb"
+      - W/"226a0cdae7d8a196bb0ac38e6b6d8034"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _gcfs_session=bFBYZTI4VlJpM2V4YjIyQktjaVZVcklPTVJMZ1lnY1lNbXFsaGpRSHp0NDViZGhQcHpmNHBCSWNpeHpCbmk4VG0xNzRidk5jeERibEEwNUU1Sk1kUGc9PS0taVhpeC9Cc2wvSnFNYkhPVUtmU1dDQT09--46c2a0879c1dd1568c39c365e9e12d264d96f301;
-        path=/; HttpOnly
+      - _session_id=3074edda0c627d81c25e12a6b5f69e31; path=/; HttpOnly
       X-Request-Id:
-      - 3c0f4c9c-ff25-452e-b1bd-ab7a5bb93885
+      - adce5583-72fd-4ee3-9e68-a99314b7bc42
       X-Runtime:
-      - '0.347441'
+      - '0.176087'
     body:
       encoding: UTF-8
-      string: '{"id":20072,"transaction_id":"nmSqAOsRXF","invoice_number":null,"description":"Pembelian
+      string: '{"id":104,"transaction_id":"d1cIui5lmW","invoice_number":null,"description":"Pembelian
         Voucher","client":{"name":"Giftcard","address":"giftcard.co.id","billing_address":"giftcard.co.id"},"recepient":{"name":"Mr.
         Burnice Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
-        Said 10 DKI JAKARTA 12950","city":"DKI JAKARTA","zip_code":"12950","notes":"-"},"items":[{"id":1,"sku":"0101","name":"Job","variants":[{"id":1,"sku":"010101","description":"Job
-        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":2,"sku":"010102","description":"Job
-        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]},{"id":2,"sku":"0102","name":"Ventosanzap","variants":[{"id":3,"sku":"010203","description":"Ventosanzap
-        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":4,"sku":"010204","description":"Ventosanzap
-        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]}],"histories":[{"id":38881,"status":"received","description":"Received
-        by Julita at 2015-03-12 08:07:52","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-03-30
-        08:59:54"},{"id":38880,"status":"delivered","description":"JNE with resi CGKS301072156314","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-03-30
-        08:55:58"},{"id":38879,"status":"new order","description":"Order #nmSqAOsRXF","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-03-30
-        08:25:39"}],"total":2700000,"status":"received","payment_status":"outstanding","delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"receive":{"receiver":"Julita","received_at":"2015-03-12
-        08:07:52"},"created_at":"2015-03-30 08:25:39","updated_at":"2015-03-30 08:59:54"}'
+        Said 10 DKI JAKARTA 12950","city":"DKI JAKARTA","zip_code":"12950","notes":"-"},"items":[{"id":1,"sku":"0101","name":"Fintone","variants":[{"id":1,"sku":"010101","description":"Fintone
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":2,"sku":"010102","description":"Fintone
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]},{"id":2,"sku":"0102","name":"Y-Solowarm","variants":[{"id":3,"sku":"010203","description":"Y-Solowarm
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":4,"sku":"010204","description":"Y-Solowarm
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]}],"histories":[{"id":119,"status":"received","description":"Received
+        by Julita at 2015-03-12 08:07:52","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-04-24
+        04:15:13"},{"id":118,"status":"delivered","description":"JNE with resi CGKS301072156314","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-04-24
+        04:13:37"},{"id":117,"status":"new order","description":"Order #d1cIui5lmW","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-04-24
+        03:59:37"}],"total":2700000,"shipping_fee":0,"total_with_shipping":2700000,"status":"received","payment_status":"outstanding","delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"receive":{"receiver":"Julita","received_at":"2015-03-12
+        08:07:52"},"created_at":"2015-04-24 03:59:37","updated_at":"2015-04-24 04:15:13"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 08:59:54 GMT
+  recorded_at: Fri, 24 Apr 2015 04:15:13 GMT
 recorded_with: VCR 2.9.3

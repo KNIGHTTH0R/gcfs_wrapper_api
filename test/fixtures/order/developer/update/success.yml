@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://localhost:3000/v1/orders/20075
+    uri: http://localhost:3000/v1/orders/119
     body:
       encoding: UTF-8
       string: '{"status":"delivered","delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 30 Mar 2015 10:07:47 GMT
+      - Fri, 24 Apr 2015 06:18:25 GMT
       Status:
       - 200 OK
       Connection:
@@ -25,33 +25,32 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1601'
+      - '1651'
       Etag:
-      - W/"316710fabdc0adb7b20e9f1fd868419a"
+      - W/"7e148ef5fd8511384ace36bd991337a9"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _gcfs_session=QzF4VzZDcmVlUVJEckYvYU1wSmZBYXZ5UWdRWU1lMU5OaUpYQ21uSjBEazI3c2ZEWlNWb21lR3FZQW9mTDZXY1ludThCM1gwSFdRSjJRSUtOT09IOWc9PS0tNVo3cUo4RUdQU2tqR2lKNzg4YUpLQT09--9d2b881e66573c4e308a9b88e10605b0110c2226;
-        path=/; HttpOnly
+      - _session_id=70f1fe3785340f1fe5d1c3cf3c55f941; path=/; HttpOnly
       X-Request-Id:
-      - 54597d89-d105-4746-bcd3-c816c220ded3
+      - f585c63c-1431-4462-a3fe-afb4c7127bae
       X-Runtime:
-      - '0.350696'
+      - '0.204475'
     body:
       encoding: UTF-8
-      string: '{"id":20075,"transaction_id":"rMO2yJDFqX","invoice_number":null,"description":"Pembelian
+      string: '{"id":119,"transaction_id":"qilLP5ZbIp","invoice_number":null,"description":"Pembelian
         Voucher","client":{"name":"Feil-Baumbach","address":"33593 Cassie Branch New
         Brianchester SD 66436-1797","billing_address":"955 Afton Canyon Stoltenbergfurt
         DE 25374-5680"},"recepient":{"name":"Mr. Burnice Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
-        Said 10 DKI JAKARTA 12950","city":"DKI JAKARTA","zip_code":"12950","notes":"-"},"items":[{"id":1,"sku":"0101","name":"Job","variants":[{"id":1,"sku":"010101","description":"Job
-        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":2,"sku":"010102","description":"Job
-        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]},{"id":2,"sku":"0102","name":"Ventosanzap","variants":[{"id":3,"sku":"010203","description":"Ventosanzap
-        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":4,"sku":"010204","description":"Ventosanzap
-        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]}],"histories":[{"id":38885,"status":"delivered","description":"JNE
-        with resi CGKS301072156314","metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}},"created_at":"2015-03-30
-        10:07:47"},{"id":38884,"status":"new order","description":"Order #rMO2yJDFqX","metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}},"created_at":"2015-03-30
-        10:01:23"}],"total":2700000,"status":"delivered","payment_status":"outstanding","delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"created_at":"2015-03-30
-        10:01:23","updated_at":"2015-03-30 10:07:47"}'
+        Said 10 DKI JAKARTA 12950","city":"DKI JAKARTA","zip_code":"12950","notes":"-"},"items":[{"id":1,"sku":"0101","name":"Fintone","variants":[{"id":1,"sku":"010101","description":"Fintone
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":2,"sku":"010102","description":"Fintone
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]},{"id":2,"sku":"0102","name":"Y-Solowarm","variants":[{"id":3,"sku":"010203","description":"Y-Solowarm
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":4,"sku":"010204","description":"Y-Solowarm
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]}],"histories":[{"id":137,"status":"delivered","description":"JNE
+        with resi CGKS301072156314","metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}},"created_at":"2015-04-24
+        06:18:25"},{"id":136,"status":"new order","description":"Order #qilLP5ZbIp","metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}},"created_at":"2015-04-24
+        04:42:41"}],"total":2700000,"shipping_fee":0,"total_with_shipping":2700000,"status":"delivered","payment_status":"outstanding","delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"created_at":"2015-04-24
+        04:42:41","updated_at":"2015-04-24 06:18:25"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 10:07:47 GMT
+  recorded_at: Fri, 24 Apr 2015 06:18:25 GMT
 recorded_with: VCR 2.9.3

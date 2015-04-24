@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://localhost:3000/v1/orders/20075
+    uri: http://localhost:3000/v1/orders/119
     body:
       encoding: UTF-8
       string: '{"status":"delivered","metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
@@ -17,7 +17,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Mon, 30 Mar 2015 10:09:57 GMT
+      - Fri, 24 Apr 2015 06:20:21 GMT
       Status:
       - 400 Bad Request
       Connection:
@@ -29,15 +29,14 @@ http_interactions:
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - _gcfs_session=Q3lpTWpHa3lXUmtJRGttNndDbm80aEpMR3JIdXUwSElkSXF4WWJldUNTQXd2Qk82RHdDYU9zUTgxK01FeitYNkNYcEQxRmphNjVHdDJYNUpySWlDZ0E9PS0tTHEvQXpQM1FCUE91eDk1WnYwWlhkZz09--c381acf0426080fdfefa3bc2f144d76162e213ea;
-        path=/; HttpOnly
+      - _session_id=4e3dee321fb6cd1366478092a796e5b6; path=/; HttpOnly
       X-Request-Id:
-      - ef58a3cc-8bb1-4871-b350-2dc0cc47ed56
+      - 4bd0174d-fd9c-4fa4-901e-db546dd97c24
       X-Runtime:
-      - '0.038635'
+      - '0.032880'
     body:
       encoding: UTF-8
       string: '{"error":"delivery is missing"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 10:09:57 GMT
+  recorded_at: Fri, 24 Apr 2015 06:20:21 GMT
 recorded_with: VCR 2.9.3

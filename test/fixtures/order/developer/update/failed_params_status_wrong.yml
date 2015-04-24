@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://localhost:3000/v1/orders/20075
+    uri: http://localhost:3000/v1/orders/119
     body:
       encoding: UTF-8
       string: '{"status":"ABCDE","metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
@@ -17,7 +17,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Mon, 30 Mar 2015 10:10:15 GMT
+      - Fri, 24 Apr 2015 06:21:12 GMT
       Status:
       - 400 Bad Request
       Connection:
@@ -29,15 +29,14 @@ http_interactions:
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - _gcfs_session=cU5xOVBUNDJzZzlOZk5pS2VQbFRTd21ia1VKSW44US9NTnJvNitzeGRzdHZkRC9SbEdIeXc5bHhBRGxrV2l3V2hodGlCcFZuZFpBUDlKVmt1ZzY0NEE9PS0tWGVsTzRsMFBPMEJHRFV4VWExbzErQT09--6ffaa5db6dc7cc816bf08bc6353f2b21b3fba54b;
-        path=/; HttpOnly
+      - _session_id=4bbaf16833e20c0154ba3d8bb9f195b6; path=/; HttpOnly
       X-Request-Id:
-      - 2a2dd2aa-b78f-4370-9670-ad8efcc859c2
+      - b5343f52-4258-4530-af39-f91ea342e674
       X-Runtime:
-      - '0.024709'
+      - '0.020555'
     body:
       encoding: UTF-8
       string: '{"error":"status does not have a valid value"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 10:10:15 GMT
+  recorded_at: Fri, 24 Apr 2015 06:21:12 GMT
 recorded_with: VCR 2.9.3

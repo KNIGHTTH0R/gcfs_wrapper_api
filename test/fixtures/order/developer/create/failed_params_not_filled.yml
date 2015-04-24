@@ -17,7 +17,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Mon, 30 Mar 2015 10:04:45 GMT
+      - Fri, 24 Apr 2015 04:44:54 GMT
       Status:
       - 400 Bad Request
       Connection:
@@ -29,12 +29,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - _gcfs_session=TnUvSDVnK0MyUmVsamdlalRweEVHSHhVUnJ1SUNiU1QxRU0zcy9sMTM4dlhmM0FwRGwyU082VXRlYkNvY0FUVEI1ZlZMbGZQTDZtSmFwakNLaEVkWGc9PS0tU3hwQWhJcisvaXArTjR1NnIxSHJwQT09--a037d81e7f9883485a30d11a63139878ebee520b;
-        path=/; HttpOnly
+      - _session_id=337e4e0c066dcaf446c14ffc4c9d7892; path=/; HttpOnly
       X-Request-Id:
-      - c7897ae0-df7e-4a08-9023-4e08577de005
+      - 6ee51694-be5f-455a-bd40-ca8ae6bfeab0
       X-Runtime:
-      - '0.031755'
+      - '0.038754'
     body:
       encoding: UTF-8
       string: '{"error":"description is missing, recepient is missing, recepient[name]
@@ -43,5 +42,5 @@ http_interactions:
         is missing, items is missing, metadata is missing, metadata[user] is missing,
         metadata[user][id] is missing, metadata[user][name] is missing"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 10:04:45 GMT
+  recorded_at: Fri, 24 Apr 2015 04:44:54 GMT
 recorded_with: VCR 2.9.3
