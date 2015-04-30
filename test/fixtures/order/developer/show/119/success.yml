@@ -1,12 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: put
+    method: get
     uri: http://localhost:3000/v1/orders/119
     body:
-      encoding: UTF-8
-      string: '{"status":"received","receive":{"receiver":"Julita","received_at":"2015-03-12
-        08:07:52"},"metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
+      encoding: US-ASCII
+      string: ''
     headers:
       Authorization:
       - Bearer 1fa06f6f92cdab2a8174d1f9868960ee
@@ -18,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 24 Apr 2015 06:19:41 GMT
+      - Fri, 24 Apr 2015 06:22:40 GMT
       Status:
       - 200 OK
       Connection:
@@ -32,11 +31,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _session_id=2aed814722a6f1f189da66ae91d80343; path=/; HttpOnly
+      - _session_id=bff4893c712dbf4338ee564cc557870f; path=/; HttpOnly
       X-Request-Id:
-      - cb3f36b0-3c4a-4199-a063-e913713a161f
+      - 8b9bf463-7068-4da8-b5a4-918aa68fdca4
       X-Runtime:
-      - '0.191784'
+      - '0.040182'
     body:
       encoding: UTF-8
       string: '{"id":119,"transaction_id":"qilLP5ZbIp","invoice_number":null,"description":"Pembelian
@@ -54,5 +53,5 @@ http_interactions:
         04:42:41"}],"total":2700000,"shipping_fee":0,"total_with_shipping":2700000,"status":"received","payment_status":"outstanding","delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"receive":{"receiver":"Julita","received_at":"2015-03-12
         08:07:52"},"created_at":"2015-04-24 04:42:41","updated_at":"2015-04-24 06:19:41"}'
     http_version: 
-  recorded_at: Fri, 24 Apr 2015 06:19:41 GMT
+  recorded_at: Fri, 24 Apr 2015 06:22:40 GMT
 recorded_with: VCR 2.9.3

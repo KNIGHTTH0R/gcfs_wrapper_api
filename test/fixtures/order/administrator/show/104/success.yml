@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/orders/104
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 22bf2c808c2f71e656dadcdd6103e202
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 24 Apr 2015 04:18:52 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6001'
+      Etag:
+      - W/"6680476868c9613586c513223588abb2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=bc83e4b4644467d3f0ce49071abb992c; path=/; HttpOnly
+      X-Request-Id:
+      - ef3605be-12d9-4781-a73b-890d7419685f
+      X-Runtime:
+      - '0.039334'
+    body:
+      encoding: UTF-8
+      string: '{"id":104,"transaction_id":"d1cIui5lmW","invoice_number":null,"description":"Pembelian
+        Voucher","client":{"name":"Giftcard","address":"giftcard.co.id","billing_address":"giftcard.co.id"},"recepient":{"name":"Mr.
+        Burnice Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
+        Said 10 DKI JAKARTA 12950","city":"DKI JAKARTA","zip_code":"12950","notes":"-"},"items":[{"id":1,"sku":"0101","name":"Fintone","variants":[{"id":1,"sku":"010101","description":"Fintone
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":2,"sku":"010102","description":"Fintone
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]},{"id":2,"sku":"0102","name":"Y-Solowarm","variants":[{"id":3,"sku":"010203","description":"Y-Solowarm
+        50rb","quantity":10,"price":45000,"nominal":50000,"subtotal":450000},{"id":4,"sku":"010204","description":"Y-Solowarm
+        100rb","quantity":10,"price":90000,"nominal":100000,"subtotal":900000}]}],"histories":[{"id":119,"status":"received","description":"Received
+        by Julita at 2015-03-12 08:07:52","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-04-24
+        04:15:13","changes":{"order":{"id":104,"description":"Pembelian Voucher","total":2700000,"transaction_id":"d1cIui5lmW","bank_name":null,"payment_at":null,"status":["delivered","received"],"payment_status":1,"invoice_number":null,"delivery_notes":"-","client":{"name":"Giftcard","address":"giftcard.co.id","billing_address":"giftcard.co.id"},"recepient":{"name":"Mr.
+        Burnice Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
+        Said 10","city":"DKI JAKARTA","zip_code":"12950","rt/rw":null,"company_name":null,"division_or_floor":null,"building_name":null},"address_type":null,"delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"receive":{"receiver":[null,"Julita"],"received_at":[null,"2015-03-12
+        08:07:52"]}},"items":[{"quantity":10,"subtotal":450000,"id":211,"item":{"id":1,"name":"Fintone"},"item_variant":{"id":1,"description":"Fintone
+        50rb","price":45000,"nominal":50000}},{"quantity":10,"subtotal":900000,"id":212,"item":{"id":1,"name":"Fintone"},"item_variant":{"id":2,"description":"Fintone
+        100rb","price":90000,"nominal":100000}},{"quantity":10,"subtotal":450000,"id":213,"item":{"id":2,"name":"Y-Solowarm"},"item_variant":{"id":3,"description":"Y-Solowarm
+        50rb","price":45000,"nominal":50000}},{"quantity":10,"subtotal":900000,"id":214,"item":{"id":2,"name":"Y-Solowarm"},"item_variant":{"id":4,"description":"Y-Solowarm
+        100rb","price":90000,"nominal":100000}}]}},{"id":118,"status":"delivered","description":"JNE
+        with resi CGKS301072156314","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-04-24
+        04:13:37","changes":{"order":{"id":104,"description":"Pembelian Voucher","total":2700000,"transaction_id":"d1cIui5lmW","bank_name":null,"payment_at":null,"status":["new
+        order","delivered"],"payment_status":1,"invoice_number":null,"delivery_notes":"-","client":{"name":"Giftcard","address":"giftcard.co.id","billing_address":"giftcard.co.id"},"recepient":{"name":"Mr.
+        Burnice Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
+        Said 10","city":"DKI JAKARTA","zip_code":"12950","rt/rw":null,"company_name":null,"division_or_floor":null,"building_name":null},"address_type":null,"delivery":{"courier_name":[null,"JNE"],"receipt_number":[null,"CGKS301072156314"]}},"items":[{"quantity":10,"subtotal":450000,"id":211,"item":{"id":1,"name":"Fintone"},"item_variant":{"id":1,"description":"Fintone
+        50rb","price":45000,"nominal":50000}},{"quantity":10,"subtotal":900000,"id":212,"item":{"id":1,"name":"Fintone"},"item_variant":{"id":2,"description":"Fintone
+        100rb","price":90000,"nominal":100000}},{"quantity":10,"subtotal":450000,"id":213,"item":{"id":2,"name":"Y-Solowarm"},"item_variant":{"id":3,"description":"Y-Solowarm
+        50rb","price":45000,"nominal":50000}},{"quantity":10,"subtotal":900000,"id":214,"item":{"id":2,"name":"Y-Solowarm"},"item_variant":{"id":4,"description":"Y-Solowarm
+        100rb","price":90000,"nominal":100000}}]}},{"id":117,"status":"new order","description":"Order
+        #d1cIui5lmW","metadata":{"user":{"id":1,"name":"Admin"}},"created_at":"2015-04-24
+        03:59:37","changes":{"order":{"id":104,"description":[null,"Pembelian Voucher"],"total":[null,2700000],"transaction_id":"d1cIui5lmW","bank_name":null,"payment_at":null,"status":1,"payment_status":1,"invoice_number":null,"delivery_notes":[null,"-"],"client":[null,{"name":"Giftcard","address":"giftcard.co.id","billing_address":"giftcard.co.id"}],"recepient":{"name":[null,"Mr.
+        Burnice Anderson"],"email":[null,"enrique.prosacco@kulas.net"],"phone_number":[null,"947.962.2387"],"address":[null,"Rasuna
+        Said 10"],"city":[null,"DKI JAKARTA"],"zip_code":[null,"12950"],"rt/rw":null,"company_name":null,"division_or_floor":null,"building_name":null},"address_type":null},"items":[{"id":211,"quantity":[null,10],"subtotal":[null,450000],"item":[null,{"id":1,"name":"Fintone"}],"item_variant":[null,{"id":1,"description":"Fintone
+        50rb","price":45000,"nominal":50000}]},{"id":212,"quantity":[null,10],"subtotal":[null,900000],"item":[null,{"id":1,"name":"Fintone"}],"item_variant":[null,{"id":2,"description":"Fintone
+        100rb","price":90000,"nominal":100000}]},{"id":213,"quantity":[null,10],"subtotal":[null,450000],"item":[null,{"id":2,"name":"Y-Solowarm"}],"item_variant":[null,{"id":3,"description":"Y-Solowarm
+        50rb","price":45000,"nominal":50000}]},{"id":214,"quantity":[null,10],"subtotal":[null,900000],"item":[null,{"id":2,"name":"Y-Solowarm"}],"item_variant":[null,{"id":4,"description":"Y-Solowarm
+        100rb","price":90000,"nominal":100000}]}]}}],"total":2700000,"shipping_fee":0,"total_with_shipping":2700000,"status":"received","payment_status":"outstanding","delivery":{"courier_name":"JNE","receipt_number":"CGKS301072156314"},"receive":{"receiver":"Julita","received_at":"2015-03-12
+        08:07:52"},"created_at":"2015-04-24 03:59:37","updated_at":"2015-04-24 04:15:13"}'
+    http_version: 
+  recorded_at: Fri, 24 Apr 2015 04:18:52 GMT
+recorded_with: VCR 2.9.3

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://localhost:3000/v1/orders/20075
+    uri: http://localhost:3000/v1/orders/119
     body:
       encoding: UTF-8
       string: '{"status":"received","receive":{"receiver":"Julita"},"metadata":{"user":{"id":1,"name":"mutouzi@gmail.com"}}}'
@@ -17,7 +17,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Mon, 30 Mar 2015 10:10:15 GMT
+      - Fri, 24 Apr 2015 06:21:07 GMT
       Status:
       - 400 Bad Request
       Connection:
@@ -29,15 +29,14 @@ http_interactions:
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - _gcfs_session=ZERrYlMyaGdRalZ4S1BaNUthRUhlNHVzeXB2T0FjSitiQzJDZmRmMjJCTGo1WFROa3VkQTZQTFZRLzRLVno0UEJpWGtXaFZuc3VNejFqcXRONkpLR0E9PS0tNUIrSk5FNFBHQWdGNXowK1YxT2lsdz09--b4eae22c5e45ba55b643ff0a03b0915a46a4d1b6;
-        path=/; HttpOnly
+      - _session_id=485cbf9f002e17b3a4ee364baea3ac50; path=/; HttpOnly
       X-Request-Id:
-      - 4a938e94-3b99-4a6a-a206-f3750c1c0124
+      - f3d9bbe7-e558-4ac7-93b0-92617c5581ca
       X-Runtime:
-      - '0.025211'
+      - '0.023493'
     body:
       encoding: UTF-8
       string: '{"error":"receive[received_at] is missing"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 10:10:15 GMT
+  recorded_at: Fri, 24 Apr 2015 06:21:07 GMT
 recorded_with: VCR 2.9.3

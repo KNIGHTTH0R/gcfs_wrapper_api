@@ -19,7 +19,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Mon, 30 Mar 2015 10:05:43 GMT
+      - Fri, 24 Apr 2015 04:45:13 GMT
       Status:
       - 400 Bad Request
       Connection:
@@ -31,15 +31,14 @@ http_interactions:
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - _gcfs_session=a2pxeE5JZkIvbjZpUDNMZzhiME5OQk51bEF6Qnc1dU9yZzM5MDVTZGk4MmM2czMrOEQwZWRJQU02R3dtSDhSZXdNK0VtVHJOM1JacW1Rc09NK3FsZXc9PS0tK1JOamwrVEEwVllQUW5KNjFnWGxIQT09--648506b355204331c6d42cfb324b550f1205c8e1;
-        path=/; HttpOnly
+      - _session_id=42f4e7b02e76b4e3784022a7f9e39681; path=/; HttpOnly
       X-Request-Id:
-      - b44e7af6-e916-4d95-914f-b0c847b9fe75
+      - 190898ea-98a8-4c75-8d56-2cd005d8e0bf
       X-Runtime:
-      - '0.021175'
+      - '0.181300'
     body:
       encoding: UTF-8
       string: '{"error":"items is missing"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 10:05:43 GMT
+  recorded_at: Fri, 24 Apr 2015 04:45:13 GMT
 recorded_with: VCR 2.9.3

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://localhost:3000/v1/orders/20072
+    uri: http://localhost:3000/v1/orders/104
     body:
       encoding: UTF-8
       string: "{}"
@@ -17,7 +17,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Mon, 30 Mar 2015 09:04:50 GMT
+      - Fri, 24 Apr 2015 04:16:02 GMT
       Status:
       - 400 Bad Request
       Connection:
@@ -29,17 +29,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - _gcfs_session=YUZJLzdVcFNNK1dYTHoxdHAxeWhGUUxpQ3U5eVNQSTBhVHNzSm5wY0V4SW96M0NwQXE0NFBTb0luTFZNNEVKWFphZFdVL1FLRXYwZ2xoM29EVkZSa1E9PS0tUU4xdXdjWVU3S1lHb3NIVUhXSlV2UT09--21b74fb38dc60c7db8af09128e7c43016ae43535;
-        path=/; HttpOnly
+      - _session_id=f8b3a3637bb07af444c12f4665824611; path=/; HttpOnly
       X-Request-Id:
-      - 3e02091d-12d7-44fd-a169-340baa244099
+      - 2b948410-979a-4703-8e99-10312fd0a215
       X-Runtime:
-      - '0.032603'
+      - '0.033491'
     body:
       encoding: UTF-8
       string: '{"error":"status is missing, status does not have a valid value, metadata
         is missing, metadata[user] is missing, metadata[user][id] is missing, metadata[user][name]
         is missing"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 09:04:50 GMT
+  recorded_at: Fri, 24 Apr 2015 04:16:02 GMT
 recorded_with: VCR 2.9.3

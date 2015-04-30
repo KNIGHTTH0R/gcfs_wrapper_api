@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://localhost:3000/v1/orders/20072
+    uri: http://localhost:3000/v1/orders/104
     body:
       encoding: UTF-8
       string: '{"status":"received","receive":{"received_at":"2015-03-12 08:07:52"},"metadata":{"user":{"id":1,"name":"Admin"}}}'
@@ -17,7 +17,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Mon, 30 Mar 2015 09:10:48 GMT
+      - Fri, 24 Apr 2015 04:17:03 GMT
       Status:
       - 400 Bad Request
       Connection:
@@ -29,15 +29,14 @@ http_interactions:
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - _gcfs_session=R2U4UExIakNuV2pTK2I0eUpRanRZOFJVK3QyYlpVVVVxNzFLbW14RTE0bDhURCtJTWMzelEreXZjR2xoY3JJbnhDRHhoMGF4RHhYZS9GQlZkT3FYOXc9PS0tSkh0VVd6bjdheWlQVkFzaHdaSmMrdz09--9be57d48520eb2a1c3c18ba0e781695270e11d29;
-        path=/; HttpOnly
+      - _session_id=6a07ad0644cc704b0006ed4b05ff9483; path=/; HttpOnly
       X-Request-Id:
-      - c5cd484f-4c61-46a2-a630-e0323e5836cd
+      - c21b20f7-613a-4902-8ca2-4cd918051072
       X-Runtime:
-      - '0.035071'
+      - '0.017602'
     body:
       encoding: UTF-8
       string: '{"error":"receive[receiver] is missing"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 09:10:48 GMT
+  recorded_at: Fri, 24 Apr 2015 04:17:03 GMT
 recorded_with: VCR 2.9.3

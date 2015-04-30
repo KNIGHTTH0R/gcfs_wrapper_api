@@ -7,7 +7,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"description":"Pembelian Voucher","recepient":{"name":"Mr. Burnice
         Anderson","email":"enrique.prosacco@kulas.net","phone_number":"947.962.2387","address":"Rasuna
-        Said 10","city":"dki jakarta","zip_code":"12950","notes":"-"},"items":[{"id":20,"variants":[{"id":53,"quantity":10}]}],"metadata":{"user":{"id":1,"name":"Admin"}}}'
+        Said 10","city":"dki jakarta","zip_code":"12950","notes":"-"},"items":[{"id":10,"variants":[{"id":21,"quantity":10}]}],"metadata":{"user":{"id":1,"name":"Admin"}}}'
     headers:
       Authorization:
       - Bearer 9682b668bdc58b5c0bf40abb2b720e12
@@ -19,7 +19,7 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Mon, 30 Mar 2015 08:48:25 GMT
+      - Fri, 24 Apr 2015 04:12:03 GMT
       Status:
       - 404 Not Found
       Connection:
@@ -31,15 +31,14 @@ http_interactions:
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - _gcfs_session=NnhURTQzVGJOWlVkckJLMnBQd01mNU5HNW9hL1p3K0JLSlh2QmNsYWw5NGFQcGhzazVTSUQ1MTkvdHlNTGNzbU9zS2xJZkhYdURCZ09lU3dwU2JMYXc9PS0tNXZZaHBwZWZOS2l6YnJsdFczbXUrZz09--b29822388d1fb07ffa8a589a3fcb5800163fcd3c;
-        path=/; HttpOnly
+      - _session_id=5bfeb813e594035fdc15a6814ddd45f2; path=/; HttpOnly
       X-Request-Id:
-      - 75d8e4c7-65d7-42aa-afe0-febfbed0520d
+      - ddc0d7f0-f34d-4112-8284-db46312d4f68
       X-Runtime:
-      - '0.022562'
+      - '0.033995'
     body:
       encoding: UTF-8
-      string: '{"error":"Item ID 20 doesn''t Exist"}'
+      string: '{"error":"Item ID 10 doesn''t Exist"}'
     http_version: 
-  recorded_at: Mon, 30 Mar 2015 08:48:25 GMT
+  recorded_at: Fri, 24 Apr 2015 04:12:03 GMT
 recorded_with: VCR 2.9.3
