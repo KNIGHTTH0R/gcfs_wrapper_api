@@ -24,3 +24,13 @@ module Dummy
   end
 end
 
+WebMock.allow_net_connect! if Rails.env.development?
+
+Gcfs::Wrapper::Api::configure do |config|
+  config.key      = 'DQI5DqcwA2fuEARnciMWl5oHroU'
+  config.secret   = 'vH6urcUIjh20aq4qLKQYXTLIUIw'
+  config.username = 'derri@giftcard.co.id'
+  config.password = '12345678'
+  config.endpoint = 'http://localhost:3000/' #https://api.gcfs.com/
+  config.debug    = true #optional, default false
+end
