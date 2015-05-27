@@ -11,6 +11,7 @@ module Gcfs
           @id = attributes["id"]
           @sku = attributes["sku"]
           @name = attributes["name"]
+          @output = attributes["output"]
           @variants = attributes["variants"].map{|item| Gcfs::Wrapper::Api::OrderItemVariant.new item } if attributes["variants"]
         end
       end
