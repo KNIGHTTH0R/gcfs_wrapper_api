@@ -18,6 +18,8 @@ module Gcfs
               elsif json.is_a? Hash
                 if json.has_key? 'error'
                   raise Gcfs::Wrapper::Api::Error.new json['error']
+                elsif json.has_key? 'diagnostic'
+                  json
                 else  
                   new(json)
                 end
