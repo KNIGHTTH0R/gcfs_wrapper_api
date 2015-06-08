@@ -36,8 +36,8 @@ module Gcfs
           @payment_status = attributes["payment_status"]
           @delivery = Gcfs::Wrapper::Api::OrderDelivery.new attributes["delivery"] if attributes["delivery"]
           @receive = Gcfs::Wrapper::Api::OrderReceive.new attributes["receive"] if attributes["receive"]
-          @created_at = attributes["created_at"]
-          @updated_at = attributes["updated_at"]
+          @created_at = Time.zone.parse(attributes["created_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
+          @updated_at = Time.zone.parse(attributes["updated_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           @order_type = attributes["order_type"]
         end
 

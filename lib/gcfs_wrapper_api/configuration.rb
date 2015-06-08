@@ -2,7 +2,7 @@ module Gcfs
   module Wrapper
     module Api
       module Configuration
-        VALID_CONFIG_KEYS     = [:endpoint, :key, :secret, :username, :password, :grant_type, :scope, :token, :access_token, :debug].freeze
+        VALID_CONFIG_KEYS     = [:endpoint, :key, :secret, :username, :password, :grant_type, :scope, :token, :access_token, :debug, :timezone].freeze
      
         DEFAULT_ENDPOINT      = 'localhost:3000'
         DEFAULT_GRANT_TYPE    = 'password'
@@ -11,6 +11,7 @@ module Gcfs
         DEFAULT_SECRET        = '12345678901234567890'
         DEFAULT_Bearer        = '12345678901234567890'
         DEFAULT_DEBUG         = false
+        DEFAULT_TimeZone      = 'UTC'
      
         attr_accessor *VALID_CONFIG_KEYS
      
@@ -27,6 +28,7 @@ module Gcfs
           self.secret       = DEFAULT_SECRET
           self.access_token = DEFAULT_Bearer
           self.debug        = DEFAULT_DEBUG
+          self.timezone     = DEFAULT_TimeZone
         end
         
         def configure

@@ -100,7 +100,7 @@ describe 'order' do
         orders.last.receive.class.must_equal Gcfs::Wrapper::Api::OrderReceive
           assert orders.last.receive.kind_of?(Gcfs::Wrapper::Api::OrderReceive)
         orders.last.receive.receiver.must_equal 'Maye Effertz'
-        orders.last.receive.received_at.must_equal '2015-04-24 10:10:08'
+        orders.last.receive.received_at.must_equal Time.zone.parse('2015-04-24 10:10:08' + ' ' + Gcfs::Wrapper::Api.options[:timezone])
       end
     end
 
@@ -661,7 +661,7 @@ describe 'order' do
             orders.last.receive.class.must_equal Gcfs::Wrapper::Api::OrderReceive
               assert orders.last.receive.kind_of?(Gcfs::Wrapper::Api::OrderReceive)
             orders.last.receive.receiver.must_equal 'Julita'
-            orders.last.receive.received_at.must_equal '2015-03-12 08:07:52'
+            orders.last.receive.received_at.must_equal Time.zone.parse('2015-03-12 08:07:52' + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           end
         end
 
@@ -956,7 +956,7 @@ describe 'order' do
           order.receive.class.must_equal Gcfs::Wrapper::Api::OrderReceive
             assert order.receive.kind_of?(Gcfs::Wrapper::Api::OrderReceive)
           order.receive.receiver.must_equal 'Julita'
-          order.receive.received_at.must_equal '2015-03-12 08:07:52'
+          order.receive.received_at.must_equal Time.zone.parse('2015-03-12 08:07:52' + ' ' + Gcfs::Wrapper::Api.options[:timezone])
         end
 
       end
@@ -1614,7 +1614,7 @@ describe 'order' do
             orders.last.receive.class.must_equal Gcfs::Wrapper::Api::OrderReceive
               assert orders.last.receive.kind_of?(Gcfs::Wrapper::Api::OrderReceive)
             orders.last.receive.receiver.must_equal 'Julita'
-            orders.last.receive.received_at.must_equal '2015-03-12 08:07:52'
+            orders.last.receive.received_at.must_equal Time.zone.parse('2015-03-12 08:07:52' + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           end
         end
 
@@ -1909,7 +1909,7 @@ describe 'order' do
           order.receive.class.must_equal Gcfs::Wrapper::Api::OrderReceive
             assert order.receive.kind_of?(Gcfs::Wrapper::Api::OrderReceive)
           order.receive.receiver.must_equal 'Julita'
-          order.receive.received_at.must_equal '2015-03-12 08:07:52'
+          order.receive.received_at.must_equal Time.zone.parse('2015-03-12 08:07:52' + ' ' + Gcfs::Wrapper::Api.options[:timezone])
         end
 
       end
