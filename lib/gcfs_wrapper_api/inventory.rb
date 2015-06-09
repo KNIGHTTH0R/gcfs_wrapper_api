@@ -19,8 +19,8 @@ module Gcfs
           @variant = Gcfs::Wrapper::Api::ItemVariant.new(attributes["variant"]) if attributes["variant"]
           @quantity = attributes["quantity"]
           @metadata = attributes["metadata"]
-          @created_at = attributes["created_at"]
-          @updated_at = attributes["updated_at"]
+          @created_at = Time.zone.parse(attributes["created_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
+          @updated_at = Time.zone.parse(attributes["updated_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
         end
 
         def self.all(type, options={force: false})

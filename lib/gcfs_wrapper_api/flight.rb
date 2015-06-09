@@ -33,9 +33,9 @@ module Gcfs
           @total_with_shipping = attributes["total_with_shipping"]
           @status = attributes["status"]
           @payment_status = attributes["payment_status"]
-          @created_at = attributes["created_at"]
-          @updated_at = attributes["updated_at"]
           @order_type = attributes["order_type"]
+          @created_at = Time.zone.parse(attributes["created_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
+          @updated_at = Time.zone.parse(attributes["updated_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
 
         end
 

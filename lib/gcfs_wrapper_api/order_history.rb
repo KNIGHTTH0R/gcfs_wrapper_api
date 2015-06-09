@@ -13,7 +13,7 @@ module Gcfs
           @description = attributes["description"]
           @metadata = attributes["metadata"]
           @changes = attributes["changes"]
-          @created_at = attributes["created_at"]
+          @created_at = Time.zone.parse(attributes["created_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
         end
       end
 

@@ -10,7 +10,7 @@ module Gcfs
         def initialize(attributes)
           attributes = JSON.parse(attributes.to_json)
           @access_token = attributes['access_token']
-          @expired_at = Time.now + attributes['expires_in']
+          @expired_at = Time.zone.now + attributes['expires_in']
           @expires_in = attributes['expires_in']
           Gcfs::Wrapper::Api.access_token = attributes['access_token']
         end
