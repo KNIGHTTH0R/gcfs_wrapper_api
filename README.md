@@ -235,6 +235,29 @@ params = {
 }
 search = Gcfs::Wrapper::Api::Flight.airports params
 ```
+### Datacell
+
+**Get Datacell Product List**
+```ruby
+params = {
+    "sort":{
+      "operator": "asc | desc",
+      "operator_code": "asc | desc"
+    }
+}
+products = Gcfs::Wrapper::Api::Dtcell.all params
+```
+
+**Topup Phone Credit**
+```ruby
+params = {
+  "operator_code": "TEL.10",
+  "phone_number": "08188812345",
+  "qty": 2,
+  "transaction_id": "TrXih2834"
+}
+topup = Gcfs::Wrapper::Api::Dtcell.topup params
+```
 
 ### Pagination
 
