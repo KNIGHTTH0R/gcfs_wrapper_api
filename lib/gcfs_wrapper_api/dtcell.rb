@@ -6,7 +6,7 @@ module Gcfs
       class Dtcell < Base
 
         SORT_ATTRIBUTES = [:operator, :operator_code].freeze
-        INPUT_ATTRIBUTES = [:operator_code, :phone_number, :qty, :transaction_id].freeze
+        INPUT_ATTRIBUTES = [:id, :phone_number, :qty, :transaction_id].freeze
         VALID_ATTRIBUTES = INPUT_ATTRIBUTES + SORT_ATTRIBUTES
         attr_reader *VALID_ATTRIBUTES
 
