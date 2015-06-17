@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/dtcell/product
+    body:
+      encoding: UTF-8
+      string: '{"operator":"Indosat","operator_code":"IR.500","description":"Pulsa
+        Telkomsel 500,000","nominal":500000,"price":500000}'
+    headers:
+      Authorization:
+      - Bearer 32f4c0bf50935df8bf03b8283ccbeaa5
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 16 Jun 2015 10:20:44 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '127'
+      Etag:
+      - W/"b65f9e94f9f138f4ae373175b13be68a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=0b58703b0ea903182d0593b037ecb12c; path=/; HttpOnly
+      X-Request-Id:
+      - db336c92-b37d-46a6-8230-e6a49db6e4a4
+      X-Runtime:
+      - '0.029410'
+    body:
+      encoding: UTF-8
+      string: '{"id":95,"operator":"Indosat","operator_code":"IR.500","description":"Pulsa
+        Telkomsel 500,000","nominal":500000,"price":500000}'
+    http_version: 
+  recorded_at: Tue, 16 Jun 2015 10:20:44 GMT
+recorded_with: VCR 2.9.3

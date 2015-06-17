@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/dtcell/product?page=&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 32f4c0bf50935df8bf03b8283ccbeaa5
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Jun 2015 09:48:57 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '79'
+      X-Total-Pages:
+      - '4'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '1'
+      X-Next-Page:
+      - '2'
+      X-Prev-Page:
+      - ''
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2130'
+      Etag:
+      - W/"40ad81dd86a3cb1bd9bdcfa8fd241800"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=e1901095cda576e8c3111d2e18218ecb; path=/; HttpOnly
+      X-Request-Id:
+      - 487be64b-e926-4abd-8cfd-a9f2f7883634
+      X-Runtime:
+      - '0.174918'
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"operator":"INDOSAT","operator_code":"IR.10","description":"Indosat
+        Reguler 10000","nominal":0,"price":0},{"id":2,"operator":"INDOSAT","operator_code":"IR.25","description":"Indosat
+        Reguler 25000","nominal":0,"price":0},{"id":4,"operator":"INDOSAT","operator_code":"IR.100","description":"Indosat
+        Reguler 100000","nominal":0,"price":0},{"id":5,"operator":"INDOSAT","operator_code":"IS.5","description":"Indosat
+        SMS 5000","nominal":0,"price":0},{"id":6,"operator":"INDOSAT","operator_code":"IS.10","description":"Indosat
+        SMS 10000","nominal":0,"price":0},{"id":7,"operator":"INDOSAT","operator_code":"IS.25","description":"Indosat
+        SMS 25000","nominal":0,"price":0},{"id":8,"operator":"INDOSAT","operator_code":"IG.5","description":"Indosat
+        GPRS 5000","nominal":0,"price":0},{"id":9,"operator":"INDOSAT","operator_code":"IG.10","description":"Indosat
+        GPRS 10000","nominal":0,"price":0},{"id":10,"operator":"INDOSAT","operator_code":"IG.25","description":"Indosat
+        GPRS 25000","nominal":0,"price":0},{"id":11,"operator":"FLEXI","operator_code":"F.5","description":"Flexi
+        5000","nominal":0,"price":0},{"id":12,"operator":"FLEXI","operator_code":"F.10","description":"Flexi
+        10000","nominal":0,"price":0},{"id":13,"operator":"FLEXI","operator_code":"F.20","description":"Flexi
+        20000","nominal":0,"price":0},{"id":14,"operator":"FLEXI","operator_code":"F.25","description":"Flexi
+        25000","nominal":0,"price":0},{"id":15,"operator":"FLEXI","operator_code":"F.50","description":"Flexi
+        50000","nominal":0,"price":0},{"id":16,"operator":"FLEXI","operator_code":"F.100","description":"Flexi
+        100000","nominal":0,"price":0},{"id":17,"operator":"FLEXI","operator_code":"F.150","description":"Flexi
+        150000","nominal":0,"price":0},{"id":18,"operator":"FLEXI","operator_code":"F.250","description":"Flexi
+        250000","nominal":0,"price":0},{"id":19,"operator":"XL","operator_code":"XL.1","description":"XL
+        Bebas 1000","nominal":0,"price":0},{"id":20,"operator":"XL","operator_code":"XL.5","description":"XL
+        Bebas 5000","nominal":0,"price":0},{"id":21,"operator":"XL","operator_code":"XL.10","description":"XL
+        Bebas 10000","nominal":0,"price":0}]'
+    http_version: 
+  recorded_at: Tue, 16 Jun 2015 09:48:57 GMT
+recorded_with: VCR 2.9.3
