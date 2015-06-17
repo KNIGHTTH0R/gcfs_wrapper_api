@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/dtcell/product?page=4&per_page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 8a64ff135161988437f8d797a346f5a1
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 Jun 2015 02:15:48 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Total:
+      - '80'
+      X-Total-Pages:
+      - '4'
+      X-Per-Page:
+      - '20'
+      X-Page:
+      - '4'
+      X-Next-Page:
+      - ''
+      X-Prev-Page:
+      - '3'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2134'
+      Etag:
+      - W/"0e8cd8c94a7d6a560faff94a94bfb454"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=d3897c7f8ccc4a472e048a5982f9200a; path=/; HttpOnly
+      X-Request-Id:
+      - f9f2b0f8-e78f-4547-9f8e-02e0bb8b4ad5
+      X-Runtime:
+      - '0.019763'
+    body:
+      encoding: UTF-8
+      string: '[{"id":62,"operator":"SMART FREN","operator_code":"SF.75","description":"SmartFren
+        75000","nominal":0,"price":0},{"id":63,"operator":"SMART FREN","operator_code":"SF.100","description":"SmartFren
+        100000","nominal":0,"price":0},{"id":64,"operator":"SMART FREN","operator_code":"SF.150","description":"SmartFren
+        150000","nominal":0,"price":0},{"id":65,"operator":"SMART FREN","operator_code":"SF.200","description":"SmartFren
+        200000","nominal":0,"price":0},{"id":66,"operator":"SMART FREN","operator_code":"SF.225","description":"SmartFren
+        225000","nominal":0,"price":0},{"id":67,"operator":"SMART FREN","operator_code":"SF.300","description":"SmartFren
+        300000","nominal":0,"price":0},{"id":68,"operator":"SMART FREN","operator_code":"SF.500","description":"SmartFren
+        500000","nominal":0,"price":0},{"id":69,"operator":"CERIA","operator_code":"CR.5","description":"CERIA
+        5000","nominal":0,"price":0},{"id":70,"operator":"CERIA","operator_code":"CR.10","description":"CERIA
+        10000","nominal":0,"price":0},{"id":71,"operator":"CERIA","operator_code":"CR.20","description":"CERIA
+        20000","nominal":0,"price":0},{"id":72,"operator":"CERIA","operator_code":"CR.50","description":"CERIA
+        50000","nominal":0,"price":0},{"id":73,"operator":"CERIA","operator_code":"CR.100","description":"CERIA
+        100000","nominal":0,"price":0},{"id":74,"operator":"AXIS","operator_code":"AX.1","description":"Axis
+        1000","nominal":0,"price":0},{"id":75,"operator":"AXIS","operator_code":"AX.5","description":"Axis
+        5000","nominal":0,"price":0},{"id":76,"operator":"AXIS","operator_code":"AX.10","description":"Axis
+        10000","nominal":0,"price":0},{"id":77,"operator":"AXIS","operator_code":"AX.20","description":"Axis
+        20000","nominal":0,"price":0},{"id":78,"operator":"AXIS","operator_code":"AX.25","description":"Axis
+        25000","nominal":0,"price":0},{"id":79,"operator":"AXIS","operator_code":"AX.50","description":"Axis
+        50000","nominal":0,"price":0},{"id":80,"operator":"AXIS","operator_code":"AX.100","description":"Axis
+        100000","nominal":0,"price":0},{"id":95,"operator":"Telkomsel","operator_code":"TEL.1","description":"Telsomsel
+        1,000","nominal":1000,"price":1200}]'
+    http_version: 
+  recorded_at: Wed, 17 Jun 2015 02:15:48 GMT
+recorded_with: VCR 2.9.3

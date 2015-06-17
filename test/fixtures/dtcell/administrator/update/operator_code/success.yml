@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/dtcell/product/95
+    body:
+      encoding: UTF-8
+      string: '{"operator":"Telkomsel","operator_code":"TEL.1K","description":"Telsomsel
+        1,000","nominal":1000,"price":1200}'
+    headers:
+      Authorization:
+      - Bearer 8a64ff135161988437f8d797a346f5a1
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 Jun 2015 03:32:01 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '117'
+      Etag:
+      - W/"eedea4e9950ea55b6e86d0f0a6c8998d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=7d5c716b9ef78db701fc0286027325e6; path=/; HttpOnly
+      X-Request-Id:
+      - 94d50f55-8751-4fbf-835a-5d95d3452e47
+      X-Runtime:
+      - '0.253437'
+    body:
+      encoding: UTF-8
+      string: '{"id":95,"operator":"Telkomsel","operator_code":"TEL.1K","description":"Telsomsel
+        1,000","nominal":1000,"price":1200}'
+    http_version: 
+  recorded_at: Wed, 17 Jun 2015 03:32:01 GMT
+recorded_with: VCR 2.9.3

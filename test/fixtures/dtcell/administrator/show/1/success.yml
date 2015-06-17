@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/dtcell/product/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 32f4c0bf50935df8bf03b8283ccbeaa5
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Jun 2015 09:51:41 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '113'
+      Etag:
+      - W/"10b886ecf052215fdae86d9776de6ce4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=f8d76fdee5629a7759f7b1980787d088; path=/; HttpOnly
+      X-Request-Id:
+      - 484632cf-6c2f-4898-88c3-2c928ecdf41d
+      X-Runtime:
+      - '0.028635'
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"operator":"INDOSAT","operator_code":"IR.10","description":"Indosat
+        Reguler 10000","nominal":0,"price":0}'
+    http_version: 
+  recorded_at: Tue, 16 Jun 2015 09:51:41 GMT
+recorded_with: VCR 2.9.3

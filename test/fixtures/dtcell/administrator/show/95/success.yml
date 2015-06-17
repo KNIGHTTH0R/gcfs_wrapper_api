@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/dtcell/product/95
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 8a64ff135161988437f8d797a346f5a1
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 Jun 2015 03:39:50 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '116'
+      Etag:
+      - W/"fd7e8c9f5cc8a8bdc64d06fdba136f0b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=918b1f4df8385396f4d7f984d6c57627; path=/; HttpOnly
+      X-Request-Id:
+      - 97257a29-0ef9-4b51-a07e-7fe29aaecd1f
+      X-Runtime:
+      - '0.016231'
+    body:
+      encoding: UTF-8
+      string: '{"id":95,"operator":"Telkomsel","operator_code":"TEL.1","description":"Telsomsel
+        1,000","nominal":1000,"price":1500}'
+    http_version: 
+  recorded_at: Wed, 17 Jun 2015 03:39:50 GMT
+recorded_with: VCR 2.9.3
