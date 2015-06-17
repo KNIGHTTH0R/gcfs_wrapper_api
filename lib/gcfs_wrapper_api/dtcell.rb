@@ -7,14 +7,14 @@ module Gcfs
 
         SORT_ATTRIBUTES = [:operator, :operator_code].freeze
         TABLE_ATTRIBUTES = [:id, :description, :nominal, :price]
-        TOPUP_ATTRIBUTES = [:phone_number, :qty, :transaction_id].freeze
+        INPUT_ATTRIBUTES = [:phone_number, :qty, :recepient, :metadata].freeze
 
         TABLE_WITH_SORT_ATTRIBUTES = TABLE_ATTRIBUTES + SORT_ATTRIBUTES
-        VALID_ATTRIBUTES = TOPUP_ATTRIBUTES + TABLE_WITH_SORT_ATTRIBUTES
-        attr_reader *VALID_ATTRIBUTES
+        VALID_ATTRIBUTES = INPUT_ATTRIBUTES + TABLE_WITH_SORT_ATTRIBUTES
 
-        # QUERY_ATTRIBUTES = [:d, :a, :date, :ret_date, :adult, :child, :infant]
-        # METADATA_ATTRIBUTES = [:id, :name].freeze
+        TOPUP_ATTRIBUTES = SORT_ATTRIBUTES + INPUT_ATTRIBUTES
+
+        attr_reader *VALID_ATTRIBUTES
 
         def initialize(attributes)
           attributes = JSON.parse(attributes.to_json)
@@ -25,12 +25,13 @@ module Gcfs
           @description = attributes["description"]
           @nominal = attributes["nominal"]
           @price = attributes["price"]
+          @message = attributes["message"]
         end
 
         def self.topup(options={})
           options = parsed_params options
-          @options = configure_params body: options.select{|key, hash|TABLE_WITH_SORT_ATTRIBUTES.include? key }.to_json
-          
+          @options = configure_params body: options.select{|key, hash|TOPUP_ATTRIBUTES.include? key }.to_json
+
           retrieve_url self.post("/v1/dtcell/credit/topup", @options)
         end
 
