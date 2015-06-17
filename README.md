@@ -235,6 +235,88 @@ params = {
 }
 search = Gcfs::Wrapper::Api::Flight.airports params
 ```
+
+### Hotel
+
+**Search Hotel according to date, destination, and number of guest**
+```ruby
+params = {
+    "q" : "legian", 
+    "startdate" : startdates , # starting date, format : 2015-04-28
+    "enddate" : enddates, # end date, format : 2015-04-30
+    "night" :"1", 
+    "room" : "1", 
+    "adult" => "2", 
+    "child" =>"0", 
+    "minprice" =>"", 
+    "maxprice" => "", 
+    "minstar" => "", 
+    "maxstar"=>"", 
+    "latitude"=>"", 
+    "longitude" =>"",  
+    "metadata":{
+        "user":{ 
+            "id":1, #Your App current_user's id
+            "name":'derri@giftcard.co.id' #Your App current_user's email
+        }
+    }
+}
+search = Gcfs::Wrapper::Api::Hotel.search params
+```
+
+**Search Autocomplete**
+```ruby
+params = {
+    "q" : "legian",  #query, it can be name hotel, city, location etc  
+    "metadata":{
+        "user":{ 
+            "id":1, #Your App current_user's id
+            "name":'derri@giftcard.co.id' #Your App current_user's email
+        }
+    }
+}
+Gcfs::Wrapper::Api::Hotel.search_autocomplete params
+```
+
+**View detail hotel**
+```ruby
+params = {
+    "hotel_id" : 214,  #hotel_id, get hotel id from search hotel  
+    "metadata":{
+        "user":{ 
+            "id":1, #Your App current_user's id
+            "name":'derri@giftcard.co.id' #Your App current_user's email
+        }
+    }
+}
+Gcfs::Wrapper::Api::Hotel.view_detail params
+```
+
+**Create Order hotel**
+```ruby
+params = {
+    "salutation" : 'Mr',  
+    "firstName" : 'Leonardo',
+    "lastName" : 'Hahahaha',
+    "phone" : '08562969660', 
+    "conSalutation" : 'Mr',
+    "conFirstName" : 'Bima',
+    "conLastName" : 'Hahahaha', 
+    "conEmailAddress" : 'bima@giftcard.co.id',
+    "conPhone" : '08562969660',
+    "country" : 'ID', 
+    "emailAddress" : 'bima@giftcard.co.id',
+    "metadata":{
+        "user":{ 
+            "id":1, #Your App current_user's id
+            "name":'derri@giftcard.co.id' #Your App current_user's email
+        }
+    }
+}
+Gcfs::Wrapper::Api::Hotel.process_order params
+```
+
+
 ### Datacell
 
 **Get Datacell Product List**
