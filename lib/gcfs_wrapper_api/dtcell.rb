@@ -25,14 +25,13 @@ module Gcfs
           @description = attributes["description"]
           @nominal = attributes["nominal"]
           @price = attributes["price"]
-          @message = attributes["message"]
         end
 
         def self.topup(options={})
           options = parsed_params options
           @options = configure_params body: options.select{|key, hash|TOPUP_ATTRIBUTES.include? key }.to_json
 
-          retrieve_url self.post("/v1/dtcell/credit/topup", @options)
+          retrieve_url_topup self.post("/v1/dtcell/credit/topup", @options)
         end
 
         def self.all(options={})
@@ -70,6 +69,20 @@ module Gcfs
           object
         end
 
+        private
+        def self.retrieve_url_topup(response)
+          begin
+            json = JSON.parse response.body
+            if json.has_key? 'error'
+              raise Gcfs::Wrapper::Api::Error.new json['error']
+            else  
+              Gcfs::Wrapper::Api::DtcellStatus.new json
+            end
+          rescue Gcfs::Wrapper::Api::Error => e
+            e
+          end
+        end
+        
       end
     end
   end
