@@ -240,7 +240,7 @@ search = Gcfs::Wrapper::Api::Flight.airports params
 
 **Search Hotel according to date, destination, and number of guest**
 ```ruby
-params = {
+params_search = {
     "q":"legian", 
     "startdate":"2015-04-28",
     "enddate":"2015-04-30",
@@ -261,7 +261,7 @@ params = {
         }
     }
 }
-search = Gcfs::Wrapper::Api::Hotel.search params
+search = Gcfs::Wrapper::Api::Hotel.search params_search
 ```
 
 **Search Autocomplete**
@@ -280,7 +280,7 @@ Gcfs::Wrapper::Api::Hotel.search_autocomplete params_auto
 
 **View detail hotel**
 ```ruby
-params = {
+params_detail_hotel = {
     "hotel_id":"4196",  #hotel_id, get hotel id from search hotel  
     "metadata":{
         "user":{ 
@@ -289,7 +289,7 @@ params = {
         }
     }
 }
-Gcfs::Wrapper::Api::Hotel.view_detail params
+Gcfs::Wrapper::Api::Hotel.view_detail params_detail_hotel
 ```
 
 **Create Order hotel**
@@ -298,15 +298,20 @@ params_order = {
     "room_id":"457757",
     "salutation":"Mr",  
     "firstName":"Leonardo",
-    "lastName":"Hahahaha",
+    "lastName":"Silva",
     "phone":"08562969660", 
     "conSalutation":"Mr",
     "conFirstName":"Bima",
-    "conLastName":"Hahahaha", 
+    "conLastName":"Rajasa", 
     "conEmailAddress": "bima@giftcard.co.id",
     "conPhone":"08562969660",
     "country":"ID", 
     "emailAddress": "bima@giftcard.co.id",
+    "recepient": {
+      "name": "Bima",
+      "email": "bima.herla@gmail.com",
+      "phone_number": "08562969660"
+    },
     "metadata":{
         "user":{ 
             "id":1, #Your App current_user's id
