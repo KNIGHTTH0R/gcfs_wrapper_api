@@ -291,7 +291,7 @@ params_auto = {
         }
     }
 }
-Gcfs::Wrapper::Api::Hotel.search_autocomplete params_auto
+Gcfs::Wrapper::Api::Hotel.search_area params_auto
 ```
 
 **View detail hotel**
