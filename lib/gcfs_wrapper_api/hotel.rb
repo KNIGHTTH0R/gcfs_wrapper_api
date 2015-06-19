@@ -49,6 +49,12 @@ module Gcfs
           retrieve_url self.get("/v1/hotels/search", @options)
         end
 
+        def self.search_area(options={})
+          options = parsed_params options
+          @options = configure_params query: options
+          retrieve_url self.get("/v1/hotels/search_area", @options)
+        end
+
         def self.process_order(options={})
           options = parsed_params options
           @options = configure_params body: options.to_json
