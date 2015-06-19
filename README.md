@@ -278,6 +278,22 @@ params_auto = {
 Gcfs::Wrapper::Api::Hotel.search_autocomplete params_auto
 ```
 
+**Search Area**
+```ruby
+params_auto = {
+    "uid":"city:178", #uid can be id,country,province
+    "q":"legian",  #query, it can be name hotel, city, location etc ,this parameter is optional 
+    "type":"province", #type can be province,city,kecamatan ,this parameter is optional
+    "metadata":{
+        "user":{ 
+            "id":1, #Your App current_user's id
+            "name":'derri@giftcard.co.id' #Your App current_user's email
+        }
+    }
+}
+Gcfs::Wrapper::Api::Hotel.search_area params_auto
+```
+
 **View detail hotel**
 ```ruby
 params_detail_hotel = {
