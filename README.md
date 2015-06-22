@@ -154,6 +154,84 @@ params = {
 order = Gcfs::Wrapper::Api::Order.create params
 ```
 
+**Create an Order with address type**
+
+```ruby
+params = {
+  "description": "Pembelian Voucher",
+  "recepient": {
+    "name": "Mr. Burnice Anderson",
+    "email": "enrique.prosacco@kulas.net",
+    "phone_number": "947.962.2387",
+    "address_type": "home",
+    "address": "Rasuna Said 10",
+    "rt_rw": "03/01",
+    "city": "dki jakarta", #Gcfs::Wrapper::Api::City @name
+    "zip_code": "12950",
+    "notes": "Pagar warna putih, Jika tidak ada orang di rumah harap ketuk rumah sebelah dan titipkan ke Ibu Dewi"
+  },
+  "items":[
+    {
+      "id": 1, #Gcfs::Wrapper::Api::Item @id
+      "variants": [{
+        "id": 1, #Gcfs::Wrapper::Api::ItemVariant @id
+        "quantity": 10
+      },
+      {
+        "id": 2,
+        "quantity": 10
+      }]
+    }
+  ],
+  "metadata":{
+    "user":{
+      "id": 1, #Your App current_user's id
+      "name": "Admin" #Your App current_user's name/email
+    }
+  }
+}
+order = Gcfs::Wrapper::Api::Order.create params
+```
+
+```ruby
+params = {
+  "description": "Pembelian Voucher",
+  "recepient": {
+    "name": "Mr. Burnice Anderson",
+    "email": "enrique.prosacco@kulas.net",
+    "phone_number": "947.962.2387",
+    "address_type": "office",
+    "company_name": "Giftcard Indonesia",
+    "division_or_floor": "Floor 11th",
+    "building_name": "Menara Imperium",
+    "address": "Rasuna Said 10",
+    "city": "dki jakarta", #Gcfs::Wrapper::Api::City @name
+    "zip_code": "12950",
+    "notes": "Pagar warna putih, Jika tidak ada orang di rumah harap ketuk rumah sebelah dan titipkan ke Ibu Dewi"
+  },
+  "items":[
+    {
+      "id": 1, #Gcfs::Wrapper::Api::Item @id
+      "variants": [{
+        "id": 1, #Gcfs::Wrapper::Api::ItemVariant @id
+        "quantity": 10
+      },
+      {
+        "id": 2,
+        "quantity": 10
+      }]
+    }
+  ],
+  "metadata":{
+    "user":{
+      "id": 1, #Your App current_user's id
+      "name": "Admin" #Your App current_user's name/email
+    }
+  }
+}
+order = Gcfs::Wrapper::Api::Order.create params
+```
+
 **Show Order**
 
 ```ruby
