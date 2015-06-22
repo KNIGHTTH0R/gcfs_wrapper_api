@@ -254,6 +254,7 @@ params_search = {
     "maxstar"=>"", 
     "latitude"=>"", 
     "longitude" =>"",  
+    "uid"=>"",
     "metadata":{
         "user":{ 
             "id":1, #Your App current_user's id

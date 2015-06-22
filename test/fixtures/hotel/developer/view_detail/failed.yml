@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/hotels/view_detail?hotel_id=121111453&metadata%5Buser%5D%5Bid%5D=1&metadata%5Buser%5D%5Bname%5D=derri@giftcard.co.id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 1fc04e370fc794c96074129c4eeebd97
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Mon, 22 Jun 2015 08:27:32 GMT
+      Status:
+      - 500 Internal Server Error
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '54'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _session_id=57330126767371d15fc601631dce424a; path=/; HttpOnly
+      X-Request-Id:
+      - 2efe9e90-a0a0-4c91-8617-1c50698da04c
+      X-Runtime:
+      - '0.013378'
+    body:
+      encoding: UTF-8
+      string: '{"error":"Hotel not found, please search other hotel"}'
+    http_version: 
+  recorded_at: Mon, 22 Jun 2015 08:27:32 GMT
+recorded_with: VCR 2.9.3

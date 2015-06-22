@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/hotels/process_order
+    body:
+      encoding: UTF-8
+      string: '{"room_id":"3480","salutation":"Mr","firstName":"Julian","lastName":"Stephen","phone":"08562969660","conSalutation":"Mr","conFirstName":"Julian","conLastName":"Stephen","conEmailAddress":"bima@giftcard.co.id","conPhone":"08562969660","country":"ID","emailAddress":"bima@giftcard.co.id","recepient":{"name":"Bima","email":"bima@giftcard.co.id","phone_number":"08562969660"},"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}}}'
+    headers:
+      Authorization:
+      - Bearer 1fc04e370fc794c96074129c4eeebd97
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Mon, 22 Jun 2015 08:56:48 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3159'
+      Etag:
+      - W/"4b1a1bd9099d73fa0947a5fa0182592b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=6c285e7f9c0e9f5df0f1e059dab70fa9; path=/; HttpOnly
+      X-Request-Id:
+      - 561aea73-bbda-4d51-9d4f-845959ae9fd7
+      X-Runtime:
+      - '30.744367'
+    body:
+      encoding: UTF-8
+      string: '{"id":101,"transaction_id":"NvzgdEaSq3","invoice_number":null,"description":"Legian
+        Paradiso Hotel , ","client":{"name":"Giftcard","address":"giftcard.co.id","billing_address":"giftcard.co.id"},"recepient":{"name":"Bima","email":"bima@giftcard.co.id","phone_number":"08562969660","address":"","city":"","zip_code":null,"notes":null},"items":[{"id":1,"output":"{\"diagnostic\"=\u003e{\"status\"=\u003e200,
+        \"elapsetime\"=\u003e\"0.1716\", \"memoryusage\"=\u003e\"4.44MB\", \"unix_timestamp\"=\u003e1434963407,
+        \"confirm\"=\u003e\"success\", \"lang\"=\u003e\"id\", \"currency\"=\u003e\"IDR\"},
+        \"output_type\"=\u003e\"json\", \"result\"=\u003e{\"order_id\"=\u003e\"22327961\",
+        \"order_timestamp\"=\u003e\"2015-06-22 15:51:35\", \"payment_timestamp\"=\u003e\"2015-06-22
+        15:56:39\", \"payment_status\"=\u003e\"paid\", \"total_customer_price\"=\u003e\"500000.00\",
+        \"customer_currency\"=\u003e\"IDR\", \"mobile_phone\"=\u003e\"+628562969660\",
+        \"all_order_type\"=\u003e\"hotel\", \"order__cart_detail\"=\u003e[{\"order_detail_id\"=\u003e\"12607159\",
+        \"order_type\"=\u003e\"hotel\", \"order_name\"=\u003e\"Legian Paradiso Hotel\",
+        \"order_name_detail\"=\u003e\"Superior Garden View Room Only\", \"customer_currency\"=\u003e\"IDR\",
+        \"customer_price\"=\u003e\"500000.00\", \"total_ticket\"=\u003e\"1\", \"detail\"=\u003e{\"order_timestamp\"=\u003e\"2015-06-22
+        15:51:35\", \"mobile_phone\"=\u003e\"+628562969660\", \"currency_exchange_rate\"=\u003e\"1.00\",
+        \"order_expire_datetime\"=\u003e\"2015-06-22 19:51:18\", \"rooms\"=\u003e\"1\",
+        \"room_adult\"=\u003e\"2\", \"room_child\"=\u003e\"0\", \"checkin\"=\u003e\"2015-06-23\",
+        \"breakfast\"=\u003e\"0\", \"reservation_code\"=\u003enil, \"bedding_request\"=\u003e\"\",
+        \"smoking_request\"=\u003e\"\", \"special_request\"=\u003e\"\"}, \"send_uri\"=\u003e\"http://api-sandbox.tiket.com/check_order/resendVoucher?type=hotel\u0026order_id=22327961\u0026order_detail_id=12607159\u0026order_hash=062b315bccdb680ece9540bd918e402f\u0026account_id=21349265\",
+        \"print_uri\"=\u003e\"http://api-sandbox.tiket.com/check_order/printVoucher?type=hotel\u0026order_id=22327961\u0026order_detail_id=12607159\u0026order_hash=062b315bccdb680ece9540bd918e402f\u0026account_id=21349265\",
+        \"passanger\"=\u003e[{\"account_salutation_name\"=\u003e\"Mr.\", \"account_first_name\"=\u003e\"Julian\",
+        \"account_last_name\"=\u003e\"Stephen\", \"address_country\"=\u003e\"id\",
+        \"account_phone\"=\u003e\"+628562969660\"}]}], \"order__payment\"=\u003e[{\"payment_currency\"=\u003e\"IDR\",
+        \"payment_amount\"=\u003e\"500000.00\", \"transfer_date\"=\u003e\"2015-06-22\",
+        \"payment_source\"=\u003e\"affiliate_deposit\", \"card_number\"=\u003enil,
+        \"expiry_month\"=\u003enil, \"expiry_year\"=\u003enil, \"card_holder_name\"=\u003e\"\"}],
+        \"order__confirmation\"=\u003e[]}, \"login_status\"=\u003e\"true\", \"guest_id\"=\u003e\"21349265\",
+        \"token\"=\u003e\"c7ee016e32d3d8dfd07a4b5a4beb84bebc8f1cfa\"}"}],"histories":[],"total":500000,"shipping_fee":0,"total_with_shipping":500000,"status":"new
+        order","dtcell_status":null,"payment_status":"outstanding","order_type":"tiket
+        hotel","created_at":"2015-06-22 08:56:48","updated_at":"2015-06-22 08:56:48"}'
+    http_version: 
+  recorded_at: Mon, 22 Jun 2015 08:56:48 GMT
+recorded_with: VCR 2.9.3

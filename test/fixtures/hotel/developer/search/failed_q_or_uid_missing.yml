@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/hotels/search?adult=2&enddate=2012-07-22&metadata%5Buser%5D%5Bid%5D=1&metadata%5Buser%5D%5Bname%5D=derri@giftcard.co.id&night=1&room=1&startdate=2012-07-21
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 1fc04e370fc794c96074129c4eeebd97
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 22 Jun 2015 07:24:34 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '71'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _session_id=34732bfd3420d0cf7c81d4c2eab22a3e; path=/; HttpOnly
+      X-Request-Id:
+      - 2b423408-ce93-4717-a19a-4f7a4c1fe8e7
+      X-Runtime:
+      - '0.459477'
+    body:
+      encoding: UTF-8
+      string: '{"error":"q, uid are missing, at least one parameter must be provided"}'
+    http_version: 
+  recorded_at: Mon, 22 Jun 2015 07:24:34 GMT
+recorded_with: VCR 2.9.3
