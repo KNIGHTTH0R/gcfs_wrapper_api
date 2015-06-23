@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/flights/search?a=DPS&d=CGK&date=2015-07-28&metadata%5Buser%5D%5Bid%5D=1&metadata%5Buser%5D%5Bname%5D=derri@giftcard.co.id&ret_date=2015-07-30
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 497e1739e9f7e5d75730901c267c36b7
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Tue, 23 Jun 2015 02:52:25 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '28'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _session_id=e4367dccb33ad5635bf9a40a4ee92496; path=/; HttpOnly
+      X-Request-Id:
+      - 0319de36-29a3-4683-beb8-7a3bc01ea7eb
+      X-Runtime:
+      - '0.016570'
+    body:
+      encoding: UTF-8
+      string: '{"error":"adult is missing"}'
+    http_version: 
+  recorded_at: Tue, 23 Jun 2015 02:52:25 GMT
+recorded_with: VCR 2.9.3

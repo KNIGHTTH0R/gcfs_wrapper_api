@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/flights/process_order
+    body:
+      encoding: UTF-8
+      string: '{"flight_id":"960685","ret_flight_id":"144355","date":"2015-08-09","adult":1,"conSalutation":"Mr","conFirstName":"Alexander","conLastName":"Emilianengko","conPhone":"6287880182218","conEmailAddress":"jess@kim.com","firstnamea1":"Alexander","lastnamea1":"Emilianengko","birthdatea1":"1988-02-02","ida1":"1234567890","titlea1":"Mr","conOtherPhone":"6287880182236","passportnoa1":"A37365","passportExpiryDatea1":"2017-07-30","passportissueddatea1":"2012-07-30","passportissuinga1":"id","passportnationalitya1":"id","dcheckinbaggagea11":0,"rcheckinbaggagea11":20,"recepient":{"name":"Scarlett","email":"windiana88@hotmail.com","phone_number":"08155566945"},"metadata":{"user":{"id":1,"name":"windiana@giftcard.co.id"}}}'
+    headers:
+      Authorization:
+      - Bearer 497e1739e9f7e5d75730901c267c36b7
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 23 Jun 2015 03:17:19 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '5677'
+      Etag:
+      - W/"44df467073b1c7b1e2e13d8e60f0b3b6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=c27c111e64cc4a145309bef19bcadc10; path=/; HttpOnly
+      X-Request-Id:
+      - 00b77aac-2194-4288-b53b-e5a468745ec4
+      X-Runtime:
+      - '15.492739'
+    body:
+      encoding: UTF-8
+      string: '{"id":103,"transaction_id":"Va9vx2kyq3","invoice_number":null,"description":"CGK
+        (Jakarta - Cengkareng) - SIN (Singapore) , SIN (Singapore) - CGK (Jakarta
+        - Cengkareng) , ","client":{"name":"Giftcard","address":"giftcard.co.id","billing_address":"giftcard.co.id"},"recepient":{"name":"Scarlett","email":"windiana88@hotmail.com","phone_number":"08155566945","address":"","city":"","zip_code":null,"notes":null},"items":[{"id":2,"output":"{\"diagnostic\"=\u003e{\"status\"=\u003e200,
+        \"elapsetime\"=\u003e\"0.1481\", \"memoryusage\"=\u003e\"4.47MB\", \"unix_timestamp\"=\u003e1435029439,
+        \"confirm\"=\u003e\"success\", \"lang\"=\u003e\"id\", \"currency\"=\u003e\"IDR\"},
+        \"output_type\"=\u003e\"json\", \"result\"=\u003e{\"order_id\"=\u003e\"22328015\",
+        \"order_timestamp\"=\u003e\"2015-06-23 10:12:16\", \"payment_timestamp\"=\u003e\"2015-06-23
+        10:17:18\", \"payment_status\"=\u003e\"paid\", \"total_customer_price\"=\u003e\"1308671.00\",
+        \"customer_currency\"=\u003e\"IDR\", \"mobile_phone\"=\u003e\"+6287880182218\",
+        \"all_order_type\"=\u003e\"flight\", \"order__cart_detail\"=\u003e[{\"order_detail_id\"=\u003e\"12607277\",
+        \"order_type\"=\u003e\"flight\", \"order_name\"=\u003e\"CGK (Jakarta - Cengkareng)
+        - SIN (Singapore)\", \"order_name_detail\"=\u003e\"Tigerair (TR-2275 - Depart)\",
+        \"customer_currency\"=\u003e\"IDR\", \"customer_price\"=\u003e\"400356.00\",
+        \"total_ticket\"=\u003e\"1\", \"detail\"=\u003e{\"order_timestamp\"=\u003e\"2015-06-23
+        10:12:16\", \"mobile_phone\"=\u003e\"+6287880182218\", \"order_detail_status\"=\u003e\"active\",
+        \"order_expire_datetime\"=\u003e\"2015-06-23 10:46:06\", \"flight_number\"=\u003e\"TR
+        2275\", \"trip\"=\u003e\"trip\", \"airlines_name\"=\u003e\"TIGER\", \"departure_city\"=\u003e\"CGK\",
+        \"departure_time\"=\u003e\"2015-08-09 09:45:00\", \"arrival_city\"=\u003e\"SIN\",
+        \"arrival_time\"=\u003e\"2015-08-09 12:40:00\", \"ticket_class\"=\u003e\"N\",
+        \"booking_code\"=\u003enil, \"count_adult\"=\u003e\"1\", \"count_child\"=\u003e\"0\",
+        \"count_infant\"=\u003e\"0\", \"contact_title\"=\u003e\"Mr\", \"contact_first_name\"=\u003e\"Alexander\",
+        \"contact_phone\"=\u003e\"+6287880182218\", \"contact_other_phone\"=\u003e\"\",
+        \"ticket_status\"=\u003e\"booked\", \"depart_airport\"=\u003e\"Soekarno Hatta\",
+        \"arrival_airport\"=\u003e\"Changi\"}, \"send_uri\"=\u003e\"http://api-sandbox.tiket.com/check_order/resendVoucher?type=flight\u0026order_id=22328015\u0026order_detail_id=12607277\u0026order_hash=c42d3d35faf61a0acfa45a3384fa0670\u0026account_id=21349299\",
+        \"print_uri\"=\u003e\"http://api-sandbox.tiket.com/check_order/printVoucher?type=flight\u0026order_id=22328015\u0026order_detail_id=12607277\u0026order_hash=c42d3d35faf61a0acfa45a3384fa0670\u0026account_id=21349299\",
+        \"passanger\"=\u003e[{\"passanger_baggage\"=\u003e\"0\", \"passenger_name\"=\u003e\"Mr
+        Alexander Emilianengko\", \"passenger_age_group\"=\u003e\"adult\", \"passenger_id_number\"=\u003e\"1234567890\",
+        \"passenger_birth_date\"=\u003e\"1988-02-02\", \"passenger_ticket_number\"=\u003e\"\"}]},
+        {\"order_detail_id\"=\u003e\"12607279\", \"order_type\"=\u003e\"flight\",
+        \"order_name\"=\u003e\"SIN (Singapore) - CGK (Jakarta - Cengkareng)\", \"order_name_detail\"=\u003e\"Airasia
+        (QZ-263 - Return)\", \"customer_currency\"=\u003e\"IDR\", \"customer_price\"=\u003e\"908315.00\",
+        \"total_ticket\"=\u003e\"1\", \"detail\"=\u003e{\"order_timestamp\"=\u003e\"2015-06-23
+        10:12:16\", \"mobile_phone\"=\u003e\"+6287880182218\", \"order_detail_status\"=\u003e\"active\",
+        \"order_expire_datetime\"=\u003e\"2015-06-23 10:46:10\", \"flight_number\"=\u003e\"QZ
+        263\", \"trip\"=\u003e\"round\", \"airlines_name\"=\u003e\"AIRASIA\", \"departure_city\"=\u003e\"SIN\",
+        \"departure_time\"=\u003e\"2015-08-30 10:20:00\", \"arrival_city\"=\u003e\"CGK\",
+        \"arrival_time\"=\u003e\"2015-08-30 11:00:00\", \"ticket_class\"=\u003e\"Z\",
+        \"booking_code\"=\u003enil, \"count_adult\"=\u003e\"1\", \"count_child\"=\u003e\"0\",
+        \"count_infant\"=\u003e\"0\", \"contact_title\"=\u003e\"Mr\", \"contact_first_name\"=\u003e\"Alexander\",
+        \"contact_phone\"=\u003e\"+6287880182218\", \"contact_other_phone\"=\u003e\"\",
+        \"ticket_status\"=\u003e\"booked\", \"depart_airport\"=\u003e\"Changi\", \"arrival_airport\"=\u003e\"Soekarno
+        Hatta\"}, \"send_uri\"=\u003e\"http://api-sandbox.tiket.com/check_order/resendVoucher?type=flight\u0026order_id=22328015\u0026order_detail_id=12607279\u0026order_hash=4225260ddd4f5c503b4334f37e924d22\u0026account_id=21349299\",
+        \"print_uri\"=\u003e\"http://api-sandbox.tiket.com/check_order/printVoucher?type=flight\u0026order_id=22328015\u0026order_detail_id=12607279\u0026order_hash=4225260ddd4f5c503b4334f37e924d22\u0026account_id=21349299\",
+        \"passanger\"=\u003e[{\"passanger_baggage\"=\u003e\"20\", \"passenger_name\"=\u003e\"Mr
+        Alexander Emilianengko\", \"passenger_age_group\"=\u003e\"adult\", \"passenger_id_number\"=\u003e\"1234567890\",
+        \"passenger_birth_date\"=\u003e\"1988-02-02\", \"passenger_ticket_number\"=\u003e\"\"}]}],
+        \"order__payment\"=\u003e[{\"payment_currency\"=\u003e\"IDR\", \"payment_amount\"=\u003e\"1308671.00\",
+        \"transfer_date\"=\u003e\"2015-06-23\", \"payment_source\"=\u003e\"affiliate_deposit\",
+        \"card_number\"=\u003enil, \"expiry_month\"=\u003enil, \"expiry_year\"=\u003enil,
+        \"card_holder_name\"=\u003e\"\"}], \"order__confirmation\"=\u003e[]}, \"login_status\"=\u003e\"true\",
+        \"guest_id\"=\u003e\"21349299\", \"token\"=\u003e\"2e56ea9f08c0ce704a3d663a1bc616a97ffbe5b7\"}"}],"histories":[],"total":1308671,"shipping_fee":0,"total_with_shipping":1308671,"status":"new
+        order","dtcell_status":null,"payment_status":"outstanding","order_type":"tiket
+        flight","created_at":"2015-06-23 03:17:19","updated_at":"2015-06-23 03:17:19"}'
+    http_version: 
+  recorded_at: Tue, 23 Jun 2015 03:17:19 GMT
+recorded_with: VCR 2.9.3

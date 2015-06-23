@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://DQI5DqcwA2fuEARnciMWl5oHroU:vH6urcUIjh20aq4qLKQYXTLIUIw@localhost:3000/v1/token
+    body:
+      encoding: UTF-8
+      string: '{"username":"derri@giftcard.co.id","password":"12345678","grant_type":"password","scope":"offline_access"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 23 Jun 2015 02:39:12 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '70'
+      Etag:
+      - W/"bdd4bc3fedc0b132eb0b96b230cc0cdf"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=4338927d17c1cdfad70b922913993376; path=/; HttpOnly
+      X-Request-Id:
+      - e3968bed-4a32-4a06-8829-56c358998be5
+      X-Runtime:
+      - '0.078530'
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"497e1739e9f7e5d75730901c267c36b7","expires_in":86400}'
+    http_version: 
+  recorded_at: Tue, 23 Jun 2015 02:39:12 GMT
+recorded_with: VCR 2.9.3
