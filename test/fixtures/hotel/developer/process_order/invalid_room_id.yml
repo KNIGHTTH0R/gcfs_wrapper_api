@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/hotels/process_order
+    body:
+      encoding: UTF-8
+      string: '{"salutation":"Mr","firstName":"Julian","lastName":"Stephen","phone":"08562969660","conSalutation":"Mr","conFirstName":"Julian","conLastName":"Stephen","conEmailAddress":"bima@giftcard.co.id","conPhone":"08562969660","country":"ID","emailAddress":"bima@giftcard.co.id","recepient":{"name":"Bima","email":"bima@giftcard.co.id","phone_number":"08562969660"},"metadata":{"user":{"id":1,"name":"derri@giftcard.co.id"}}}'
+    headers:
+      Authorization:
+      - Bearer 1fc04e370fc794c96074129c4eeebd97
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 22 Jun 2015 09:04:59 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '30'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _session_id=f04d306c285a3a7ff94bc6151ba36671; path=/; HttpOnly
+      X-Request-Id:
+      - 23be49f7-5ea6-4501-a7dd-dda4eccd7e92
+      X-Runtime:
+      - '0.150678'
+    body:
+      encoding: UTF-8
+      string: '{"error":"room_id is missing"}'
+    http_version: 
+  recorded_at: Mon, 22 Jun 2015 09:04:59 GMT
+recorded_with: VCR 2.9.3

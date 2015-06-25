@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/hotels/search_autocomplete?adult=2&child=0&enddate=2012-07-22&metadata%5Buser%5D%5Bid%5D=1&metadata%5Buser%5D%5Bname%5D=derri@giftcard.co.id&night=1&q=Bali&room=1&startdate=2012-07-21
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 1fc04e370fc794c96074129c4eeebd97
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 Jun 2015 07:54:37 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2100'
+      Etag:
+      - W/"e705cb5e3dd491a16f7633b79b04bdd9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=cc5e21295607f26fc1c9c87fef6f957f; path=/; HttpOnly
+      X-Request-Id:
+      - 9f1bfaf9-81fc-40ac-a750-2cbbf69c2c33
+      X-Runtime:
+      - '0.683228'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkaWFnbm9zdGljIjp7InN0YXR1cyI6IjIwMCIsImVsYXBzZXRpbWUiOiIw
+        LjEyNzQiLCJtZW1vcnl1c2FnZSI6IjUuMjRNQiIsInVuaXhfdGltZXN0YW1w
+        IjoxNDM0OTU5Njc2LCJjb25maXJtIjoic3VjY2VzcyIsImxhbmciOiJpZCIs
+        ImN1cnJlbmN5IjoiSURSIn0sIm91dHB1dF90eXBlIjoianNvbiIsInJlc3Vs
+        dHMiOnsicmVzdWx0IjpbeyJpZCI6ImJ1c2luZXNzOjIwNTgyODQzIiwid2Vp
+        Z2h0IjoiNDA2NjUiLCJkaXN0YW5jZSI6IjYyMDIzLjE0NDUzMSIsInNrZXki
+        OiIxLjUyNTIyMiIsImNvdW50cnlfaWQiOiJpZCIsImxhYmVsIjoiQ2x1YiBC
+        YWxpIEAgS290YSBCdW5nYSAoUHVuY2FrLCBDaXBhbmFzKSIsInZhbHVlIjoi
+        Q2x1YiBCYWxpIEAgS290YSBCdW5nYSIsImNhdGVnb3J5IjoiUmVjb21lbmRl
+        ZCBIb3RlbCIsInRpcGUiOiJidXNpbmVzc19pZCIsImJ1c2luZXNzX3VyaSI6
+        Imh0dHBzOi8vYXBpLXNhbmRib3gudGlrZXQuY29tL2hvdGVsL2luZG9uZXNp
+        YS9wdW5jYWsvY2lwYW5hcy9jbHViLWJhbGkta290YS1idW5nYT91aWQ9YnVz
+        aW5lc3MlM0EyMDU4Mjg0MyJ9LHsiaWQiOiJidXNpbmVzczoyMDU4NTc1OCIs
+        IndlaWdodCI6IjQwNjY4IiwiZGlzdGFuY2UiOiIxMDk2MjMuNjMyODEyIiwi
+        c2tleSI6IjIuNjk1NTc1IiwiY291bnRyeV9pZCI6ImlkIiwibGFiZWwiOiJI
+        YXdhaWkgQSBDbHViIEJhbGkgUmVzb3J0IChBbnllciwgQW55ZXIpIiwidmFs
+        dWUiOiJIYXdhaWkgQSBDbHViIEJhbGkgUmVzb3J0IiwiY2F0ZWdvcnkiOiJS
+        ZWNvbWVuZGVkIEhvdGVsIiwidGlwZSI6ImJ1c2luZXNzX2lkIiwiYnVzaW5l
+        c3NfdXJpIjoiaHR0cHM6Ly9hcGktc2FuZGJveC50aWtldC5jb20vaG90ZWwv
+        aW5kb25lc2lhL2FueWVyL2FueWVyL2hhd2FpaS1hLWNsdWItYmFsaS1yZXNv
+        cnQtMz91aWQ9YnVzaW5lc3MlM0EyMDU4NTc1OCJ9LHsiaWQiOiJidXNpbmVz
+        czoxMTEyMDUiLCJ3ZWlnaHQiOiI0MDY3NSIsImRpc3RhbmNlIjoiMTIxNzEw
+        LjgyMDMxMiIsInNrZXkiOiIyLjk5MjI3NiIsImNvdW50cnlfaWQiOiJpZCIs
+        ImxhYmVsIjoiQmFsaSBJbmRhaCBIb3RlbCBCYW5kdW5nIChCYW5kdW5nLCBC
+        dWFoYmF0dSkiLCJ2YWx1ZSI6IkJhbGkgSW5kYWggSG90ZWwgQmFuZHVuZyIs
+        ImNhdGVnb3J5IjoiUmVjb21lbmRlZCBIb3RlbCIsInRpcGUiOiJidXNpbmVz
+        c19pZCIsImJ1c2luZXNzX3VyaSI6Imh0dHBzOi8vYXBpLXNhbmRib3gudGlr
+        ZXQuY29tL2hvdGVsL2luZG9uZXNpYS9iYW5kdW5nL2J1YWhiYXR1L2JhbGkt
+        aW5kYWgtaG90ZWw/dWlkPWJ1c2luZXNzJTNBMTExMjA1In0seyJpZCI6ImJ1
+        c2luZXNzOjIwMTg2NjUzIiwid2VpZ2h0IjoiNDA2NjUiLCJkaXN0YW5jZSI6
+        IjY1NzQzNS4xODc1MDAiLCJza2V5IjoiMTYuMTY3MTAxIiwiY291bnRyeV9p
+        ZCI6ImlkIiwibGFiZWwiOiJCYWxp4oCZa3UgR3Vlc3QgSG91c2UgKE1hbGFu
+        ZywgQmF0dSkiLCJ2YWx1ZSI6IkJhbGnigJlrdSBHdWVzdCBIb3VzZSIsImNh
+        dGVnb3J5IjoiUmVjb21lbmRlZCBIb3RlbCIsInRpcGUiOiJidXNpbmVzc19p
+        ZCIsImJ1c2luZXNzX3VyaSI6Imh0dHBzOi8vYXBpLXNhbmRib3gudGlrZXQu
+        Y29tL2hvdGVsL2luZG9uZXNpYS9tYWxhbmcvYmF0dS9iYWxpa3UtZ3Vlc3Qt
+        aG91c2U/dWlkPWJ1c2luZXNzJTNBMjAxODY2NTMifSx7ImlkIjoiYnVzaW5l
+        c3M6MTMxOTY5Iiwid2VpZ2h0IjoiNDA2ODEiLCJkaXN0YW5jZSI6Ijg4MjM2
+        OC44MTI1MDAiLCJza2V5IjoiMjEuNjg5OTQ5IiwiY291bnRyeV9pZCI6Imlk
+        IiwibGFiZWwiOiJUYW1hbiBTYXJpIEJhbGkgUmVzb3J0IChCYWxpLCBQZW11
+        dGFyYW4pIiwidmFsdWUiOiJUYW1hbiBTYXJpIEJhbGkgUmVzb3J0IiwiY2F0
+        ZWdvcnkiOiJSZWNvbWVuZGVkIEhvdGVsIiwidGlwZSI6ImJ1c2luZXNzX2lk
+        IiwiYnVzaW5lc3NfdXJpIjoiaHR0cHM6Ly9hcGktc2FuZGJveC50aWtldC5j
+        b20vaG90ZWwvaW5kb25lc2lhL2JhbGkvcGVtdXRhcmFuL3RhbWFuLXNhcmkt
+        YmFsaS1yZXNvcnQtYW5kLXNwYT91aWQ9YnVzaW5lc3MlM0ExMzE5NjkifV19
+        LCJsb2dpbl9zdGF0dXMiOiJmYWxzZSIsInRva2VuIjoiYTRhNTM4YTA2YjRk
+        ZGU1NzI2MzRhNTNhMzAwYTE5MGQ3Y2ZlNjBhZSJ9
+    http_version: 
+  recorded_at: Mon, 22 Jun 2015 07:54:37 GMT
+recorded_with: VCR 2.9.3

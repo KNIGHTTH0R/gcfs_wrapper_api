@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/hotels/search_area?metadata%5Buser%5D%5Bid%5D=1&metadata%5Buser%5D%5Bname%5D=derri@giftcard.co.id&uid=city:12178
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 1fc04e370fc794c96074129c4eeebd97
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 Jun 2015 08:15:25 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '269'
+      Etag:
+      - W/"dae2cb9ea13991b3f836f5ec4e4323e0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=6352a24decf7ac14c9c29c97b115d15a; path=/; HttpOnly
+      X-Request-Id:
+      - 02f55d85-1c2c-4555-8ced-71b6b10fabc1
+      X-Runtime:
+      - '0.411447'
+    body:
+      encoding: UTF-8
+      string: '{"diagnostic":{"status":"200","elapsetime":"0.0916","memoryusage":"5MB","unix_timestamp":1434960925,"confirm":"success","lang":"id","currency":"IDR"},"output_type":"json","results":{"result":[]},"login_status":"false","token":"a4a538a06b4dde572634a53a300a190d7cfe60ae"}'
+    http_version: 
+  recorded_at: Mon, 22 Jun 2015 08:15:25 GMT
+recorded_with: VCR 2.9.3
