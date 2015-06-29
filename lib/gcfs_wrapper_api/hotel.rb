@@ -15,7 +15,7 @@ module Gcfs
         # QUERY_ATTRIBUTES = [:client, :category, :sku, :name, :nominal, :price, :min_price, :max_price].freeze
 
         # QUERY_ATTRIBUTES = [:d, :a, :date, :ret_date, :adult, :child, :infant]
-        QUERY_ATTRIBUTES = [:q, :startdate, :enddate, :night, :room, :adult, :infant]
+        QUERY_ATTRIBUTES = [:q, :startdate, :enddate, :night, :room, :adult, :child, :infant, :minprice, :maxprice, :minstar, :maxstar, :latitude, :longitude, :uid ]
 
         METADATA_ATTRIBUTES = [:id, :name].freeze
         # SORT_ATTRIBUTES = [:sku, :name, :category].freeze
