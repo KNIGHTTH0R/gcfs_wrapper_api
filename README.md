@@ -374,8 +374,7 @@ Gcfs::Wrapper::Api::Hotel.search_area params_auto
 ```
 
 **View detail hotel**
-
-Note: before execute this method, we have to execute search (Gcfs::Wrapper::Api::Hotel.search) method first to get and save hotel_id in cache
+> Note: before execute this method, we have to execute search (Gcfs::Wrapper::Api::Hotel.search) method first to get and save hotel_id in cache
 
 ```ruby
 params_detail_hotel = {
@@ -391,8 +390,7 @@ Gcfs::Wrapper::Api::Hotel.view_detail params_detail_hotel
 ```
 
 **Create Order hotel**
-
-Note: before execute this method, we have to execute view_detail (Gcfs::Wrapper::Api::Hotel.view_detail) method first to get and save room_id in cache
+> Note: before execute this method, we have to execute view_detail (Gcfs::Wrapper::Api::Hotel.view_detail) method first to get and save room_id in cache
 
 ```ruby
 params_order = {
