@@ -12,7 +12,7 @@ module Gcfs
         INPUT_ATTRIBUTES_WITH_DELIVERY_RECEIVE = INPUT_ATTRIBUTES + DELIVERY_ATTRIBUTES + RECEIVE_ATTRIBUTES
         ITEMS_ATTRIBUTES = [:items].freeze
         INPUT_ATTRIBUTES_WITH_ITEMS = INPUT_ATTRIBUTES_WITH_RECEPIENT + ITEMS_ATTRIBUTES
-        TABLE_ATTRIBUTES = [:id, :transaction_id, :invoice_number, :client, :histories, :total, :shipping_fee, :total_with_shipping, :payment_status, :dtcell_status, :created_at, :updated_at, :order_type].freeze
+        TABLE_ATTRIBUTES = [:id, :transaction_id, :invoice_number, :client, :histories, :total, :shipping_fee, :total_with_shipping, :payment_type, :payment_status, :dtcell_status, :created_at, :updated_at, :order_type, :request_delivery_date].freeze
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES_WITH_ITEMS + DELIVERY_ATTRIBUTES + RECEIVE_ATTRIBUTES
         attr_reader *VALID_ATTRIBUTES
 
@@ -27,6 +27,7 @@ module Gcfs
           @description = attributes["description"]
           @client = Gcfs::Wrapper::Api::Client.new attributes["client"]
           @recepient = Gcfs::Wrapper::Api::Recepient.new attributes["recepient"]
+          @request_delivery_date = attributes["request_delivery_date"].to_date if attributes["request_delivery_date"]
           @items = attributes["items"].map{|item| Gcfs::Wrapper::Api::OrderItem.new item } if attributes["items"]
           @histories = attributes["histories"].map{|item| Gcfs::Wrapper::Api::OrderHistory.new item } if attributes["histories"]
           @total = attributes["total"]
@@ -34,6 +35,7 @@ module Gcfs
           @total_with_shipping = attributes["total_with_shipping"]
           @status = attributes["status"]
           @dtcell_status = attributes["dtcell_status"]
+          @payment_type = attributes["payment_type"]
           @payment_status = attributes["payment_status"]
           @delivery = Gcfs::Wrapper::Api::OrderDelivery.new attributes["delivery"] if attributes["delivery"]
           @receive = Gcfs::Wrapper::Api::OrderReceive.new attributes["receive"] if attributes["receive"]
