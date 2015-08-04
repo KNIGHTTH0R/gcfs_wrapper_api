@@ -28,7 +28,10 @@ module Gcfs
           @client = Gcfs::Wrapper::Api::Client.new attributes["client"]
           @recepient = Gcfs::Wrapper::Api::Recepient.new attributes["recepient"]
           @request_delivery_date = attributes["request_delivery_date"].to_date if attributes["request_delivery_date"]
-          @items = attributes["items"].map{|item| Gcfs::Wrapper::Api::OrderItem.new item } if attributes["items"]
+          @items = attributes["items"].map{|item| Gcfs::Wrapper::Api::OrderItem.new item } if attributes["items"] and attributes["order_type"] == 'gcfs item'
+          @items = attributes["items"].map{|item| Gcfs::Wrapper::Api::OrderItem.new item } if attributes["items"] and attributes["order_type"] == 'tiket flight'
+          @items = attributes["items"].map{|item| Gcfs::Wrapper::Api::OrderItem.new item } if attributes["items"] and attributes["order_type"] == 'tiket hotel'
+          @items = attributes["items"].map{|item| Gcfs::Wrapper::Api::OrderDatacellItem.new item } if attributes["items"] and attributes["order_type"] == 'datacell'
           @histories = attributes["histories"].map{|item| Gcfs::Wrapper::Api::OrderHistory.new item } if attributes["histories"]
           @total = attributes["total"]
           @shipping_fee = attributes["shipping_fee"]
