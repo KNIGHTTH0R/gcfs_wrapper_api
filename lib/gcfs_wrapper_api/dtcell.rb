@@ -76,7 +76,7 @@ module Gcfs
             if json.has_key? 'error'
               raise Gcfs::Wrapper::Api::Error.new json['error']
             else  
-              Gcfs::Wrapper::Api::DtcellStatus.new json
+              Gcfs::Wrapper::Api::Order.new json
             end
           rescue Gcfs::Wrapper::Api::Error => e
             e
