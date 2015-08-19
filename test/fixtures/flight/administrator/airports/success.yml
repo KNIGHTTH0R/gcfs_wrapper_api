@@ -1,0 +1,258 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/flights/airports?metadata%5Buser%5D%5Bid%5D=1&metadata%5Buser%5D%5Bname%5D=windiana@giftcard.co.id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 497e1739e9f7e5d75730901c267c36b7
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 23 Jun 2015 02:54:47 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '30309'
+      Etag:
+      - W/"0c6f4789948c7052525f67fa7df81e98"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=57e9ec5341e83ed3895238f800167985; path=/; HttpOnly
+      X-Request-Id:
+      - 8b7cf4fd-9e57-4f83-9203-b12d003c5f37
+      X-Runtime:
+      - '1.189158'
+    body:
+      encoding: UTF-8
+      string: '{"airport":[{"airport_name":"Pattimura","airport_code":"AMQ","location_name":"Ambon","country_id":"id","country_name":"Indonesia"},{"airport_name":"ATAMBUA","airport_code":"ABU","location_name":"Atambua","country_id":"id","country_name":"Indonesia"},{"airport_name":"Soa","airport_code":"BJW","location_name":"Bajawa","country_id":"id","country_name":"Indonesia"},{"airport_name":"Sepinggan","airport_code":"BPN","location_name":"BalikPapan","country_id":"id","country_name":"Indonesia"},{"airport_name":"Sultan
+        Iskandar Muda","airport_code":"BTJ","location_name":"Banda Aceh","country_id":"id","country_name":"Indonesia"},{"airport_name":"Husein
+        Sastranegara","airport_code":"BDO","location_name":"Bandung","country_id":"id","country_name":"Indonesia"},{"airport_name":"SYAMSUDDIN
+        NOOR","airport_code":"BDJ","location_name":"Banjarmasin","country_id":"id","country_name":"Indonesia"},{"airport_name":"BLIMBINGSARI","airport_code":"DQJ","location_name":"Banyuwangi
+        - BLIMBINGSARI","country_id":"id","country_name":"Indonesia"},{"airport_name":"Hang
+        Nadim","airport_code":"BTH","location_name":"Batam","country_id":"id","country_name":"Indonesia"},{"airport_name":"Baubau","airport_code":"BUW","location_name":"Baubau","country_id":"id","country_name":"Indonesia"},{"airport_name":"Fatmawati
+        Soekarno","airport_code":"BKS","location_name":"Bengkulu","country_id":"id","country_name":"Indonesia"},{"airport_name":"Kalimarau","airport_code":"BEJ","location_name":"Berau","country_id":"id","country_name":"Indonesia"},{"airport_name":"Frans
+        Kaisiepo","airport_code":"BIK","location_name":"Biak","country_id":"id","country_name":"Indonesia"},{"airport_name":"Muhammad
+        Salahuddin","airport_code":"BMU","location_name":"Bima","country_id":"id","country_name":"Indonesia"},{"airport_name":"BLIMBINGSARI","airport_code":"BWX","location_name":"BLIMBINGSARI","country_id":"id","country_name":"Indonesia"},{"airport_name":"Buli","airport_code":"WUB","location_name":"Buli","country_id":"id","country_name":"Indonesia"},{"airport_name":"Pogugol","airport_code":"UOL","location_name":"Buol","country_id":"id","country_name":"Indonesia"},{"airport_name":"NGURAH
+        RAI","airport_code":"DPS","location_name":"Denpasar, Bali","country_id":"id","country_name":"Indonesia"},{"airport_name":"H.
+        Hasan Aroeboesman","airport_code":"ENE","location_name":"Ende","country_id":"id","country_name":"Indonesia"},{"airport_name":"Fakfak","airport_code":"FKQ","location_name":"FakFak","country_id":"id","country_name":"Indonesia"},{"airport_name":"GALELA","airport_code":"GLX","location_name":"Galela","country_id":"id","country_name":"Indonesia"},{"airport_name":"Jalaluddin","airport_code":"GTO","location_name":"Gorontalo","country_id":"id","country_name":"Indonesia"},{"airport_name":"Gunung
+        Sitoli, Binaka","airport_code":"GNS","location_name":"GunungSitoli","country_id":"id","country_name":"Indonesia"},{"airport_name":"Soekarno
+        Hatta","airport_code":"CGK","location_name":"Jakarta - Cengkareng","country_id":"id","country_name":"Indonesia"},{"airport_name":"HALIM
+        PERDANAKUSUMA","airport_code":"HLP","location_name":"Jakarta - Halim","country_id":"id","country_name":"Indonesia"},{"airport_name":"Sultan
+        Thaha Syaifuddin","airport_code":"DJB","location_name":"Jambi","country_id":"id","country_name":"Indonesia"},{"airport_name":"Sentani","airport_code":"DJJ","location_name":"Jayapura","country_id":"id","country_name":"Indonesia"},{"airport_name":"Kaimana,
+        Utarom","airport_code":"KNG","location_name":"Kaimana","country_id":"id","country_name":"Indonesia"},{"airport_name":"Haluoleo","airport_code":"KDI","location_name":"Kendari","country_id":"id","country_name":"Indonesia"},{"airport_name":"RAHADI
+        OESMAN","airport_code":"KTG","location_name":"Ketapang","country_id":"id","country_name":"Indonesia"},{"airport_name":"Kotabaru","airport_code":"KBU","location_name":"Kotabaru","country_id":"id","country_name":"Indonesia"},{"airport_name":"El
+        Tari","airport_code":"KOE","location_name":"Kupang","country_id":"id","country_name":"Indonesia"},{"airport_name":"Labuanbajo,
+        Komodo","airport_code":"LBJ","location_name":"LabuanBajo","country_id":"id","country_name":"Indonesia"},{"airport_name":"Labuha,
+        Oesman Sadik","airport_code":"LAH","location_name":"Labuha","country_id":"id","country_name":"Indonesia"},{"airport_name":"Radin
+        Inten II","airport_code":"TKG","location_name":"Lampung","country_id":"id","country_name":"Indonesia"},{"airport_name":"Lhokseumawe,
+        Malikussaleh","airport_code":"LSW","location_name":"Lhokseumawe","country_id":"id","country_name":"Indonesia"},{"airport_name":"Lombok","airport_code":"LOP","location_name":"Lombok,
+        Mataram","country_id":"id","country_name":"Indonesia"},{"airport_name":"Syukuran
+        Aminuddin Amir","airport_code":"LUW","location_name":"Luwuk","country_id":"id","country_name":"Indonesia"},{"airport_name":"Abdul
+        Rachman Saleh","airport_code":"MLG","location_name":"Malang","country_id":"id","country_name":"Indonesia"},{"airport_name":"ROBERT
+        ATTY BESSING","airport_code":"MLN","location_name":"Malinau","country_id":"id","country_name":"Indonesia"},{"airport_name":"Mamuju","airport_code":"MJU","location_name":"Mamuju","country_id":"id","country_name":"Indonesia"},{"airport_name":"Sam
+        Ratulangi","airport_code":"MDC","location_name":"Manado","country_id":"id","country_name":"Indonesia"},{"airport_name":"Rendani","airport_code":"MKW","location_name":"Manokwari","country_id":"id","country_name":"Indonesia"},{"airport_name":"Wai
+        Oti","airport_code":"MOF","location_name":"Maumere","country_id":"id","country_name":"Indonesia"},{"airport_name":"Kuala
+        Namu","airport_code":"KNO","location_name":"Medan (Kuala Namu)","country_id":"id","country_name":"Indonesia"},{"airport_name":"MELALAN","airport_code":"MLK","location_name":"Melak","country_id":"id","country_name":"Indonesia"},{"airport_name":"Melonguane","airport_code":"MNA","location_name":"Melanguane","country_id":"id","country_name":"Indonesia"},{"airport_name":"Mopah","airport_code":"MKQ","location_name":"Merauke","country_id":"id","country_name":"Indonesia"},{"airport_name":"Meulaboh,
+        Cut Nyak Dien","airport_code":"MEQ","location_name":"Meulaboh","country_id":"id","country_name":"Indonesia"},{"airport_name":"MOROTAI","airport_code":"OTI","location_name":"MOROTAI","country_id":"id","country_name":"Indonesia"},{"airport_name":"BANDAR
+        UDARA BERINGIN","airport_code":"MTW","location_name":"Muara Teweh","country_id":"id","country_name":"Indonesia"},{"airport_name":"Nabire","airport_code":"NBX","location_name":"Nabire","country_id":"id","country_name":"Indonesia"},{"airport_name":"Natuna
+        Ranai","airport_code":"NTX","location_name":"NatunaRanai","country_id":"id","country_name":"Indonesia"},{"airport_name":"NUNUKAN","airport_code":"NNX","location_name":"Nunukan","country_id":"id","country_name":"Indonesia"},{"airport_name":"Minangkabau","airport_code":"PDG","location_name":"Padang","country_id":"id","country_name":"Indonesia"},{"airport_name":"Tjilik
+        Riwut","airport_code":"PKY","location_name":"Palangka raya","country_id":"id","country_name":"Indonesia"},{"airport_name":"Sultan
+        Mahmud Badaruddin II","airport_code":"PLM","location_name":"Palembang","country_id":"id","country_name":"Indonesia"},{"airport_name":"Mutiara","airport_code":"PLW","location_name":"Palu","country_id":"id","country_name":"Indonesia"},{"airport_name":"Depati
+        Amir","airport_code":"PGK","location_name":"Pangkal pinang","country_id":"id","country_name":"Indonesia"},{"airport_name":"PANGKALAN
+        BUN","airport_code":"PKN","location_name":"Pangkalan Bun","country_id":"id","country_name":"Indonesia"},{"airport_name":"Sultan
+        Syarif Kasim II","airport_code":"PKU","location_name":"Pekanbaru","country_id":"id","country_name":"Indonesia"},{"airport_name":"Sangia
+        Nibandera Pomalaa","airport_code":"PUM","location_name":"Pomalaa","country_id":"id","country_name":"Indonesia"},{"airport_name":"Supadio","airport_code":"PNK","location_name":"Pontianak","country_id":"id","country_name":"Indonesia"},{"airport_name":"Poso,
+        Kasiguncu","airport_code":"PSJ","location_name":"Poso","country_id":"id","country_name":"Indonesia"},{"airport_name":"Mali","airport_code":"ARD","location_name":"Pulau
+        Alor","country_id":"id","country_name":"Indonesia"},{"airport_name":"PUTUSSIBAU","airport_code":"PSU","location_name":"Putussibau","country_id":"id","country_name":"Indonesia"},{"airport_name":"ROTE","airport_code":"RTI","location_name":"Rote","country_id":"id","country_name":"Indonesia"},{"airport_name":"Frans
+        Sales Lega","airport_code":"RTG","location_name":"Ruteng","country_id":"id","country_name":"Indonesia"},{"airport_name":"TEMINDUNG","airport_code":"SRI","location_name":"Samarinda","country_id":"id","country_name":"Indonesia"},{"airport_name":"H.
+        Asan Sampit","airport_code":"SMQ","location_name":"Sampit","country_id":"id","country_name":"Indonesia"},{"airport_name":"BANDAR
+        UDARA OLILIT","airport_code":"SXK","location_name":"Saumlaki","country_id":"id","country_name":"Indonesia"},{"airport_name":"SELAYAR","airport_code":"YKR","location_name":"Selayar","country_id":"id","country_name":"Indonesia"},{"airport_name":"Achmad
+        Yani","airport_code":"SRG","location_name":"Semarang","country_id":"id","country_name":"Indonesia"},{"airport_name":"SIBOLGA","airport_code":"RRZ","location_name":"Sibolga","country_id":"id","country_name":"Indonesia"},{"airport_name":"Silangit","airport_code":"DTB","location_name":"Silangit","country_id":"id","country_name":"Indonesia"},{"airport_name":"Lasikin","airport_code":"SNX","location_name":"Sinabang","country_id":"id","country_name":"Indonesia"},{"airport_name":"SUSILO","airport_code":"SQG","location_name":"Sintang","country_id":"id","country_name":"Indonesia"},{"airport_name":"Adisumarmo","airport_code":"SOC","location_name":"Solo","country_id":"id","country_name":"Indonesia"},{"airport_name":"Dominique
+        Edward Osok","airport_code":"SOQ","location_name":"Sorong","country_id":"id","country_name":"Indonesia"},{"airport_name":"Sumbawa,
+        Brang Biji","airport_code":"SWQ","location_name":"Sumbawa","country_id":"id","country_name":"Indonesia"},{"airport_name":"Juanda","airport_code":"SUB","location_name":"Surabaya","country_id":"id","country_name":"Indonesia"},{"airport_name":"Naha","airport_code":"NAH","location_name":"Tahuna","country_id":"id","country_name":"Indonesia"},{"airport_name":"Tampolaka","airport_code":"TMC","location_name":"Tambolaka","country_id":"id","country_name":"Indonesia"},{"airport_name":"H.A.S
+        Hanandjoeddin","airport_code":"TJQ","location_name":"Tanjung Pandan","country_id":"id","country_name":"Indonesia"},{"airport_name":"Raja
+        Haji FIsabilillah","airport_code":"TNJ","location_name":"Tanjung Pinang","country_id":"id","country_name":"Indonesia"},{"airport_name":"TANJUNG
+        HARAPAN","airport_code":"TJS","location_name":"Tanjung Selor","country_id":"id","country_name":"Indonesia"},{"airport_name":"WARUKIN","airport_code":"TJG","location_name":"Tanjung
+        Warukin","country_id":"id","country_name":"Indonesia"},{"airport_name":"Juwata","airport_code":"TRK","location_name":"Tarakan","country_id":"id","country_name":"Indonesia"},{"airport_name":"Sultan
+        Babullah","airport_code":"TTE","location_name":"Ternate","country_id":"id","country_name":"Indonesia"},{"airport_name":"Mozes
+        Kilangin","airport_code":"TIM","location_name":"Timika","country_id":"id","country_name":"Indonesia"},{"airport_name":"Tobelo","airport_code":"KAZ","location_name":"Tobelo","country_id":"id","country_name":"Indonesia"},{"airport_name":"TOLI
+        TOLI","airport_code":"TLI","location_name":"TOLI TOLI","country_id":"id","country_name":"Indonesia"},{"airport_name":"Tual,
+        Dumatubin","airport_code":"LUV","location_name":"Tual","country_id":"id","country_name":"Indonesia"},{"airport_name":"SULTAN
+        HASANUDDIN","airport_code":"UPG","location_name":"Ujungpandang, Makassar","country_id":"id","country_name":"Indonesia"},{"airport_name":"WAINGAPU","airport_code":"WGP","location_name":"Waingapu","country_id":"id","country_name":"Indonesia"},{"airport_name":"Matahora","airport_code":"WNI","location_name":"Wakatobi","country_id":"id","country_name":"Indonesia"},{"airport_name":"WAMENA","airport_code":"WMX","location_name":"Wamena","country_id":"id","country_name":"Indonesia"},{"airport_name":"Wangi
+        wangi, Matahora","airport_code":"WGI","location_name":"Wangi wangi","country_id":"id","country_name":"Indonesia"},{"airport_name":"Adi
+        Sutjipto","airport_code":"JOG","location_name":"Yogyakarta","country_id":"id","country_name":"Indonesia"},{"airport_name":"ADELAIDE","airport_code":"ADL","location_name":"Adelaide","country_id":"au","country_name":"Australia
+        "},{"airport_name":"Alice Springs","airport_code":"ASP","location_name":"Alice
+        Springs","country_id":"au","country_name":"Australia "},{"airport_name":"AVALON","airport_code":"AVV","location_name":"AVALON","country_id":"au","country_name":"Australia
+        "},{"airport_name":"BALLINA BYRON","airport_code":"BNK","location_name":"BALLINA
+        BYRON","country_id":"au","country_name":"Australia "},{"airport_name":"BRISBANE","airport_code":"BNE","location_name":"Brisbane","country_id":"au","country_name":"Australia
+        "},{"airport_name":"CAIRNS","airport_code":"CNS","location_name":"Cairns","country_id":"au","country_name":"Australia
+        "},{"airport_name":"CANBERRA","airport_code":"CBR","location_name":"CANBERRA","country_id":"au","country_name":"Australia
+        "},{"airport_name":"Coffs Harbour","airport_code":"CFS","location_name":"Coffs
+        Harbour","country_id":"au","country_name":"Australia "},{"airport_name":"DARWIN","airport_code":"DRW","location_name":"Darwin","country_id":"au","country_name":"Australia
+        "},{"airport_name":"GOLD COAST","airport_code":"OOL","location_name":"Gold
+        Coast","country_id":"au","country_name":"Australia "},{"airport_name":"HAMILTON
+        ISLAND","airport_code":"HTI","location_name":"HAMILTON ISLAND","country_id":"au","country_name":"Australia
+        "},{"airport_name":"HAYMAN ISLAND","airport_code":"HIS","location_name":"HAYMAN
+        ISLAND","country_id":"au","country_name":"Australia "},{"airport_name":"HOBART","airport_code":"HBA","location_name":"Hobart","country_id":"au","country_name":"Australia
+        "},{"airport_name":"LAUNCESTON","airport_code":"LST","location_name":"Launceston","country_id":"au","country_name":"Australia
+        "},{"airport_name":"MACKAY","airport_code":"MKY","location_name":"Mackay (Whitsundays)","country_id":"au","country_name":"Australia
+        "},{"airport_name":"MELBOURNE","airport_code":"MEL","location_name":"Melbourne","country_id":"au","country_name":"Australia
+        "},{"airport_name":"MELBOURNE (ALL AIRPORTS)","airport_code":"VIZ","location_name":"Melbourne
+        (all airports)","country_id":"au","country_name":"Australia "},{"airport_name":"NEWCASTLE
+        - PORT STEPHENS","airport_code":"NTL","location_name":"NEWCASTLE - PORT STEPHENS","country_id":"au","country_name":"Australia
+        "},{"airport_name":"PERTH","airport_code":"PER","location_name":"Perth","country_id":"au","country_name":"Australia
+        "},{"airport_name":"SUNSHINE COAST","airport_code":"MCY","location_name":"Sunshine
+        Coast","country_id":"au","country_name":"Australia "},{"airport_name":"SYDNEY
+        (KINGSFORD-SMITH)","airport_code":"SYD","location_name":"Sydney","country_id":"au","country_name":"Australia
+        "},{"airport_name":"TOWNSVILLE","airport_code":"TSV","location_name":"TOWNSVILLE","country_id":"au","country_name":"Australia
+        "},{"airport_name":"ULURU","airport_code":"AYQ","location_name":"Uluru","country_id":"au","country_name":"Australia
+        "},{"airport_name":"WHITSUNDAY COAST - PROSERPINE","airport_code":"PPP","location_name":"WHITSUNDAY
+        COAST - PROSERPINE","country_id":"au","country_name":"Australia "},{"airport_name":"SHAH
+        AMANAT","airport_code":"CGP","location_name":"Chittagong","country_id":"bd","country_name":"Bangladesh
+        "},{"airport_name":"INDIRA GANDHI","airport_code":"DEL","location_name":"Delhi","country_id":"bd","country_name":"Bangladesh
+        "},{"airport_name":"Dhaka","airport_code":"DAC","location_name":"Dhaka","country_id":"bd","country_name":"Bangladesh
+        "},{"airport_name":"BRUNEI","airport_code":"BWN","location_name":"Brunei","country_id":"bn","country_name":"Brunei
+        Darussalam "},{"airport_name":"PHNOM PENH","airport_code":"PNH","location_name":"Phnom
+        Penh","country_id":"kh","country_name":"Cambodia "},{"airport_name":"SIEM
+        REAP","airport_code":"REP","location_name":"Siem Reap","country_id":"kh","country_name":"Cambodia
+        "},{"airport_name":"Beijing Capital","airport_code":"PEK","location_name":"Beijing","country_id":"cn","country_name":"China
+        "},{"airport_name":"Chengdu Shuangliu","airport_code":"CTU","location_name":"Chengdu","country_id":"cn","country_name":"China
+        "},{"airport_name":"Chongqing Jiangbei","airport_code":"CKG","location_name":"Chongqing","country_id":"cn","country_name":"China
+        "},{"airport_name":"Guangzhou Baiyun","airport_code":"CAN","location_name":"Guangzhou","country_id":"cn","country_name":"China
+        "},{"airport_name":"Guilin Liangjiang","airport_code":"KWL","location_name":"Guilin","country_id":"cn","country_name":"China
+        "},{"airport_name":"HAIKOU","airport_code":"HAK","location_name":"Haikou","country_id":"cn","country_name":"China
+        "},{"airport_name":"HANGZHOU XIAOSHAN","airport_code":"HGH","location_name":"Hangzhou","country_id":"cn","country_name":"China
+        "},{"airport_name":"Kunming Wujiaba","airport_code":"KMG","location_name":"Kunming","country_id":"cn","country_name":"China
+        "},{"airport_name":"Nanning Wuxu","airport_code":"NNG","location_name":"Nanning","country_id":"cn","country_name":"China
+        "},{"airport_name":"Ningbo Lishe","airport_code":"NGB","location_name":"Ningbo","country_id":"cn","country_name":"China
+        "},{"airport_name":"Qingdao","airport_code":"TAO","location_name":"Qingdao","country_id":"cn","country_name":"China
+        "},{"airport_name":"Shanghai Pudong","airport_code":"PVG","location_name":"Shanghai","country_id":"cn","country_name":"China
+        "},{"airport_name":"SHANTOU / JIEYANG","airport_code":"SWA","location_name":"SHANTOU
+        / JIEYANG","country_id":"cn","country_name":"China "},{"airport_name":"Shenyang","airport_code":"SHE","location_name":"Shenyang","country_id":"cn","country_name":"China
+        "},{"airport_name":"Shenzhen","airport_code":"SZX","location_name":"Shenzhen","country_id":"cn","country_name":"China
+        "},{"airport_name":"Tianjin","airport_code":"TSN","location_name":"Tianjin","country_id":"cn","country_name":"China
+        "},{"airport_name":"Wuhan Tianhe","airport_code":"WUH","location_name":"Wuhan","country_id":"cn","country_name":"China
+        "},{"airport_name":"Xi An Xianyang","airport_code":"XIY","location_name":"Xi''an","country_id":"cn","country_name":"China
+        "},{"airport_name":"Naike","airport_code":"CMB","location_name":"Colombo","country_id":"co","country_name":"Colombia
+        "},{"airport_name":"NADI","airport_code":"NAN","location_name":"NADI","country_id":"fj","country_name":"Fiji
+        "},{"airport_name":"HONG KONG","airport_code":"HKG","location_name":"Hong
+        Kong","country_id":"hk","country_name":"Hong Kong "},{"airport_name":"SARDAR
+        VALLABHBHAI PATEL","airport_code":"AMD","location_name":"Ahmedabad","country_id":"in","country_name":"India
+        "},{"airport_name":"Bangalore","airport_code":"BLR","location_name":"Bangalore","country_id":"in","country_name":"India
+        "},{"airport_name":"Chennai","airport_code":"MAA","location_name":"Chennai","country_id":"in","country_name":"India
+        "},{"airport_name":"Hyderabad","airport_code":"HYD","location_name":"Hyderabad","country_id":"in","country_name":"India
+        "},{"airport_name":"Kochi","airport_code":"COK","location_name":"Kochi","country_id":"in","country_name":"India
+        "},{"airport_name":"Netaji Subhas Chandra Bosen","airport_code":"CCU","location_name":"Kolkata","country_id":"in","country_name":"India
+        "},{"airport_name":"CHHATRAPATI SHIVAJI","airport_code":"BOM","location_name":"Mumbai","country_id":"in","country_name":"India
+        "},{"airport_name":"Thiruvananthapuram","airport_code":"TRV","location_name":"Thiruvananthapuram","country_id":"in","country_name":"India
+        "},{"airport_name":"Tiruchirapalli (Trichy)","airport_code":"TRZ","location_name":"Tiruchirapalli
+        (Trichy)","country_id":"in","country_name":"India "},{"airport_name":"FUKUOKA","airport_code":"FUK","location_name":"Fukuoka","country_id":"jp","country_name":"Japan
+        "},{"airport_name":"KAGOSHIMA","airport_code":"KOJ","location_name":"Kagoshima","country_id":"jp","country_name":"Japan
+        "},{"airport_name":"KUMAMOTO","airport_code":"KMJ","location_name":"Kumamoto","country_id":"jp","country_name":"Japan
+        "},{"airport_name":"MATSUYAMA","airport_code":"MYJ","location_name":"Matsuyama","country_id":"jp","country_name":"Japan
+        "},{"airport_name":"NAGOYA CHUBU CENTRAIR","airport_code":"NGO","location_name":"Nagoya","country_id":"jp","country_name":"Japan
+        "},{"airport_name":"OITA","airport_code":"OIT","location_name":"Oita","country_id":"jp","country_name":"Japan
+        "},{"airport_name":"OKINAWA, NAHA","airport_code":"OKA","location_name":"Okinawa
+        - Naha","country_id":"jp","country_name":"Japan "},{"airport_name":"OSAKA,
+        KANSAI","airport_code":"KIX","location_name":"Osaka - Kansai","country_id":"jp","country_name":"Japan
+        "},{"airport_name":"SAPPORO, SHIN-CHITOSE","airport_code":"CTS","location_name":"Sapporo
+        - Shin-Chitose","country_id":"jp","country_name":"Japan "},{"airport_name":"TAKAMATSU
+        ","airport_code":"TAK","location_name":"Takamatsu ","country_id":"jp","country_name":"Japan
+        "},{"airport_name":"Tokyo, Haneda","airport_code":"HND","location_name":"Tokyo
+        - Haneda","country_id":"jp","country_name":"Japan "},{"airport_name":"TOKYO,
+        NARITA","airport_code":"NRT","location_name":"Tokyo - Narita","country_id":"jp","country_name":"Japan
+        "},{"airport_name":"Wattay","airport_code":"VTE","location_name":"Vientiane","country_id":"la","country_name":"Laos"},{"airport_name":"MACAU","airport_code":"MFM","location_name":"Macau","country_id":"mo","country_name":"Macau
+        "},{"airport_name":"Sultan Abdul Halim","airport_code":"AOR","location_name":"Alor
+        Setar","country_id":"my","country_name":"Malaysia "},{"airport_name":"Bintulu","airport_code":"BTU","location_name":"Bintulu","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"Senai","airport_code":"JHB","location_name":"Johor Baru","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"Sultan Ismail Petra","airport_code":"KBR","location_name":"Kota
+        Bharu","country_id":"my","country_name":"Malaysia "},{"airport_name":"Kota
+        Kinabalu","airport_code":"BKI","location_name":"Kota Kinabalu","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"KUALA LUMPUR","airport_code":"KUL","location_name":"Kuala
+        Lumpur","country_id":"my","country_name":"Malaysia "},{"airport_name":"SULTAN
+        MAHMUD","airport_code":"TGG","location_name":"Kuala Terengganu","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"Kuching","airport_code":"KCH","location_name":"Kuching","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"Langkawi","airport_code":"LGK","location_name":"Langkawi","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"Malacca","airport_code":"MKZ","location_name":"Malacca","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"Miri","airport_code":"MYY","location_name":"Miri","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"PENANG","airport_code":"PEN","location_name":"Penang","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"Sandakan","airport_code":"SDK","location_name":"Sandaka","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"Sibu","airport_code":"SBW","location_name":"Sibu","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"Sultan Abdul Aziz Shah","airport_code":"SZB","location_name":"Subang","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"IPOH","airport_code":"IPH","location_name":"SULTAN AZLAN
+        SHAH","country_id":"my","country_name":"Malaysia "},{"airport_name":"Tawau","airport_code":"TWU","location_name":"Tawau","country_id":"my","country_name":"Malaysia
+        "},{"airport_name":"Mandalay","airport_code":"MDL","location_name":"Mandalay","country_id":"mm","country_name":"Myanmar
+        "},{"airport_name":"YANGOON","airport_code":"RGN","location_name":"Yangoon","country_id":"mm","country_name":"Myanmar
+        "},{"airport_name":"Tribhuvan","airport_code":"KTM","location_name":"Kathmandu","country_id":"np","country_name":"Nepal
+        "},{"airport_name":"AUCKLAND","airport_code":"AKL","location_name":"AUCKLAND","country_id":"nz","country_name":"New
+        Zealand "},{"airport_name":"CHRISTCHURCH","airport_code":"CHC","location_name":"CHRISTCHURCH","country_id":"nz","country_name":"New
+        Zealand "},{"airport_name":"DUNEDIN","airport_code":"DUD","location_name":"DUNEDIN","country_id":"nz","country_name":"New
+        Zealand "},{"airport_name":"QUEENSTOWN","airport_code":"ZQN","location_name":"QUEENSTOWN","country_id":"nz","country_name":"New
+        Zealand "},{"airport_name":"WELLINGTON","airport_code":"WLG","location_name":"WELLINGTON","country_id":"nz","country_name":"New
+        Zealand "},{"airport_name":"Bacolod","airport_code":"BCD","location_name":"Bacolod","country_id":"ph","country_name":"Philippines
+        "},{"airport_name":"Mactan-Cebu","airport_code":"CEB","location_name":"Cebu","country_id":"ph","country_name":"Philippines
+        "},{"airport_name":"CLARK","airport_code":"CRK","location_name":"Clark","country_id":"ph","country_name":"Philippines
+        "},{"airport_name":"Davao","airport_code":"DVO","location_name":"Davao","country_id":"ph","country_name":"Philippines
+        "},{"airport_name":"Iloilo","airport_code":"ILO","location_name":"Iloilo","country_id":"ph","country_name":"Philippines
+        "},{"airport_name":"NINOY AQUINO","airport_code":"MNL","location_name":"Manila
+        (NAIA)","country_id":"ph","country_name":"Philippines "},{"airport_name":"Puerto
+        Princesa","airport_code":"PPS","location_name":"Puerto Princesa","country_id":"ph","country_name":"Philippines
+        "},{"airport_name":"Tacloban","airport_code":"TAC","location_name":"Tacloban","country_id":"ph","country_name":"Philippines
+        "},{"airport_name":"King Abdulaziz","airport_code":"JED","location_name":"Jeddah","country_id":"sa","country_name":"Saudi
+        Arabia "},{"airport_name":"Changi","airport_code":"SIN","location_name":"Singapore","country_id":"sg","country_name":"Singapore
+        "},{"airport_name":"Gimhae","airport_code":"PUS","location_name":"Busan","country_id":"kr","country_name":"South
+        Korea"},{"airport_name":"Incheon","airport_code":"ICN","location_name":"Seoul","country_id":"kr","country_name":"South
+        Korea"},{"airport_name":"TAIWAN TAOYUAN","airport_code":"TPE","location_name":"Taipei","country_id":"tw","country_name":"Taiwan"},{"airport_name":"DON
+        MUEANG","airport_code":"DMK","location_name":"Bangkok - Don Mueang","country_id":"th","country_name":"Thailand
+        "},{"airport_name":"SUVARNABHUMI","airport_code":"BKK","location_name":"Bangkok
+        - Suvarnabhumi","country_id":"th","country_name":"Thailand "},{"airport_name":"CHIANG
+        MAI","airport_code":"CNX","location_name":"Chiang Mai","country_id":"th","country_name":"Thailand
+        "},{"airport_name":"Mae Fah Luang-Chiang Rai","airport_code":"CEI","location_name":"Chiang
+        Rai","country_id":"th","country_name":"Thailand "},{"airport_name":"Hat Yai","airport_code":"HDY","location_name":"Hat
+        Yai","country_id":"th","country_name":"Thailand "},{"airport_name":"Krabi","airport_code":"KBV","location_name":"Krabi","country_id":"th","country_name":"Thailand
+        "},{"airport_name":"Nakhon Phanom","airport_code":"KOP","location_name":"Nakhon
+        Phanom","country_id":"th","country_name":"Thailand "},{"airport_name":"Nakhon
+        Si Thammarat","airport_code":"NST","location_name":"Nakhon Si Thammarat","country_id":"th","country_name":"Thailand
+        "},{"airport_name":"Narathiwat","airport_code":"NAW","location_name":"Narathiwat","country_id":"th","country_name":"Thailand
+        "},{"airport_name":"PHUKET","airport_code":"HKT","location_name":"Phuket","country_id":"th","country_name":"Thailand
+        "},{"airport_name":"Surat Thani","airport_code":"URT","location_name":"Surat
+        Thani","country_id":"th","country_name":"Thailand "},{"airport_name":"Trang","airport_code":"TST","location_name":"Trang","country_id":"th","country_name":"Thailand
+        "},{"airport_name":"Ubon Ratchathani","airport_code":"UBP","location_name":"Ubon
+        Ratchathani","country_id":"th","country_name":"Thailand "},{"airport_name":"Udonthani","airport_code":"UTH","location_name":"Udon
+        Thani","country_id":"th","country_name":"Thailand "},{"airport_name":"Presidente
+        Nicolau Lobato","airport_code":"DIL","location_name":"Dili","country_id":"tl","country_name":"Timor-Leste
+        "},{"airport_name":"ABU DHABI","airport_code":"ABU","location_name":"Abu Dhabi","country_id":"ae","country_name":"United
+        Arab Emirates "},{"airport_name":"LONDON","airport_code":"LGW","location_name":"London","country_id":"gb","country_name":"United
+        Kingdom "},{"airport_name":"HONOLULU","airport_code":"HNL","location_name":"HONOLULU","country_id":"us","country_name":"United
+        States "},{"airport_name":"BUON MA THUOT","airport_code":"BMV","location_name":"Buon
+        Ma Thuot","country_id":"vn","country_name":"Vietnam "},{"airport_name":"DA
+        NANG","airport_code":"DAD","location_name":"Da Nang","country_id":"vn","country_name":"Vietnam
+        "},{"airport_name":"DONG HOI","airport_code":"VDH","location_name":"Dong Hoi","country_id":"vn","country_name":"Vietnam
+        "},{"airport_name":"HAI PHONG","airport_code":"HPH","location_name":"Hai Phong","country_id":"vn","country_name":"Vietnam
+        "},{"airport_name":"TAN SON NHAT","airport_code":"SGN","location_name":"Ho
+        Chi Minh City","country_id":"vn","country_name":"Vietnam "},{"airport_name":"HUI","airport_code":"HUI","location_name":"HUI","country_id":"vn","country_name":"Vietnam
+        "},{"airport_name":"NHA TRANG","airport_code":"CXR","location_name":"Nha Trang","country_id":"vn","country_name":"Vietnam
+        "},{"airport_name":"NOI BAI","airport_code":"HAN","location_name":"Noi Bai","country_id":"vn","country_name":"Vietnam
+        "},{"airport_name":"PHU QUOC","airport_code":"PQC","location_name":"Phu Quoc","country_id":"vn","country_name":"Vietnam
+        "},{"airport_name":"QUY NHON","airport_code":"UIH","location_name":"Quy Nhon
+        ","country_id":"vn","country_name":"Vietnam "},{"airport_name":"THANH HOA","airport_code":"THD","location_name":"Thanh
+        Hoa","country_id":"vn","country_name":"Vietnam "},{"airport_name":"TUY HOA","airport_code":"TBB","location_name":"Tuy
+        Hoa","country_id":"vn","country_name":"Vietnam "},{"airport_name":"VINH","airport_code":"VII","location_name":"Vinh","country_id":"vn","country_name":"Vietnam
+        "}]}'
+    http_version: 
+  recorded_at: Tue, 23 Jun 2015 02:54:47 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/dtcell/product/95
+    body:
+      encoding: UTF-8
+      string: '{"operator":"XL","operator_code":"TEL.1","description":"Telsomsel 1,000","nominal":1000,"price":1200}'
+    headers:
+      Authorization:
+      - Bearer 8a64ff135161988437f8d797a346f5a1
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 Jun 2015 03:30:41 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '109'
+      Etag:
+      - W/"49fd775d2cba95f1df645baab866d2d9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=f524de65d831dbba912ca75787032dd1; path=/; HttpOnly
+      X-Request-Id:
+      - 78ef58d9-94aa-44ef-93f5-4ca2429a8e87
+      X-Runtime:
+      - '0.026596'
+    body:
+      encoding: UTF-8
+      string: '{"id":95,"operator":"XL","operator_code":"TEL.1","description":"Telsomsel
+        1,000","nominal":1000,"price":1200}'
+    http_version: 
+  recorded_at: Wed, 17 Jun 2015 03:30:41 GMT
+recorded_with: VCR 2.9.3

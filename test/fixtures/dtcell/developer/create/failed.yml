@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v1/dtcell/product
+    body:
+      encoding: UTF-8
+      string: '{"operator":"Telkomsel","operator_code":"TEL.1","description":"Telsomsel
+        1,000","nominal":1000,"price":1500}'
+    headers:
+      Authorization:
+      - Bearer 21d38d7debd544d254a60b7f2b138191
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 17 Jun 2015 04:36:28 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '27'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _session_id=f6c65054afca2928e7761a46271868de; path=/; HttpOnly
+      X-Request-Id:
+      - 958d13fe-7c4a-473e-996f-02055a406202
+      X-Runtime:
+      - '0.016521'
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_request"}'
+    http_version: 
+  recorded_at: Wed, 17 Jun 2015 04:36:28 GMT
+recorded_with: VCR 2.9.3

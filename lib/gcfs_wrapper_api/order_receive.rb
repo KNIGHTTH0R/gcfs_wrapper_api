@@ -9,7 +9,7 @@ module Gcfs
 
         def initialize(attributes)
           @receiver = attributes["receiver"]
-          @received_at = attributes["received_at"]
+          @received_at = Time.zone.parse(attributes["received_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
         end
       end
 

@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/dtcell/product/96
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 8a64ff135161988437f8d797a346f5a1
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 17 Jun 2015 03:44:40 GMT
+      Status:
+      - 404 Not Found
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '33'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _session_id=4bbaf8bb868f40088ac4e7d98c12c607; path=/; HttpOnly
+      X-Request-Id:
+      - 37e41d62-0f9d-4b8a-a01f-570487f7f2ab
+      X-Runtime:
+      - '0.015037'
+    body:
+      encoding: UTF-8
+      string: '{"error":"Product doesn''t Exist"}'
+    http_version: 
+  recorded_at: Wed, 17 Jun 2015 03:44:40 GMT
+recorded_with: VCR 2.9.3

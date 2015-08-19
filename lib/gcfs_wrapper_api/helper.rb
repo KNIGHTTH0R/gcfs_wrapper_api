@@ -14,7 +14,7 @@ module Gcfs
         end
 
         def fetch_gcfs_api_token
-          Rails.cache.fetch('GCFS_API_TOKEN') { Gcfs::Wrapper::Api::Token.request }
+          Rails.cache.fetch('GCFS_API_TOKEN', expires_in: 1.hour) { Gcfs::Wrapper::Api::Token.request }
         end
 
         def refetch_gcfs_api_token

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/dtcell/product/95
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Authorization:
+      - Bearer 8a64ff135161988437f8d797a346f5a1
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 17 Jun 2015 03:36:19 GMT
+      Status:
+      - 400 Bad Request
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '95'
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _session_id=d93179f9812c77f2972080d106fc0dd6; path=/; HttpOnly
+      X-Request-Id:
+      - f33f48f7-4998-409c-b874-2a2d88477f0e
+      X-Runtime:
+      - '0.175210'
+    body:
+      encoding: UTF-8
+      string: '{"error":"operator is missing, operator_code is missing, nominal is
+        missing, price is missing"}'
+    http_version: 
+  recorded_at: Wed, 17 Jun 2015 03:36:19 GMT
+recorded_with: VCR 2.9.3

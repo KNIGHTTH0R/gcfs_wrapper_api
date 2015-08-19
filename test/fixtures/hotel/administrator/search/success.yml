@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/hotels/search?adult=2&enddate=2012-07-22&metadata%5Buser%5D%5Bid%5D=1&metadata%5Buser%5D%5Bname%5D=derri@giftcard.co.id&night=1&q=legian&room=1&startdate=2012-07-21
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 1fc04e370fc794c96074129c4eeebd97
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 Jun 2015 06:54:56 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '24062'
+      Etag:
+      - W/"e8ae935685ff9a11d25b6bed4d8b3b62"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=2b9cbf770eccefcda4e49c8ba3bf4d41; path=/; HttpOnly
+      X-Request-Id:
+      - 12577e38-a692-449e-a9fd-8da15b4ddb26
+      X-Runtime:
+      - '15.738837'
+    body:
+      encoding: UTF-8
+      string: '{"diagnostic":{"status":200,"elapsetime":"14.5559","memoryusage":"82.37MB","unix_timestamp":1434956095,"confirm":"success","lang":"id","currency":"IDR"},"output_type":"json","search_queries":{"q":"legian","uid":"","startdate":"2015-06-23","enddate":"2015-06-24","night":"1","room":1,"adult":"2","child":0,"sort":false,"minstar":0,"maxstar":5,"minprice":"0.00","maxprice":"8808000.00","distance":100000},"results":{"result":[{"id":"348020150623","room_available":"3","latitude":"-8.71107580000000000000","longitude":"115.17265509999993000000","star_rating":"3","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/legian-paradiso-hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A12453","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Legian","photo_primary":"https://www-sandbox.tiket.com/img/business/1/0/business-10_swimming_pool.sq2.jpg","room_max_occupancies":"2","rating":"7.3","room_facility_name":"Brankas|AC|Satelit/TV
+        kabel|Meja|Shower|Bar kecil|Mesin pembuat kopi/teh|Air mineral botol gratis|Televisi|Telepon|Cermin|Pengering
+        rambut dengan permintaan|Teras","oldprice":"810216.00","address":"Legian Street
+        # 118, Kuta , Kuta, Badung","wifi":"","promo_name":"Diskon 65%","price":"500000.00","total_price":"500000.00","regional":"Legian
+        -   - Bali","name":"Legian Paradiso Hotel","hotel_id":"12453"},{"id":"45775720150623","room_available":"5","latitude":"-8.70791697870486400000","longitude":"115.17826847144170000000","star_rating":"3","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/spazzio-bali-hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A4196","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Legian","photo_primary":"https://www-sandbox.tiket.com/img/business/l/o/business-lobby_171.sq2.jpg","room_max_occupancies":"2","rating":"7.8","room_facility_name":"Ruang
+        Bebas Rokok|Brankas|AC|Akses Internet - LAN (gratis)|Internet - Wifi (gratis)|Televisi
+        LCD/layar plasma|Satelit/TV kabel|Meja|Shower|Air mineral botol gratis|Telepon|Papan
+        setrika dengan permintaan|Kulkas","oldprice":"425363.00","address":"Dewi Sri
+        Street, No 20 Legian , Kuta, Badung","wifi":"Wi-Fi Tersedia","promo_name":"Diskon
+        65%","price":"262500.00","total_price":"262500.00","regional":"Legian -   -
+        Bali","name":"Spazzio Bali Hotel","hotel_id":"4196"},{"id":"45555720150623","room_available":"5","latitude":"-8.69819000000000000000","longitude":"115.17407930000002000000","star_rating":"0","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/casa-dasa-bali?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A19997382","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":" ","photo_primary":"https://www-sandbox.tiket.com/img/business/o/n/business-one-bedroom-standard1.sq2.jpg","room_max_occupancies":"2","rating":"","room_facility_name":"Ruang
+        Bebas Rokok|AC|Akses Internet - LAN |Akses Internet - LAN (gratis)|Internet
+        - Wifi|Internet - Wifi (gratis)|Televisi LCD/layar plasma|Satelit/TV kabel|Meja|Alat
+        pemutar DVD/CD|Shower|Pengering Rambut|Bar kecil|Air mineral botol gratis|Televisi|Telepon|Sandal|Cermin|Papan
+        setrika dengan permintaan|Pengering rambut dengan permintaan|Kulkas|Teras|Gratis
+        Perlengkapan Mandi|Alat pembuat kopi and teh berdasarkan permintaan|Shower
+        Panas and Dingin","oldprice":"550947.00","address":"Jalan Nakula No. 10 Legian
+        Kuta Bali ,  , Kuta","wifi":"Wi-Fi Tersedia","promo_name":"Diskon 52%","price":"264000.00","total_price":"264000.00","regional":"  -   -
+        Bali","name":"Casa Dasa Legian","hotel_id":"19997382"},{"id":"WSMA0511003520150623","room_available":1,"latitude":"-8.70856442985294500000","longitude":"115.17080157995224000000","star_rating":"2","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/loft-legian-hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A194728","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Legian","room_max_occupancies":2,"photo_primary":"https://www-sandbox.tiket.com/img/business/s/u/business-superior_twin_loft1.sq2.jpg","rating":"8.0","room_facility_name":"","additional_description":["Hanya
+        untuk KTP/KITAS","Top Secret Deal"],"oldprice":"716100.00","address":"Melasti
+        street no. 99, Legian , Kuta, Badung","wifi":"","promo_name":"Diskon 75%","price":"350000.00","total_price":"350000.00","regional":"Legian
+        -   - Bali","name":"Loft Legian Hotel ","hotel_id":"194728"},{"id":"45592220150623","room_available":"1","latitude":"-8.71990670000000000000","longitude":"115.17500889999997000000","star_rating":"3","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/sandat-hotel-legian?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A19484897","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Legian","photo_primary":"https://www-sandbox.tiket.com/img/business/d/s/business-dsc_31922.sq2.jpg","room_max_occupancies":"2","rating":"8.4","room_facility_name":"Meja|Shower|Mesin
+        pembuat kopi/teh|Air mineral botol gratis|Televisi|Telepon|Gratis Perlengkapan
+        Mandi|Lemari","oldprice":"657380.00","address":"Jl. Legian No. 120 , Kuta,
+        Badung","wifi":"","promo_name":"","price":"420000.00","total_price":"420000.00","regional":"Legian
+        -   - Bali","name":"Hotel Sandat Legian","hotel_id":"19484897"},{"id":"47606320150623","room_available":"2","latitude":"-8.71564360000000000000","longitude":"115.17393210000000000000","star_rating":"3","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/fourteen-roses-hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A118530","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Kuta","photo_primary":"https://www-sandbox.tiket.com/img/business/i/m/business-img_6188.sq2.jpg","room_max_occupancies":"2","rating":"6.5","room_facility_name":"Ruang
+        Bebas Rokok|AC|Satelit/TV kabel|Meja|Shower|Bathtub|Air mineral botol gratis|Televisi|Telepon|Cermin|Kulkas|Teras|Teras|Gratis
+        Perlengkapan Mandi|Shower Panas and Dingin","oldprice":"685553.00","address":"Legian
+        Street No. 153 , Kuta, Badung","wifi":"","promo_name":"Diskon 36%","price":"438000.00","total_price":"438000.00","regional":"Kuta
+        -   - Bali","name":"Fourteen Roses Hotel","hotel_id":"118530"},{"id":"109820150623","room_available":"5","latitude":"-8.69762492010732000000","longitude":"115.16453677832646000000","star_rating":"4","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/ananta-legian-hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A18418","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":" ","photo_primary":"https://www-sandbox.tiket.com/img/business/v/i/business-view-top1.sq2.jpg","room_max_occupancies":"2","rating":"8.9","room_facility_name":"Ruang
+        Bebas Rokok|Brankas|AC|Internet - Wifi|Internet - Wifi (gratis)|Televisi LCD/layar
+        plasma|Satelit/TV kabel|Meja|Shower|Pengering Rambut|Bar kecil|Mesin pembuat
+        kopi/teh|Air mineral botol gratis|Televisi|Telepon|Sandal|Cermin","oldprice":"1509539.00","address":"Werkudara
+        street No. 539, Legian , Kuta, Badung","wifi":"Wi-Fi Tersedia","promo_name":"Diskon
+        50%","price":"1085000.00","total_price":"1085000.00","regional":"  -   - Bali","name":"Ananta
+        Legian Hotel","hotel_id":"18418"},{"id":"53625820150623","room_available":"5","latitude":"-8.71793620000000000000","longitude":"115.17472440000006000000","star_rating":"2","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/surya-tropical-kuta-bali?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A20783379","province_name":"Bali","kecamatan_name":"Kuta","kelurahan_name":"Legian","photo_primary":"https://www-sandbox.tiket.com/img/default/d/e/default-default.sq2.jpg","room_max_occupancies":"2","rating":"","oldprice":"1039982.00","room_facility_name":"","address":"Jalan
+        Raya Legian Gang Tropozone Kuta Bali , Kuta, Badung","wifi":"","promo_name":"Diskon
+        56%","price":"","total_price":"","regional":"Legian - Kuta - Bali","name":"Surya
+        Tropical Kuta Bali","hotel_id":"20783379"},{"id":"WSMA0511003520150623","room_available":1,"latitude":"-8.70158352727046500000","longitude":"115.16619622707367000000","star_rating":"4","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/ossotel-legian?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A19885417","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Legian","room_max_occupancies":2,"photo_primary":"https://www-sandbox.tiket.com/img/business/t/k/business-tkt.1_-_main_pict_--.sq2.jpg","rating":"","room_facility_name":"","additional_description":["Hanya
+        untuk KTP/KITAS","Top Secret Deal"],"oldprice":"1236694.00","address":"North
+        Padma Street , Kuta, Badung","wifi":"","promo_name":"Diskon 67%","price":"755556.00","total_price":"755556.00","regional":"Legian
+        -   - Bali","name":"Ossotel Legian","hotel_id":"19885417"},{"id":"341920150623","room_available":"4","latitude":"-8.70881365070466300000","longitude":"115.17087936401367000000","star_rating":"3","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/wida-hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A195435","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Legian","photo_primary":"https://www-sandbox.tiket.com/img/business/w/i/business-wida161.sq2.jpg","room_max_occupancies":"2","rating":"7.0","room_facility_name":"Brankas|Televisi
+        LCD/layar plasma|Satelit/TV kabel|Meja|Shower|Air mineral botol gratis|Telepon|Kulkas|Gratis
+        Perlengkapan Mandi|Lemari|Shower Panas and Dingin","oldprice":"1064642.00","address":"Melasti
+        Street 36 Legian Kuta , Kuta, Badung","wifi":"","promo_name":"","price":"400000.00","total_price":"400000.00","regional":"Legian
+        -   - Bali","name":"Wida Hotel","hotel_id":"195435"},{"id":"47563220150623","room_available":"3","latitude":"-8.69687130000000000000","longitude":"115.17531959999997000000","star_rating":"2","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/the-agung-residence?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A20709231","province_name":"Bali","kecamatan_name":"Kuta","kelurahan_name":"Legian","photo_primary":"https://www-sandbox.tiket.com/img/business/s/w/business-swimming_pool_-4-1.sq2.jpg","room_max_occupancies":"2","rating":"","room_facility_name":"Ruang
+        Bebas Rokok|Brankas|AC|Internet - Wifi|Internet - Wifi (gratis)|Televisi LCD/layar
+        plasma|Satelit/TV kabel|Meja|Shower|Televisi|Telepon|Cermin|Papan setrika
+        dengan permintaan|Gratis Perlengkapan Mandi|Shower Panas and Dingin","oldprice":"426080.00","address":"Jalan
+        Nakula - LC. Srhi Laksmi I No.18, Legian , Kuta, Badung","wifi":"Wi-Fi Tersedia","promo_name":"Diskon
+        50%","price":"245000.00","total_price":"245000.00","regional":"Legian - Kuta
+        - Bali","name":"The AGUNG Residence","hotel_id":"20709231"},{"id":"WSMA1306007720150623","room_available":1,"latitude":"-8.70768000000000000000","longitude":"115.17473960000007000000","star_rating":"3","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/bliss-wayan-hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A12719","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Legian","room_max_occupancies":2,"photo_primary":"https://www-sandbox.tiket.com/img/business/l/o/business-lounge6.sq2.jpg","rating":"8.5","room_facility_name":"","additional_description":["Hanya
+        untuk KTP/KITAS","Top Secret Deal"],"oldprice":"797941.00","address":"Sriwijaya
+        street  No. 88, Legian , Kuta, Badung","wifi":"","promo_name":"Diskon 59%","price":"433334.00","total_price":"433334.00","regional":"Legian
+        -   - Bali","name":"Bliss Wayan Hotel","hotel_id":"12719"},{"id":"63820150623","room_available":"5","latitude":"-8.70938410000000000000","longitude":"115.17935950000003000000","star_rating":"3","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/gosyen-hotel-bali?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A4040","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Kuta","photo_primary":"https://www-sandbox.tiket.com/img/business/0/6/business-0622.sq2.jpg","room_max_occupancies":"2","rating":"9.6","room_facility_name":"Ruang
+        Bebas Rokok|Brankas|AC|Internet - Wifi (gratis)|Televisi LCD/layar plasma|Satelit/TV
+        kabel|Meja|Shower|Bar kecil|Mesin pembuat kopi/teh|Air mineral botol gratis|Televisi|Telepon|Cermin|Gratis
+        Perlengkapan Mandi|Lemari|Shower Panas and Dingin","oldprice":"602598.00","address":"Dewi
+        Sri street No. 9, Legian, Kuta , Kuta, Badung","wifi":"Wi-Fi Tersedia","promo_name":"Diskon
+        50%","price":"385000.00","total_price":"385000.00","regional":"Kuta -   -
+        Bali","name":"Gosyen Hotel Bali","hotel_id":"4040"},{"id":"45650820150623","room_available":"3","latitude":"-8.71259989999999900000","longitude":"115.16982630000007000000","star_rating":"2","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/beneyasa-beach-hotel-2?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A20165941","province_name":"Bali","kecamatan_name":"Kuta","kelurahan_name":"Legian","photo_primary":"https://www-sandbox.tiket.com/img/business/i/m/business-img_5676.sq2.jpg","room_max_occupancies":"2","rating":"","room_facility_name":"Brankas|Meja|Shower|Kulkas|Teras|Kipas
+        Angin","oldprice":"330081.00","address":"Lebak Benesari Street , Kuta, Badung","wifi":"","promo_name":"Diskon
+        48%","price":"189800.00","total_price":"189800.00","regional":"Legian - Kuta
+        - Bali","name":"Beneyasa Beach Hotel 2","hotel_id":"20165941"},{"id":"45648020150623","room_available":"2","latitude":"-8.69940147138338400000","longitude":"115.16735762357712000000","star_rating":"3","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/kuta/kusnadi-hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A20163787","province_name":"Bali","kecamatan_name":"Kuta","kelurahan_name":"Legian","photo_primary":"https://www-sandbox.tiket.com/img/business/k/u/business-kusnadi7.sq2.jpg","room_max_occupancies":"2","rating":"","room_facility_name":"AC|Internet
+        - Wifi (gratis)|Satelit/TV kabel|Pengering rambut berdasarkan permintaan|Shower
+        Panas and Dingin","oldprice":"0.00","address":"Werkudara Street No. 518, Legian
+        , Kuta, Badung","wifi":"Wi-Fi Tersedia","promo_name":"Diskon 48%","price":"","total_price":"","regional":"Legian
+        - Kuta - Bali","name":"Kusnadi Hotel","hotel_id":"20163787"},{"id":"ROOMDUM-1120420150623","room_available":1,"latitude":"-8.70852659999999900000","longitude":"115.17087930000002000000","star_rating":"3","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/champlung-mas-legian?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A11204","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Legian","room_max_occupancies":2,"photo_primary":"https://www-sandbox.tiket.com/img/business/t/i/business-tiket_41.sq2.jpg","rating":"","room_facility_name":"","additional_description":["Hanya
+        untuk KTP/KITAS","Top Secret Deal"],"oldprice":"671089.00","address":"Melasti
+        Street, Legian - Kuta , Kuta, Badung","wifi":"","promo_name":"","price":"364445.00","total_price":"364445.00","regional":"Legian
+        -   - Bali","name":"Champlung Mas Legian","hotel_id":"11204"},{"id":"WSMA1106030020150623","room_available":1,"latitude":"-8.70178310000000000000","longitude":"115.17954789999999000000","star_rating":"3","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/berry-hotel-bali?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A4248","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Legian","room_max_occupancies":2,"photo_primary":"https://www-sandbox.tiket.com/img/business/t/h/business-thumbhandler.ashx-.sq2.jpg","rating":"8.4","room_facility_name":"","additional_description":["Hanya
+        untuk KTP/KITAS","Top Secret Deal"],"oldprice":"1000086.00","address":"Dewi
+        Sri Street I No. 16, Kuta , Kuta, Badung","wifi":"","promo_name":"","price":"543112.00","total_price":"543112.00","regional":"Legian
+        -   - Bali","name":"Hotel Berry","hotel_id":"4248"},{"id":"48373220150623","room_available":"8","latitude":"-8.71248420000000000000","longitude":"115.17111729999999000000","star_rating":"3","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/adi-dharma-hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A18314","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Legian","photo_primary":"https://www-sandbox.tiket.com/img/business/l/o/business-lobby-front-view.sq2.jpg","room_max_occupancies":"2","rating":"8.0","room_facility_name":"Ruang
+        Bebas Rokok|Brankas|AC|Internet - Wifi (gratis)|Televisi LCD/layar plasma|Meja|Shower|Bathtub|Pengering
+        Rambut|Bar kecil|Mesin pembuat kopi/teh|Air mineral botol gratis|Televisi|Telepon|Cermin|Kulkas|Teras|Teras|Gratis
+        Perlengkapan Mandi|Lemari|Shower Panas and Dingin","oldprice":"1119111.00","address":"Benesari
+        Street, Legian - Kuta , Kuta, Badung","wifi":"Wi-Fi Tersedia","promo_name":"","price":"1250000.00","total_price":"1250000.00","regional":"Legian
+        -   - Bali","name":"Adi Dharma Hotel","hotel_id":"18314"},{"id":"WSMA0709109120150623","room_available":1,"latitude":"-8.71247249999999900000","longitude":"115.17305120000003000000","star_rating":"4","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/legian/the-akmani-legian?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A106048","province_name":"Bali","kecamatan_name":"
+        ","kelurahan_name":"Legian","room_max_occupancies":2,"photo_primary":"https://www-sandbox.tiket.com/img/business/w/e/business-webs_-2-.sq2.jpg","rating":"8.3","room_facility_name":"","additional_description":["Hanya
+        untuk KTP/KITAS","Top Secret Deal"],"oldprice":"918428.00","address":"Legian
+        Raya 91, Kuta, Bali 80361 Indonesia , Kuta, Badung","wifi":"","promo_name":"Diskon
+        53%","price":"561112.00","total_price":"561112.00","regional":"Legian -   -
+        Bali","name":"The Akmani Legian","hotel_id":"106048"},{"id":"45646820150623","room_available":"2","latitude":"-8.71704650000000000000","longitude":"115.17017540000006000000","star_rating":"2","business_uri":"https://api-sandbox.tiket.com/hotel/indonesia/bali/kuta/beneyasa-beach-inn-1?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026star_rating%5B0%5D=0\u0026star_rating%5B1%5D=1\u0026star_rating%5B2%5D=2\u0026star_rating%5B3%5D=3\u0026star_rating%5B4%5D=4\u0026star_rating%5B5%5D=5\u0026latitude=0\u0026longitude=0\u0026distance=0\u0026uid=business%3A20163244","province_name":"Bali","kecamatan_name":"Kuta","kelurahan_name":"Legian","photo_primary":"https://www-sandbox.tiket.com/img/business/s/u/business-superac1.sq2.jpg","room_max_occupancies":"2","rating":"","room_facility_name":"Meja|Shower|Teras","oldprice":"405210.00","address":"Legian
+        Street, Poppies Lane II , Kuta, Badung","wifi":"","promo_name":"Diskon 50%","price":"233000.00","total_price":"233000.00","regional":"Legian
+        - Kuta - Bali","name":"Beneyasa Beach Inn 1","hotel_id":"20163244"}]},"pagination":{"total_found":147,"current_page":1,"offset":"20","lastPage":8},"login_status":"false","token":"a4a538a06b4dde572634a53a300a190d7cfe60ae"}'
+    http_version: 
+  recorded_at: Mon, 22 Jun 2015 06:54:56 GMT
+recorded_with: VCR 2.9.3

@@ -20,8 +20,8 @@ module Gcfs
           @name = attributes["name"]
           @category = attributes["category"]
           @image = attributes["image"]
-          @created_at = attributes["created_at"]
-          @updated_at = attributes["updated_at"]
+          @created_at = Time.zone.parse(attributes["created_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
+          @updated_at = Time.zone.parse(attributes["updated_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           @variants = attributes["variants"].map{|variant| Gcfs::Wrapper::Api::ItemVariant.new variant } if attributes["variants"]
         end
 

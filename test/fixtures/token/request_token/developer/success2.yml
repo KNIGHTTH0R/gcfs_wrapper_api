@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://DQI5DqcwA2fuEARnciMWl5oHroU:vH6urcUIjh20aq4qLKQYXTLIUIw@localhost:3000/v1/token
+    body:
+      encoding: UTF-8
+      string: '{"username":"windiana@giftcard.co.id","password":"12345678","grant_type":"password","scope":"offline_access"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Wed, 17 Jun 2015 04:18:36 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '70'
+      Etag:
+      - W/"d96292696bd0a1eaee8c8ae325aff34e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=91affb0b792ff77e845bd52eaf0b5d86; path=/; HttpOnly
+      X-Request-Id:
+      - 28cae03c-43de-4a7f-94e0-17979f9edf6e
+      X-Runtime:
+      - '0.322902'
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"21d38d7debd544d254a60b7f2b138191","expires_in":85803}'
+    http_version: 
+  recorded_at: Wed, 17 Jun 2015 04:18:36 GMT
+recorded_with: VCR 2.9.3

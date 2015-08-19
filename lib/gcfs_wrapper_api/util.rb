@@ -18,6 +18,8 @@ module Gcfs
               elsif json.is_a? Hash
                 if json.has_key? 'error'
                   raise Gcfs::Wrapper::Api::Error.new json['error']
+                elsif json.has_key?('diagnostic') || json.has_key?('airport')
+                  json
                 else  
                   new(json)
                 end
@@ -56,8 +58,10 @@ module Gcfs
             options.delete_if {|key, value| value.blank? }
 
             options.keys.select{|key|[:query,:sort].include? key}.each do |key|
-              options[key] = options[key].symbolize_keys
-              options[key].delete_if {|key, value| value.blank? }
+              unless options[key].is_a?String
+                options[key] = options[key].symbolize_keys 
+                options[key].delete_if {|key, value| value.blank? }
+              end
             end
             options
           end

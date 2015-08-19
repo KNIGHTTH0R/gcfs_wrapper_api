@@ -154,10 +154,296 @@ params = {
 order = Gcfs::Wrapper::Api::Order.create params
 ```
 
+**Create an Order with address type**
+
+```ruby
+params = {
+  "description": "Pembelian Voucher",
+  "recepient": {
+    "name": "Mr. Burnice Anderson",
+    "email": "enrique.prosacco@kulas.net",
+    "phone_number": "947.962.2387",
+    "address_type": "home",
+    "address": "Rasuna Said 10",
+    "rt_rw": "03/01",
+    "city": "dki jakarta", #Gcfs::Wrapper::Api::City @name
+    "zip_code": "12950",
+    "notes": "Pagar warna putih, Jika tidak ada orang di rumah harap ketuk rumah sebelah dan titipkan ke Ibu Dewi"
+  },
+  "items":[
+    {
+      "id": 1, #Gcfs::Wrapper::Api::Item @id
+      "variants": [{
+        "id": 1, #Gcfs::Wrapper::Api::ItemVariant @id
+        "quantity": 10
+      },
+      {
+        "id": 2,
+        "quantity": 10
+      }]
+    }
+  ],
+  "metadata":{
+    "user":{
+      "id": 1, #Your App current_user's id
+      "name": "Admin" #Your App current_user's name/email
+    }
+  }
+}
+order = Gcfs::Wrapper::Api::Order.create params
+```
+
+```ruby
+params = {
+  "description": "Pembelian Voucher",
+  "recepient": {
+    "name": "Mr. Burnice Anderson",
+    "email": "enrique.prosacco@kulas.net",
+    "phone_number": "947.962.2387",
+    "address_type": "office",
+    "company_name": "Giftcard Indonesia",
+    "division_or_floor": "Floor 11th",
+    "building_name": "Menara Imperium",
+    "address": "Rasuna Said 10",
+    "city": "dki jakarta", #Gcfs::Wrapper::Api::City @name
+    "zip_code": "12950",
+    "notes": "Pagar warna putih, Jika tidak ada orang di rumah harap ketuk rumah sebelah dan titipkan ke Ibu Dewi"
+  },
+  "items":[
+    {
+      "id": 1, #Gcfs::Wrapper::Api::Item @id
+      "variants": [{
+        "id": 1, #Gcfs::Wrapper::Api::ItemVariant @id
+        "quantity": 10
+      },
+      {
+        "id": 2,
+        "quantity": 10
+      }]
+    }
+  ],
+  "metadata":{
+    "user":{
+      "id": 1, #Your App current_user's id
+      "name": "Admin" #Your App current_user's name/email
+    }
+  }
+}
+order = Gcfs::Wrapper::Api::Order.create params
+```
+
 **Show Order**
 
 ```ruby
 Gcfs::Wrapper::Api::Order.find(1)
+```
+
+### Flight
+
+**Search flight according to date, destination, and number of passangers**
+```ruby
+params = {
+    "d":"CGK",
+    "a":"DPS",
+    "date":"2015-04-28",
+    "ret_date":"2015-04-30",
+    "adult":"2",
+    "child":"0",
+    "infant":"1",
+    "sort":"priceasc",
+    "metadata":{
+        "user":{
+            "id": 1, #Your App current_user's id
+            "name": "Admin" #Your App current_user's email
+        }
+    }
+}
+search = Gcfs::Wrapper::Api::Flight.search params
+```
+
+**Create Flight Order**
+```ruby
+params = {
+  "flight_id": "960685",
+  "ret_flight_id": "144355",
+  "date": "2015-08-09",
+  "adult": 1,
+  "conSalutation": "Mrs",
+  "conFirstName": "Jessica",
+  "conLastName": "Kim",
+  "conPhone": "6287880182218",
+  "conEmailAddress": "jess@kim.com",
+  "firstnamea1": "Jessica",
+  "lastnamea1": "Kim",
+  "birthdatea1": "1988-02-02",
+  "ida1": "1234567890",
+  "titlea1": "Ms",
+  "conOtherPhone": "6287880182236",
+  "passportnoa1": "A37365",
+  "passportExpiryDatea1": "2017-07-30",
+  "passportissueddatea1": "2012-07-30",
+  "passportissuinga1": "id",
+  "passportnationalitya1": "id",
+  "dcheckinbaggagea11": 0,
+  "rcheckinbaggagea11": 20,
+  "recepient": {
+    "name": "Scarlett",
+    "email": "windiana88@hotmail.com",
+    "phone_number": "08155566945"
+  },
+  "metadata": {
+    "user": {
+      "id": 1,
+      "name": "windiana@giftcard.co.id"
+    }
+  }
+}
+order = Gcfs::Wrapper::Api::Flight.process_order params
+```
+
+**Get Airport List**
+```ruby
+params = {
+  metadata: {
+    user: {
+      id: 1,
+      name: "windiana@giftcard.co.id"
+    }
+  }
+}
+search = Gcfs::Wrapper::Api::Flight.airports params
+```
+
+### Hotel
+
+**Search Hotel according to date, destination, and number of guest**
+```ruby
+params_search = {
+    "q":"legian", 
+    "startdate":"2015-04-28",
+    "enddate":"2015-04-30",
+    "night":"1", 
+    "room":"1", 
+    "adult":"2", 
+    "child":"0", 
+    "minprice":"", 
+    "maxprice":"", 
+    "minstar":"", 
+    "maxstar":"", 
+    "latitude":"", 
+    "longitude":"",  
+    "uid":"",
+    "metadata":{
+        "user":{ 
+            "id":1, #Your App current_user's id
+            "name":'derri@giftcard.co.id' #Your App current_user's email
+        }
+    }
+}
+search = Gcfs::Wrapper::Api::Hotel.search params_search
+```
+
+**Search Autocomplete**
+```ruby
+params_auto = {
+    "q":"legian",  #query, it can be name hotel, city, location etc  
+    "metadata":{
+        "user":{ 
+            "id":1, #Your App current_user's id
+            "name":'derri@giftcard.co.id' #Your App current_user's email
+        }
+    }
+}
+Gcfs::Wrapper::Api::Hotel.search_autocomplete params_auto
+```
+
+**Search Area**
+```ruby
+params_auto = {
+    "uid":"city:178", #uid can be id,country,province
+    "q":"legian",  #query, it can be name hotel, city, location etc ,this parameter is optional 
+    "type":"province", #type can be province,city,kecamatan ,this parameter is optional
+    "metadata":{
+        "user":{ 
+            "id":1, #Your App current_user's id
+            "name":'derri@giftcard.co.id' #Your App current_user's email
+        }
+    }
+}
+Gcfs::Wrapper::Api::Hotel.search_area params_auto
+```
+
+**View detail hotel**
+> Note: before execute this method, we have to execute search (Gcfs::Wrapper::Api::Hotel.search) method first to get and save hotel_id in cache
+
+```ruby
+params_detail_hotel = {
+    "hotel_id":"4196",  #hotel_id, get hotel id from search hotel  
+    "metadata":{
+        "user":{ 
+            "id":1, #Your App current_user's id
+            "name":'derri@giftcard.co.id' #Your App current_user's email
+        }
+    }
+}
+Gcfs::Wrapper::Api::Hotel.view_detail params_detail_hotel
+```
+
+**Create Order hotel**
+> Note: before execute this method, we have to execute view_detail (Gcfs::Wrapper::Api::Hotel.view_detail) method first to get and save room_id in cache
+
+```ruby
+params_order = {
+    "room_id":"457757",
+    "salutation":"Mr",  
+    "firstName":"Leonardo",
+    "lastName":"Silva",
+    "phone":"08562969660", 
+    "conSalutation":"Mr",
+    "conFirstName":"Bima",
+    "conLastName":"Rajasa", 
+    "conEmailAddress": "bima@giftcard.co.id",
+    "conPhone":"08562969660",
+    "country":"ID", 
+    "emailAddress": "bima@giftcard.co.id",
+    "recepient": {
+      "name": "Bima",
+      "email": "bima.herla@gmail.com",
+      "phone_number": "08562969660"
+    },
+    "metadata":{
+        "user":{ 
+            "id":1, #Your App current_user's id
+            "name":"derri@giftcard.co.id" #Your App current_user's email
+        }
+    }
+}
+Gcfs::Wrapper::Api::Hotel.process_order params_order
+```
+
+
+### Datacell
+
+**Get Datacell Product List**
+```ruby
+params = {
+    "sort":{
+      "operator": "asc | desc",
+      "operator_code": "asc | desc"
+    }
+}
+products = Gcfs::Wrapper::Api::Dtcell.all params
+```
+
+**Topup Phone Credit**
+```ruby
+params = {
+  "operator_code": "TEL.10",
+  "phone_number": "08188812345",
+  "qty": 2,
+  "transaction_id": "TrXih2834"
+}
+topup = Gcfs::Wrapper::Api::Dtcell.topup params
 ```
 
 ### Pagination

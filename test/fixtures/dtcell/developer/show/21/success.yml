@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/dtcell/product/21
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 21d38d7debd544d254a60b7f2b138191
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 Jun 2015 04:31:25 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '102'
+      Etag:
+      - W/"8db1d154094732eb89356e394e7bb7ee"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=0d49c7ca20f7f3813c117a72f061e2a1; path=/; HttpOnly
+      X-Request-Id:
+      - 7b1c1d7a-563c-4179-8061-406852210061
+      X-Runtime:
+      - '0.021243'
+    body:
+      encoding: UTF-8
+      string: '{"id":21,"operator":"XL","operator_code":"XL.10","description":"XL
+        Bebas 10000","nominal":0,"price":0}'
+    http_version: 
+  recorded_at: Wed, 17 Jun 2015 04:31:25 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/hotels/view_detail?hotel_id=12453&metadata%5Buser%5D%5Bid%5D=1&metadata%5Buser%5D%5Bname%5D=derri@giftcard.co.id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 1fc04e370fc794c96074129c4eeebd97
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 Jun 2015 08:19:47 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15783'
+      Etag:
+      - W/"021c1d585795faeb9b9ac2ffb330c63c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _session_id=8b5c4952fe621eca3e9fe40266357ee0; path=/; HttpOnly
+      X-Request-Id:
+      - a7c291c0-472b-456e-abd2-682eb1058c30
+      X-Runtime:
+      - '1.024833'
+    body:
+      encoding: UTF-8
+      string: '{"diagnostic":{"status":200,"elapsetime":"0.5378","memoryusage":"14.47MB","unix_timestamp":1434961186,"confirm":"success","lang":"id","currency":"IDR"},"output_type":"json","primaryPhotos":"http://api-sandbox.tiket.com/img/business/1/0/business-10_swimming_pool.s.jpg","breadcrumb":{"business_id":"12453","business_uri":"https://api-sandbox.tiket.com/legian-paradiso-hotel","business_name":"Legian
+        Paradiso Hotel","area_id":"87227","area_name":"Legian","kelurahan_id":"46216","kelurahan_name":"Legian","kecamatan_id":"4172","kecamatan_name":"Kuta","city_id":"21720","city_name":"Bali","province_id":"17","province_name":"Bali","country_id":"id","country_name":"Indonesia","continent_id":"1","continent_name":"Asia","kelurahan_uri":"https://api-sandbox.tiket.com/search/hotel?uid=city:21720","kecamatan_uri":"https://api-sandbox.tiket.com/search/hotel?uid=kecamatan:4172","province_uri":"https://api-sandbox.tiket.com/search/hotel?uid=province:17","country_uri":"https://api-sandbox.tiket.com/search/hotel?uid=country:id","continent_uri":"https://api-sandbox.tiket.com/search/hotel?uid=continent:1","star_rating":"3"},"results":{"result":[{"id":"348020150623","room_available":"3","room_id":"3480","currency":"IDR","minimum_stays":"1","with_breakfasts":"0","all_photo_room":["http://api-sandbox.tiket.com/img/business/2/_/business-2_superior_garden_room3.room.jpg","http://api-sandbox.tiket.com/img/business/3/_/business-3_superior_bath_room2.room.jpg"],"photo_url":"http://api-sandbox.tiket.com/img/business/2/_/business-2_superior_garden_room3.s.jpg","room_name":"Superior
+        Garden View Room Only","value_added":"","promo_title":"Diskon 65%","list_promo_policy":{"tier_one":"Pesanan
+        ini tidak dapat dibatalkan atau diubah. Apabila tidak datang, pembayaran yang
+        sudah diterima tidak dapat diuangkan kembali.","tier_two":"Pesanan ini tidak
+        dapat dibatalkan atau diubah. Apabila tidak datang, pembayaran yang sudah
+        diterima tidak dapat diuangkan kembali."},"price":"500000.00","bookUri":"https://api-sandbox.tiket.com/order/add/hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026minstar=0\u0026maxstar=0\u0026minprice=0\u0026maxprice=1743000\u0026hotelname=0\u0026room_id=3480\u0026hasPromo=1","room_facility":["AC","Teras","Mesin
+        pembuat kopi/teh","Air mineral botol gratis","Meja","Pengering rambut dengan
+        permintaan","Brankas","Bar kecil","Cermin","Satelit/TV kabel","Shower","Telepon","Televisi"],"room_description":false},{"id":"91320150623","room_available":"3","room_id":"913","currency":"IDR","minimum_stays":"1","with_breakfasts":"1","all_photo_room":["http://api-sandbox.tiket.com/img/business/2/_/business-2_superior_garden_room2.room.jpg","http://api-sandbox.tiket.com/img/business/3/_/business-3_superior_bath_room1.room.jpg"],"photo_url":"http://api-sandbox.tiket.com/img/business/2/_/business-2_superior_garden_room2.s.jpg","room_name":"Superior
+        Garden View","value_added":"","promo_title":"Diskon 65%","list_promo_policy":{"tier_one":"Pesanan
+        ini tidak dapat dibatalkan atau diubah. Apabila tidak datang, pembayaran yang
+        sudah diterima tidak dapat diuangkan kembali.","tier_two":"Pesanan ini tidak
+        dapat dibatalkan atau diubah. Apabila tidak datang, pembayaran yang sudah
+        diterima tidak dapat diuangkan kembali."},"price":"600000.00","bookUri":"https://api-sandbox.tiket.com/order/add/hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026minstar=0\u0026maxstar=0\u0026minprice=0\u0026maxprice=1743000\u0026hotelname=0\u0026room_id=913\u0026hasPromo=1","room_facility":["AC","Mesin
+        pembuat kopi/teh","Air mineral botol gratis","Meja","Brankas","Bar kecil","Satelit/TV
+        kabel","Shower","Telepon","Televisi"],"room_description":false},{"id":"91520150623","room_available":"3","room_id":"915","currency":"IDR","minimum_stays":"1","with_breakfasts":"1","all_photo_room":["http://api-sandbox.tiket.com/img/business/4/_/business-4_deluxe_pool_view_room1.room.jpg"],"photo_url":"http://api-sandbox.tiket.com/img/business/4/_/business-4_deluxe_pool_view_room1.s.jpg","room_name":"Deluxe
+        Pool View","value_added":"","promo_title":"Diskon 65%","list_promo_policy":{"tier_one":"Pesanan
+        ini tidak dapat dibatalkan atau diubah. Apabila tidak datang, pembayaran yang
+        sudah diterima tidak dapat diuangkan kembali.","tier_two":"Pesanan ini tidak
+        dapat dibatalkan atau diubah. Apabila tidak datang, pembayaran yang sudah
+        diterima tidak dapat diuangkan kembali."},"price":"725000.00","bookUri":"https://api-sandbox.tiket.com/order/add/hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026minstar=0\u0026maxstar=0\u0026minprice=0\u0026maxprice=1743000\u0026hotelname=0\u0026room_id=915\u0026hasPromo=1","room_facility":["AC","Mesin
+        pembuat kopi/teh","Air mineral botol gratis","Meja","Brankas","Bar kecil","Satelit/TV
+        kabel","Shower","Telepon","Televisi"],"room_description":false},{"id":"91620150623","room_available":"3","room_id":"916","currency":"IDR","minimum_stays":"1","with_breakfasts":"1","all_photo_room":["http://api-sandbox.tiket.com/img/business/5/_/business-5_super_deluxe_garden_room2.room.jpg","http://api-sandbox.tiket.com/img/business/6/_/business-6_super_deluxe_bath_room1.room.jpg"],"photo_url":"http://api-sandbox.tiket.com/img/business/5/_/business-5_super_deluxe_garden_room2.s.jpg","room_name":"Super
+        Deluxe Garden View","value_added":"","promo_title":"Diskon 65%","list_promo_policy":{"tier_one":"Pesanan
+        ini tidak dapat dibatalkan atau diubah. Apabila tidak datang, pembayaran yang
+        sudah diterima tidak dapat diuangkan kembali.","tier_two":"Pesanan ini tidak
+        dapat dibatalkan atau diubah. Apabila tidak datang, pembayaran yang sudah
+        diterima tidak dapat diuangkan kembali."},"price":"0.00","bookUri":"https://api-sandbox.tiket.com/order/add/hotel?startdate=2015-06-23\u0026enddate=2015-06-24\u0026night=1\u0026room=1\u0026adult=2\u0026child=0\u0026minstar=0\u0026maxstar=0\u0026minprice=0\u0026maxprice=1743000\u0026hotelname=0\u0026room_id=916\u0026hasPromo=1","room_facility":["AC","Mesin
+        pembuat kopi/teh","Air mineral botol gratis","Meja","Brankas","Bar kecil","Satelit/TV
+        kabel","Shower","Telepon","Televisi"],"room_description":false}]},"addinfos":{"addinfo":["Checkout
+        : 12:00","Usia Anak : 4-12 tahun","Check in paling awal : 14:00","Jumlah Restoran
+        : 1","Voltase ruangan : 220 V","Waktu untuk sampai di bandara : 15 menit"]},"all_photo":{"photo":[{"file_name":"http://api-sandbox.tiket.com/img/business/_/d/business-_dsc4062.s.jpg","photo_type":"Taman"},{"file_name":"http://api-sandbox.tiket.com/img/business/1/_/business-1_lobby.s.jpg","photo_type":"Lobby"},{"file_name":"http://api-sandbox.tiket.com/img/business/1/0/business-10_swimming_pool.s.jpg","photo_type":"Kolam
+        Renang"},{"file_name":"http://api-sandbox.tiket.com/img/business/1/1/business-11_arjuna_meeting_room.s.jpg","photo_type":"Ruangan
+        Meeting"},{"file_name":"http://api-sandbox.tiket.com/img/business/1/2/business-12_garden_1.s.jpg","photo_type":"Taman"},{"file_name":"http://api-sandbox.tiket.com/img/business/1/3/business-13_garden_2.s.jpg","photo_type":"Taman"},{"file_name":"http://api-sandbox.tiket.com/img/business/2/_/business-2_superior_garden_room.s.jpg","photo_type":"Kamar
+        Tamu"},{"file_name":"http://api-sandbox.tiket.com/img/business/3/_/business-3_superior_bath_room.s.jpg","photo_type":"Kamar
+        Mandi"},{"file_name":"http://api-sandbox.tiket.com/img/business/4/_/business-4_deluxe_pool_view_room.s.jpg","photo_type":"Kamar
+        Tamu"},{"file_name":"http://api-sandbox.tiket.com/img/business/5/_/business-5_super_deluxe_garden_room.s.jpg","photo_type":"Kamar
+        Tamu"},{"file_name":"http://api-sandbox.tiket.com/img/business/6/_/business-6_super_deluxe_bath_room.s.jpg","photo_type":"Kamar
+        Mandi"},{"file_name":"http://api-sandbox.tiket.com/img/business/7/_/business-7_suite_garden_room.s.jpg","photo_type":"Kamar
+        Tamu"},{"file_name":"http://api-sandbox.tiket.com/img/business/8/_/business-8_suite_living_room.s.jpg","photo_type":"Ruang
+        Tamu"},{"file_name":"http://api-sandbox.tiket.com/img/business/9/_/business-9_bloody_sweet_restaurant.s.jpg","photo_type":"Rumah
+        Makan"},{"file_name":"http://api-sandbox.tiket.com/img/business/p/o/business-pool_2.s.jpg","photo_type":"Kolam
+        Renang"}]},"primaryPhotos_large":"http://api-sandbox.tiket.com/img/business/1/0/business-10_swimming_pool.crop.jpg","avail_facilities":{"avail_facilitiy":[{"facility_type":"hotel","facility_name":"Layanan
+        Kamar 24 Jam"},{"facility_type":"hotel","facility_name":"Antar Jemput Bandara
+        Dikenakan Biaya"},{"facility_type":"hotel","facility_name":"Ranjang Bayi"},{"facility_type":"hotel","facility_name":"Tempat
+        untuk bayi"},{"facility_type":"hotel","facility_name":"Bar"},{"facility_type":"hotel","facility_name":"Pusat
+        Bisnis"},{"facility_type":"hotel","facility_name":"Tempat Parkir"},{"facility_type":"hotel","facility_name":"Penjaga
+        PIntu"},{"facility_type":"hotel","facility_name":"Penukaran Mata Uang"},{"facility_type":"hotel","facility_name":"Kotak
+        Penyimpanan Barang Berharga"},{"facility_type":"hotel","facility_name":"Ruang
+        Santai Keluarga"},{"facility_type":"hotel","facility_name":"Layanan Laundry/Dry
+        Cleaning"},{"facility_type":"hotel","facility_name":"Bagasi Penyimpanan"},{"facility_type":"hotel","facility_name":"Fasilitas
+        Rapat"},{"facility_type":"hotel","facility_name":"Bar Disamping Kolam Renang"},{"facility_type":"hotel","facility_name":"Rumah
+        Makan"},{"facility_type":"hotel","facility_name":"Layanan Kamar"},{"facility_type":"hotel","facility_name":"Salon"},{"facility_type":"hotel","facility_name":"Ruang
+        untuk merokok"},{"facility_type":"hotel","facility_name":"Tur"},{"facility_type":"hotel","facility_name":"WIFI
+        Dikenakan Biaya"},{"facility_type":"room","facility_name":"AC"},{"facility_type":"room","facility_name":"Teras"},{"facility_type":"room","facility_name":"Mesin
+        pembuat kopi/teh"},{"facility_type":"room","facility_name":"Air mineral botol
+        gratis"},{"facility_type":"room","facility_name":"Meja"},{"facility_type":"room","facility_name":"Pengering
+        rambut dengan permintaan"},{"facility_type":"room","facility_name":"Brankas"},{"facility_type":"room","facility_name":"Bar
+        kecil"},{"facility_type":"room","facility_name":"Cermin"},{"facility_type":"room","facility_name":"Satelit/TV
+        kabel"},{"facility_type":"room","facility_name":"Shower"},{"facility_type":"room","facility_name":"Telepon"},{"facility_type":"room","facility_name":"Televisi"},{"facility_type":"sport","facility_name":"Taman"},{"facility_type":"sport","facility_name":"Pijat"},{"facility_type":"sport","facility_name":"Kolam
+        Renang di Luar Ruangan"},{"facility_type":"sport","facility_name":"Spa"}]},"nearby_attractions":{"nearby_attraction":[{"distance":216,"business_primary_photo":"http://api-sandbox.tiket.com/img/business/t/h/business-this-is-what-they-gave.s.jpg","business_name":"Little
+        Italy Resto","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-little-italy-resto"},{"distance":216,"business_primary_photo":"http://api-sandbox.tiket.com/img/business/p/a/business-papas1.s.jpg","business_name":"Papa''s
+        Limoncello Cafe","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-papas-limoncello-cafe"},{"distance":216,"business_primary_photo":"http://api-sandbox.tiket.com/img/business/4/1/business-41568_125987704117510_1397_n.s.jpg","business_name":"Layali
+        Arabian Resto","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-layali-arabian-resto"},{"distance":218,"business_primary_photo":"http://api-sandbox.tiket.com/img/business/g/u/business-guhaguagdu.s.jpg","business_name":"Embargo
+        Bar","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-embargo-bar"},{"distance":218,"business_primary_photo":"http://api-sandbox.tiket.com/img/business/b/o/business-bounty.s.jpg","business_name":"Bounty
+        Club","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-bounty-club"},{"distance":269,"business_primary_photo":"http://api-sandbox.tiket.com/img/business/m/b/business-mbok_limbok.s.jpg","business_name":"Warung
+        Galery Ayam Kalasan Mbok Limbok","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-Warung
+        Galery ayam-kalasan-mbok-limbok"},{"distance":590,"business_primary_photo":"http://api-sandbox.tiket.com/img/business/k/u/business-kuta_lombok-6.s.jpg","business_name":"Kuta
+        Beach","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-kuta-beach"},{"distance":736,"business_primary_photo":"http://api-sandbox.tiket.com/img/poi/p/a/poi-pantai-canggu.s.jpg","business_name":"Canggu
+        Beach","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-pantai-canggu"},{"distance":736,"business_primary_photo":"http://api-sandbox.tiket.com/img/business/3/3/business-333-korirestaurantbar.s.jpg","business_name":"KORI
+        Restaurant \u0026 Bar","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-kori-restaurant-bar"},{"distance":749,"business_primary_photo":"http://api-sandbox.tiket.com/img/business/c/a/business-cafein.s.jpg","business_name":"The
+        Caffeine Bali","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-the-caffeine-bali"},{"distance":791,"business_primary_photo":"http://api-sandbox.tiket.com/img/business/d/a/business-dadadad1.s.jpg","business_name":"Beach
+        Walk","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-beach-walk"},{"distance":943,"business_primary_photo":"http://api-sandbox.tiket.com/img/business/s/f/business-sfafafaf.s.jpg","business_name":"The
+        Banjar","business_uri":"https://api-sandbox.tiket.com/attractions/indonesia/bali/hotel-dekat-the-banjar"}]},"policy":[{"name":"Superior
+        Garden View","tier_one":"Pembatalan yang diterima 3 hari sebelum tanggal kedatangan,
+        akan dikenakan biaya untuk periode penuh.","tier_two":"Bebas biaya pembatalan
+        sampai H-7, setelah itu , akan dikenakan biaya untuk malam pertama."},{"name":"Deluxe
+        Pool View","tier_one":"Pembatalan yang diterima 3 hari sebelum tanggal kedatangan,
+        akan dikenakan biaya untuk periode penuh.","tier_two":"Bebas biaya pembatalan
+        sampai H-7, setelah itu , akan dikenakan biaya untuk malam pertama."},{"name":"Superior
+        Garden View Room Only","tier_one":"Pembatalan yang diterima 3 hari sebelum
+        tanggal kedatangan, akan dikenakan biaya untuk periode penuh.","tier_two":"Bebas
+        biaya pembatalan sampai H-7, setelah itu , akan dikenakan biaya untuk malam
+        pertama."}],"general":{"address":"Legian Street # 118, Kuta , Kuta, Badung","description":"Hotel+Legian+Paradiso+terletak+di+area+pusat+Bali+dengan+toko%2C+bar%2C+klub+malam%2C+restoran+dan+pantai+hanya+dengan+berjalan+kaki.+Hotel+budget+ini+dapat+ditempuh+kurang+dari+10+menit+berkendara+dari+Bandara+Internasional+Ngurah+Rai+dan+hanya+15+menit+berkendara+ke+Denpasar.%3Cbr+%2F%3E%0AHotel+ini+memiliki+kolam+renang%2C+parkir+gratis+dan+beberapa+jenis+pilihan+tempat+makan.+Masakan+internasional+dan+buffet+tersedia+di+Restoran+Pergola.+Pilihan+tempat+makan+lainnya+adalah+Restoran+Jepang+Fukutaro+%26+Bar+Coconut+Pool+.+Hotel+ini+memiliki+24-jam+layanan+kamar%2C+ruang+pertemuan+dan+layanan+pijat.+Dengan+fasilitas+lainnya+termasuk+layanan+binatu+dan+meja+tur.%3Cbr+%2F%3E%0ASebuah+bangunan+bergaya+Mediterania%2C+dengan+kamar+yang+luas+dibangun+di+sekitar+kolam+pusat+dan+taman+tropis%2C+memiliki+124+kamar+dengan+pilihan+satu%2C+dua+atau+tiga+tempat+tidur.+Kamar-kamar+di+hotel+ini+dilengkapi+dengan+AC%2C+TV+kabel+%2F+satelit%2C+mini+bar+dan+balkon+pribadi.+Kamar+mandi+pribadi+dilengkapi+dengan+fasilitas+shower.","latitude":-8.7110784298305,"longitude":115.17265282199},"login_status":"false","token":"a4a538a06b4dde572634a53a300a190d7cfe60ae"}'
+    http_version: 
+  recorded_at: Mon, 22 Jun 2015 08:19:47 GMT
+recorded_with: VCR 2.9.3

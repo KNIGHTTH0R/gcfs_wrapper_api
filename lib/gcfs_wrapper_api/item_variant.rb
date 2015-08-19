@@ -17,8 +17,8 @@ module Gcfs
           @description = attributes["description"]
           @nominal = attributes["nominal"]
           @price = attributes["price"]
-          @created_at = attributes["created_at"]
-          @updated_at = attributes["updated_at"]
+          @created_at = Time.zone.parse(attributes["created_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
+          @updated_at = Time.zone.parse(attributes["updated_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
         end
 
         def self.all(item_id, options={force: false})
