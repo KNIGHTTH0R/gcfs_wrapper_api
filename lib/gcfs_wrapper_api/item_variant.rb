@@ -18,6 +18,7 @@ module Gcfs
           @nominal = attributes["nominal"]
           @price = attributes["price"]
           @stock = attributes["stock"]
+          @program_id = attributes["program_id"]
           @created_at = Time.zone.parse(attributes["created_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           @updated_at = Time.zone.parse(attributes["updated_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
         end
