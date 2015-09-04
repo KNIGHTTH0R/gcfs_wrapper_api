@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class ItemVariant < Base
-        INPUT_ATTRIBUTES = [:description, :nominal, :price].freeze
+        INPUT_ATTRIBUTES = [:description, :nominal, :price, :program_id].freeze
         TABLE_ATTRIBUTES = [:id, :sku, :created_at, :updated_at, :stock].freeze
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES
         attr_reader *VALID_ATTRIBUTES
