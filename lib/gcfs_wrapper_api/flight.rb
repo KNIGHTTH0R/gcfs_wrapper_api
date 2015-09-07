@@ -47,6 +47,12 @@ module Gcfs
           retrieve_url self.get("/v1/flights/search", @options)
         end
 
+        def self.check_flight_data(options={})
+          options = parsed_params options
+          @options = configure_params body: options.to_json
+          retrieve_url self.post("/v1/flights/check_flight_data", @options)
+        end
+
         def self.process_order(options={})
           options = parsed_params options
           @options = configure_params body: options.to_json
