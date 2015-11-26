@@ -73,6 +73,18 @@ module Gcfs
           retrieve_url self.get("/v1/hotels/view_detail", @options)
         end
 
+        def self.checkout_page_request(options={})
+          options = parsed_params options
+          @options = configure_params query: options
+          retrieve_url self.get("/v1/hotels/checkout_page_request", @options)
+        end
+
+        def self.get_order(options={})
+          options = parsed_params options
+          @options = configure_params query: options
+          retrieve_url self.get("/v1/hotels/get_order", @options)
+        end
+
       end
     end
   end
