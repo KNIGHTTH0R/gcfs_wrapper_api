@@ -65,6 +65,11 @@ module Gcfs
           retrieve_url self.get("/v1/flights/airports", @options)
         end
 
+        def self.get_cart(options={})
+          @options = configure_params
+          retrieve_url self.get("/v1/flights/cart", @options)
+        end
+
       end
     end
   end
