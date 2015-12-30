@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class Order < Base
-        INPUT_ATTRIBUTES = [:description, :status, :metadata].freeze
+        INPUT_ATTRIBUTES = [:description, :status, :metadata, :cust_payment_type, :cust_payment_card_no, :cust_prev_balance, :cust_current_balance].freeze
         RECEPIENT_ATTRIBUTES = [:recepient].freeze
         INPUT_ATTRIBUTES_WITH_RECEPIENT = INPUT_ATTRIBUTES + RECEPIENT_ATTRIBUTES
         DELIVERY_ATTRIBUTES = [:delivery].freeze
@@ -45,6 +45,10 @@ module Gcfs
           @created_at = Time.zone.parse(attributes["created_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           @updated_at = Time.zone.parse(attributes["updated_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           @order_type = attributes["order_type"]
+          @cust_payment_type = attributes["cust_payment_type"]
+          @cust_payment_card_no = attributes["cust_payment_card_no"]
+          @cust_prev_balance = attributes["cust_prev_balance"]
+          @cust_current_balance = attributes["cust_current_balance"]
         end
 
         def self.all(options={force: false, query:{}, sort:{}})
