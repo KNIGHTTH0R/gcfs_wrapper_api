@@ -11,9 +11,10 @@ module Gcfs
         RECEIVE_ATTRIBUTES = [:receive].freeze
         INPUT_ATTRIBUTES_WITH_DELIVERY_RECEIVE = INPUT_ATTRIBUTES + DELIVERY_ATTRIBUTES + RECEIVE_ATTRIBUTES
         ITEMS_ATTRIBUTES = [:items].freeze
+        PAYMENTS_ATTRIBUTES = [:payments].freeze
         INPUT_ATTRIBUTES_WITH_ITEMS = INPUT_ATTRIBUTES_WITH_RECEPIENT + ITEMS_ATTRIBUTES
         TABLE_ATTRIBUTES = [:id, :transaction_id, :invoice_number, :client, :histories, :total, :shipping_fee, :total_with_shipping, :payment_type, :payment_status, :dtcell_status, :created_at, :updated_at, :order_type, :request_delivery_date, :tada_type, :design_type].freeze
-        VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES_WITH_ITEMS + DELIVERY_ATTRIBUTES + RECEIVE_ATTRIBUTES
+        VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES_WITH_ITEMS + DELIVERY_ATTRIBUTES + RECEIVE_ATTRIBUTES + PAYMENTS_ATTRIBUTES
         attr_reader *VALID_ATTRIBUTES
 
         QUERY_ATTRIBUTES = [:start_date, :end_date, :client, :client_ids, :contain_delivery_notes, :recepient, :category, :item, :variant, :invoice_number, :transaction_id, :status, :payment_status, :requester, :requester_id].freeze
@@ -49,6 +50,7 @@ module Gcfs
           @cust_payment_card_no = attributes["cust_payment_card_no"]
           @cust_prev_balance = attributes["cust_prev_balance"]
           @cust_current_balance = attributes["cust_current_balance"]
+          @payments = attributes["payments"].map{|payment| Gcfs::Wrapper::Api::OrderPayment.new payment }
         end
 
         def self.all(options={force: false, query:{}, sort:{}})
