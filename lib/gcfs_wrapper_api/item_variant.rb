@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class ItemVariant < Base
-        INPUT_ATTRIBUTES = [:description, :nominal, :active, :price, :program_id].freeze
+        INPUT_ATTRIBUTES = [:description, :nominal, :active, :price, :program_id, :metadata].freeze
         TABLE_ATTRIBUTES = [:id, :sku, :created_at, :updated_at, :stock].freeze
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES
         attr_reader *VALID_ATTRIBUTES
@@ -20,6 +20,7 @@ module Gcfs
           @stock = attributes["stock"]
           @active = attributes["active"]
           @program_id = attributes["program_id"]
+          @metadata = attributes["metadata"]
           @created_at = Time.zone.parse(attributes["created_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           @updated_at = Time.zone.parse(attributes["updated_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
         end
