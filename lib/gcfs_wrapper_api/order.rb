@@ -13,7 +13,7 @@ module Gcfs
         ITEMS_ATTRIBUTES = [:items].freeze
         PAYMENTS_ATTRIBUTES = [:payments].freeze
         INPUT_ATTRIBUTES_WITH_ITEMS = INPUT_ATTRIBUTES_WITH_RECEPIENT + ITEMS_ATTRIBUTES
-        TABLE_ATTRIBUTES = [:id, :transaction_id, :invoice_number, :client, :histories, :total, :shipping_fee, :total_with_shipping, :payment_type, :payment_status, :dtcell_status, :created_at, :updated_at, :order_type, :request_delivery_date, :tada_type, :design_type].freeze
+        TABLE_ATTRIBUTES = [:id, :transaction_id, :invoice_number, :client, :histories, :total, :shipping_fee, :total_with_shipping, :payment_type, :payment_status, :dtcell_status, :created_at, :updated_at, :order_type, :request_delivery_date, :tada_type, :design_type, :sent_at].freeze
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES_WITH_ITEMS + DELIVERY_ATTRIBUTES + RECEIVE_ATTRIBUTES + PAYMENTS_ATTRIBUTES
         attr_reader *VALID_ATTRIBUTES
 
@@ -52,6 +52,7 @@ module Gcfs
           @cust_current_balance = attributes["cust_current_balance"]
           @payments = attributes["payments"].map{|payment| Gcfs::Wrapper::Api::OrderPayment.new payment }
           @humanized_sla_status = attributes["humanized_sla_status"]
+          @sent_at = attributes["sent_at"]
         end
 
         def self.all(options={force: false, query:{}, sort:{}})
