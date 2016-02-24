@@ -59,6 +59,18 @@ module Gcfs
           retrieve_url self.post("/v1/flights/process_order", @options)
         end
 
+        def self.add_order(options={})
+          options = parsed_params options
+          @options = configure_params body: options.to_json
+          retrieve_url self.post("/v1/flights/add_order", @options)
+        end
+
+        def self.confirm_order(options={})
+          options = parsed_params options
+          @options = configure_params body: options.to_json
+          retrieve_url self.post("/v1/flights/confirm_order", @options)
+        end
+
         def self.airports(metadata={})
           options = parsed_params metadata
           @options = configure_params query: metadata
@@ -66,7 +78,8 @@ module Gcfs
         end
 
         def self.get_cart(options={})
-          @options = configure_params
+          options = parsed_params options
+          @options = configure_params query: options
           retrieve_url self.get("/v1/flights/cart", @options)
         end
 
