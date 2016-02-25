@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class Order < Base
-        INPUT_ATTRIBUTES = [:description, :status, :metadata, :cust_payment_type, :cust_payment_card_no, :cust_prev_balance, :cust_current_balance, :humanized_sla_status].freeze
+        INPUT_ATTRIBUTES = [:description, :status, :metadata, :cust_payment_type, :cust_payment_card_no, :cust_prev_balance, :cust_current_balance, :humanized_sla_status,:payments].freeze
         RECEPIENT_ATTRIBUTES = [:recepient].freeze
         INPUT_ATTRIBUTES_WITH_RECEPIENT = INPUT_ATTRIBUTES + RECEPIENT_ATTRIBUTES
         DELIVERY_ATTRIBUTES = [:delivery].freeze
