@@ -25,7 +25,6 @@ module Gcfs
           @bem_request_logs = attributes["bem_request_logs"].map{|bem_log| Gcfs::Wrapper::Api::BemRequestLog.new bem_log } if attributes["bem_request_logs"].present?
         end
       end
-
     end
   end
 end
