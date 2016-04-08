@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class OrderItemVariant < Base
-        VALID_ATTRIBUTES =  [:id, :sku, :description, :quantity, :price, :nominal, :subtotal, :design_type, :tada_type, :design_notes, :program_id, :order_item_id, :dtcell_orders, :bem_request_logs, :card_notes].freeze
+        VALID_ATTRIBUTES =  [:id, :sku, :description, :quantity, :price, :nominal, :subtotal, :design_type, :tada_type, :topup_card_no, :design_notes, :program_id, :order_item_id, :dtcell_orders, :bem_request_logs, :card_notes].freeze
         attr_reader *VALID_ATTRIBUTES
 
         def initialize(attributes)
@@ -17,6 +17,7 @@ module Gcfs
           @subtotal = attributes["subtotal"]
           @design_type = attributes["design_type"]
           @tada_type = attributes["tada_type"]
+          @topup_card_no = attributes["topup_card_no"]
           @design_notes = attributes["design_notes"]
           @program_id = attributes["program_id"]
           @order_item_id = attributes["order_item_id"]
