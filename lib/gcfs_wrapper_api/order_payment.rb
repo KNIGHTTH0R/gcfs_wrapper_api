@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class OrderPayment < Base
-        VALID_ATTRIBUTES =  [:id, :payment_type, :card_no, :prev_balance, :current_balance].freeze
+        VALID_ATTRIBUTES =  [:id, :payment_type, :card_no, :prev_balance, :current_balance, :merchant_id].freeze
         attr_reader *VALID_ATTRIBUTES
 
         def initialize(attributes)
@@ -13,6 +13,7 @@ module Gcfs
           @card_no = attributes["card_no"]
           @prev_balance = attributes["prev_balance"]
           @current_balance = attributes["current_balance"]
+          @merchant_id = attributes["merchant_id"]
         end
       end
 
