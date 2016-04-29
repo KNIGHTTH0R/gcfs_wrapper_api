@@ -11,7 +11,7 @@ module Gcfs
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES_WITH_VARIANTS
         attr_reader *VALID_ATTRIBUTES
 
-        QUERY_ATTRIBUTES = [:client, :category, :sku, :name, :nominal, :price, :min_price, :max_price].freeze
+        QUERY_ATTRIBUTES = [:client, :category, :sku, :name, :nominal, :price, :min_price, :max_price, :program_id].freeze
         SORT_ATTRIBUTES = [:sku, :name, :category].freeze
 
         def initialize(attributes)
