@@ -71,6 +71,18 @@ module Gcfs
           retrieve_url self.post("/v1/flights/confirm_order", @options)
         end
 
+        def self.checkout_payment(options={})
+          options = parsed_params options
+          @options = configure_params body: options.to_json
+          retrieve_url self.post("/v1/flights/checkout_payment", @options)
+        end
+
+        def self.continue_process(options={})
+          options = parsed_params options
+          @options = configure_params body: options.to_json
+          retrieve_url self.post("/v1/flights/continue_process", @options)
+        end
+
         def self.airports(metadata={})
           options = parsed_params metadata
           @options = configure_params query: metadata
