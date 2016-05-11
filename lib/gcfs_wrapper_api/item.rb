@@ -7,7 +7,7 @@ module Gcfs
         INPUT_ATTRIBUTES = [:name, :category, :image].freeze
         VARIANTS_ATTRIBUTES = [:variants].freeze
         INPUT_ATTRIBUTES_WITH_VARIANTS = INPUT_ATTRIBUTES + VARIANTS_ATTRIBUTES
-        TABLE_ATTRIBUTES = [:id, :sku, :created_at, :updated_at, :stock].freeze
+        TABLE_ATTRIBUTES = [:id, :sku, :created_at, :updated_at, :stock, :vendor].freeze
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES_WITH_VARIANTS
         attr_reader *VALID_ATTRIBUTES
 
@@ -21,6 +21,7 @@ module Gcfs
           @category = attributes["category"]
           @image = attributes["image"]
           @stock = attributes["stock"]
+          @vendor = attributes["vendor"]
           @created_at = Time.zone.parse(attributes["created_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           @updated_at = Time.zone.parse(attributes["updated_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           @variants = attributes["variants"].map{|variant| Gcfs::Wrapper::Api::ItemVariant.new variant } if attributes["variants"]
