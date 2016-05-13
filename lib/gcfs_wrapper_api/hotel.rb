@@ -61,6 +61,12 @@ module Gcfs
           retrieve_url self.post("/v1/hotels/process_order", @options)
         end
 
+        def self.continue_process(options={})
+          options = parsed_params options
+          @options = configure_params body: options.to_json
+          retrieve_url self.post("/v1/hotels/continue_process", @options)
+        end
+        
         def self.search_autocomplete(options={})
           options = parsed_params options
           @options = configure_params query: options
