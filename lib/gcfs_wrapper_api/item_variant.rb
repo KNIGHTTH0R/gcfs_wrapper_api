@@ -5,7 +5,7 @@ module Gcfs
 
       class ItemVariant < Base
         INPUT_ATTRIBUTES = [:description, :nominal, :active, :price, :program_id, :metadata].freeze
-        TABLE_ATTRIBUTES = [:id, :sku, :created_at, :updated_at, :stock].freeze
+        TABLE_ATTRIBUTES = [:id, :sku, :name, :created_at, :updated_at, :stock].freeze
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES
         attr_reader *VALID_ATTRIBUTES
 
@@ -14,6 +14,7 @@ module Gcfs
         def initialize(attributes)
           @id = attributes["id"]
           @sku = attributes["sku"]
+          @name = attributes["name"]
           @description = attributes["description"]
           @nominal = attributes["nominal"]
           @price = attributes["price"]
