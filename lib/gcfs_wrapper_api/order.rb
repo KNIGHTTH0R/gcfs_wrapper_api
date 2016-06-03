@@ -17,7 +17,7 @@ module Gcfs
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES_WITH_ITEMS + DELIVERY_ATTRIBUTES + RECEIVE_ATTRIBUTES + PAYMENTS_ATTRIBUTES
         attr_reader *VALID_ATTRIBUTES
 
-        QUERY_ATTRIBUTES = [:start_date, :end_date, :client, :client_ids, :contain_delivery_notes, :recepient, :category, :item, :variant, :invoice_number, :transaction_id, :status, :payment_status, :requester, :requester_id, :merchant_id, :gcp_transaction_number, :order_ids].freeze
+        QUERY_ATTRIBUTES = [:start_date, :end_date, :client, :client_ids, :contain_delivery_notes, :recepient, :category, :item, :variant, :invoice_number, :po_number, :transaction_id, :status, :payment_status, :requester, :requester_id, :merchant_id, :gcp_transaction_number, :order_ids].freeze
         SORT_ATTRIBUTES = [:date, :client, :transaction_id, :description, :recepient, :total, :invoice_number, :status, :payment_status].freeze
 
         def initialize(attributes)
