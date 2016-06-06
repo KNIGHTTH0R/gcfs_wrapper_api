@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class Category < Base
-        INPUT_ATTRIBUTES = [:name].freeze
+        INPUT_ATTRIBUTES = [:name, :label].freeze
         TABLE_ATTRIBUTES = [:id].freeze
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES
         attr_reader *VALID_ATTRIBUTES
@@ -14,6 +14,7 @@ module Gcfs
         def initialize(attributes)
           @id = attributes["id"]
           @name = attributes["name"]
+          @label = attributes["label"]
         end
 
         def self.all(options={force: false})
