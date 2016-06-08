@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class DtcellOrder < Base
-        VALID_ATTRIBUTES =  [:id, :resultcode, :message, :trxid, :ref_trxid, :vendor, :operator_code, :phone_number, :status].freeze
+        VALID_ATTRIBUTES =  [:id, :resultcode, :message, :trxid, :ref_trxid, :vendor, :operator_code, :phone_number, :status, :is_sent].freeze
         attr_reader *VALID_ATTRIBUTES
 
         def initialize(attributes)
@@ -17,6 +17,7 @@ module Gcfs
           @operator_code = attributes["operator_code"]
           @phone_number = attributes["phone_number"]
           @status = attributes["status"]
+          @is_sent = attributes["is_sent"]
         end
       end
 
