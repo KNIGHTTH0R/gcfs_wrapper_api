@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class Item < Base
-        INPUT_ATTRIBUTES = [:name, :description, :category, :image].freeze
+        INPUT_ATTRIBUTES = [:name, :description, :category, :image, :phone_prefixes].freeze
         VARIANTS_ATTRIBUTES = [:variants].freeze
         INPUT_ATTRIBUTES_WITH_VARIANTS = INPUT_ATTRIBUTES + VARIANTS_ATTRIBUTES
         TABLE_ATTRIBUTES = [:id, :sku, :created_at, :updated_at, :stock, :vendor].freeze
@@ -26,6 +26,7 @@ module Gcfs
           @created_at = Time.zone.parse(attributes["created_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           @updated_at = Time.zone.parse(attributes["updated_at"] + ' ' + Gcfs::Wrapper::Api.options[:timezone])
           @variants = attributes["variants"].map{|variant| Gcfs::Wrapper::Api::ItemVariant.new variant } if attributes["variants"]
+          @phone_prefixes = attributes["phone_prefixes"].map{|phone_prefix| Gcfs::Wrapper::Api::PhonePrefix.new phone_prefix } if attributes["phone_prefixes"]
         end
 
         def self.all(options={force: false})
