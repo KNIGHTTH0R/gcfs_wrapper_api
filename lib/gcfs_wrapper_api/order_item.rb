@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class OrderItem < Base
-        VALID_ATTRIBUTES =  [:id, :sku, :name, :category_name, :variants, :output, :tiket_order_id, :resultcode, :message, :trxid, :ref_trxid].freeze
+        VALID_ATTRIBUTES =  [:id, :sku, :name, :category_name, :variants, :output, :tiket_order_id, :resultcode, :message, :trxid, :ref_trxid, :is_po_item].freeze
         attr_reader *VALID_ATTRIBUTES
 
         def initialize(attributes)
@@ -19,6 +19,7 @@ module Gcfs
           @message = attributes["message"]
           @trxid = attributes["trxid"]
           @ref_trxid = attributes["ref_trxid"]
+          @is_po_item = attributes["is_po_item"]
         end
       end
 

@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class OrderDatacellItem < Base
-        VALID_ATTRIBUTES =  [:id, :resultcode, :message, :trxid, :ref_trxid, :operator_code, :phone_number, :quantity, :price].freeze
+        VALID_ATTRIBUTES =  [:id, :resultcode, :message, :trxid, :ref_trxid, :operator_code, :phone_number, :quantity, :price, :is_po_item].freeze
         attr_reader *VALID_ATTRIBUTES
 
         def initialize(attributes)
@@ -17,6 +17,7 @@ module Gcfs
           @phone_number = attributes["phone_number"]
           @quantity = attributes["quantity"]
           @price = attributes["price"]
+          @is_po_item = attributes["is_po_item"]
         end
       end
 
