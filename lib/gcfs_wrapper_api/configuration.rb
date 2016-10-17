@@ -4,7 +4,7 @@ module Gcfs
       module Configuration
         VALID_CONFIG_KEYS     = [:endpoint, :key, :secret, :username, :password, :grant_type, :scope, :token, :access_token, :debug, :timezone].freeze
      
-        DEFAULT_ENDPOINT      = 'localhost:3000'
+        DEFAULT_ENDPOINT      = 'http://gcfs.gift.local'
         DEFAULT_GRANT_TYPE    = 'password'
         DEFAULT_SCOPE         = 'offline_access'
         DEFAULT_KEY           = '12345678901234567890'
