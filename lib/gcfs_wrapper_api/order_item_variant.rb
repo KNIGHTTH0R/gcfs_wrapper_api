@@ -4,7 +4,7 @@ module Gcfs
       extend Configuration
 
       class OrderItemVariant < Base
-        VALID_ATTRIBUTES =  [:id, :sku, :description, :quantity, :price, :nominal, :subtotal, :design_type, :tada_type, :topup_card_no, :design_notes, :program_id, :order_item_id, :dtcell_orders, :bem_request_logs, :card_notes].freeze
+        VALID_ATTRIBUTES =  [:id, :sku, :description, :quantity, :price, :nominal, :subtotal, :design_type, :tada_type, :topup_card_no, :design_notes, :program_id, :order_item_id, :dtcell_orders, :bem_request_logs, :card_notes, :status, :air_waybill_id, :awb_number, :status_item, :category_id].freeze
         attr_reader *VALID_ATTRIBUTES
 
         def initialize(attributes)
@@ -22,6 +22,10 @@ module Gcfs
           @program_id = attributes["program_id"]
           @order_item_id = attributes["order_item_id"]
           @card_notes = attributes["card_notes"]
+          @air_waybill_id = attributes["air_waybill_id"]
+          @awb_number = attributes["awb_number"] if attributes["awb_number"].present?
+          @status_item = attributes["status_item"]
+          @category_id = attributes["category_id"]
           @dtcell_orders = attributes["dtcell_orders"].map{|dtcell_order| Gcfs::Wrapper::Api::DtcellOrder.new dtcell_order } if attributes["dtcell_orders"].present?
           @bem_request_logs = attributes["bem_request_logs"].map{|bem_log| Gcfs::Wrapper::Api::BemRequestLog.new bem_log } if attributes["bem_request_logs"].present?
         end

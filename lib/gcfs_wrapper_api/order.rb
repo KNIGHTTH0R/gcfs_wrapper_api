@@ -56,6 +56,7 @@ module Gcfs
           @humanized_sla_status = attributes["humanized_sla_status"]
           @sent_at = attributes["sent_at"]
           @order_ids = attributes["order_ids"]
+          
         end
 
         def self.all(options={force: false, query:{}, sort:{}})
