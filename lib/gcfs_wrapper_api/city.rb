@@ -5,7 +5,7 @@ module Gcfs
 
       class City < Base
         INPUT_ATTRIBUTES = [].freeze
-        TABLE_ATTRIBUTES = [:id, :name, :price].freeze
+        TABLE_ATTRIBUTES = [:id, :name, :price, :categories].freeze
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES
         attr_reader *VALID_ATTRIBUTES
 
@@ -15,6 +15,7 @@ module Gcfs
           @id = attributes["id"]
           @name = attributes["name"]
           @price = attributes["price"]
+          @categories = attributes["categories"]
         end
 
         def self.all(options={force: false})
@@ -28,6 +29,14 @@ module Gcfs
           @objects[options[:per_page].to_i][options[:page].to_i] = nil if options[:force]
           # @objects[options[:per_page].to_i][options[:page].to_i] ||= retrieve_url self.get("/v1/categories", @options)
           cities = retrieve_url self.get("/v1/cities/old", @options)
+        end
+
+        def self.complete(options={})
+          options = parsed_params options
+          query = { :complete => 1 }
+          query[:city] = options[:city] if options[:city]
+          @options = configure_params query: query
+          cities = retrieve_url self.get("/v1/cities", @options)
         end
 
       end
