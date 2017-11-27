@@ -13,8 +13,12 @@ module Gcfs
             begin
               json = JSON.parse response.body
               if json.is_a? Array
+                if response.headers["X-Total"]
                 content = { data: json.map{|item| new(item) } }.merge!(parsed_pagination(response))
                 Kaminari.paginate_array(content[:data], total_count: content[:total_count]).page(content[:page]).per(content[:per_page])
+              else
+                content = json.map{|item| new(item)}
+              end
               elsif json.is_a? Hash
                 if json.has_key? 'error'
                   raise Gcfs::Wrapper::Api::Error.new json['error']
