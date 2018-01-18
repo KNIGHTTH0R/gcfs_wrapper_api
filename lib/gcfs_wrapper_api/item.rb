@@ -4,14 +4,14 @@ module Gcfs
       extend Configuration
 
       class Item < Base
-        INPUT_ATTRIBUTES = [:name, :description, :category, :image, :phone_prefixes].freeze
+        INPUT_ATTRIBUTES = [:name, :description, :category, :vendor_id, :image, :phone_prefixes].freeze
         VARIANTS_ATTRIBUTES = [:variants].freeze
         INPUT_ATTRIBUTES_WITH_VARIANTS = INPUT_ATTRIBUTES + VARIANTS_ATTRIBUTES
-        TABLE_ATTRIBUTES = [:id, :sku, :category_id, :created_at, :updated_at, :stock, :vendor].freeze
+        TABLE_ATTRIBUTES = [:id, :sku, :category_id, :vendor_id, :created_at, :updated_at, :stock, :vendor].freeze
         VALID_ATTRIBUTES =  TABLE_ATTRIBUTES + INPUT_ATTRIBUTES_WITH_VARIANTS
         attr_reader *VALID_ATTRIBUTES
 
-        QUERY_ATTRIBUTES = [:client, :category, :sku, :name, :nominal, :price, :min_price, :max_price, :program_id].freeze
+        QUERY_ATTRIBUTES = [:client, :category, :vendor_id, :sku, :name, :nominal, :price, :min_price, :max_price, :program_id].freeze
         SORT_ATTRIBUTES = [:sku, :name, :category].freeze
 
         def initialize(attributes)
@@ -21,6 +21,7 @@ module Gcfs
           @description = attributes["description"]
           @category_id = attributes["category_id"]
           @category = attributes["category"]
+          @vendor_id = attributes["vendor_id"]
           @image = attributes["image"]
           @stock = attributes["stock"]
           @vendor = attributes["vendor"]
